@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cqhq6ekdi8kjq"]
+
+[ext_resource type="PackedScene" uid="uid://dsmq3h1opun6d" path="res://testing_grounds/testing_grounds.tscn" id="1_bb0ch"]
+[ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="2_ewmae"]
+
+[node name="MovementTest" type="Node" unique_id=333719031]
+
+[node name="TestingGrounds" parent="." unique_id=1422870158 instance=ExtResource("1_bb0ch")]
+
+[node name="Fih" parent="TestingGrounds" unique_id=761742824 instance=ExtResource("2_ewmae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)

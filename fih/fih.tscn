@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://c1li6jqoavtwc"]
+
+[ext_resource type="Script" uid="uid://d0ebbhywb5t0c" path="res://fih/fih.gd" id="1_f47id"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_uomrg"]
+
+[node name="Fih" type="CharacterBody3D" unique_id=761742824]
+script = ExtResource("1_f47id")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1266004146]
+shape = SubResource("SphereShape3D_uomrg")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1758125523]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0.45)
+
+[node name="FinTimer" type="Timer" parent="." unique_id=1662488199]
+unique_name_in_owner = true
+wait_time = 0.5
+one_shot = true
+
+[node name="VelocityLabel" type="Label" parent="." unique_id=855302359]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
