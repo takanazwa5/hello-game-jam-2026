@@ -64,4 +64,4 @@ func _physics_process(_delta: float) -> void:
 
 
 func _process(_delta: float) -> void:
-	velocity_label.text = "%.2f" % velocity.z
+	velocity_label.text = "%.2f" % velocity.length()
