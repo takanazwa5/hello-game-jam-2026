@@ -43,20 +43,20 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _flap_fin() -> void:
 	fin_timer.start()
-	velocity = velocity.move_toward(-camera.global_basis.z * TURBO_SPEED, TURBO_ACCELERATION * _acceleration_modifier)
+	velocity = velocity.move_toward(-camera.global_basis.z * TURBO_SPEED, TURBO_ACCELERATION + _acceleration_modifier)
 	move_and_slide()
 
 
 func _physics_process(_delta: float) -> void:
 	var dot_product: float = camera.global_basis.z.dot(velocity)
-	#_acceleration_modifier = dot_product / 2 if dot_product > 0.0 else 0.0 # NOTE: chujowe, nowa wersja lepsza
-	_acceleration_modifier = remap(dot_product, 0, 5, 1, 2)
-	_acceleration_modifier = clampf(_acceleration_modifier, 1, 2)
+	_acceleration_modifier = dot_product / 10 if dot_product > 0.0 else 0.0
+	#_acceleration_modifier = remap(dot_product, 0, 5, 1, 2)
+	#_acceleration_modifier = clampf(_acceleration_modifier, 1, 2)
 	print(_acceleration_modifier)
 
 	if fin_timer.is_stopped():
 		if Input.is_action_pressed(&"W"):
-			velocity = velocity.move_toward(-camera.global_basis.z * SPEED, ACCELERATION * _acceleration_modifier)
+			velocity = velocity.move_toward(-camera.global_basis.z * SPEED, ACCELERATION + _acceleration_modifier)
 		else:
 			velocity = velocity.move_toward(Vector3.ZERO, DECELERATION)
 
