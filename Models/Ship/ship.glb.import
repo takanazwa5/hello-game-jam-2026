@@ -1,0 +1,73 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dq6iqj4am004u"
+path="res://.godot/imported/ship.glb-2286d252d557b21534137fd8c91ac860.scn"
+
+[deps]
+
+source_file="res://Models/Ship/ship.glb"
+dest_files=["res://.godot/imported/ship.glb-2286d252d557b21534137fd8c91ac860.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"mat_rocks": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_rocks.tres",
+"use_external/path": "uid://di5g4527h34c5"
+},
+"mat_ship_01": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_01.tres",
+"use_external/path": "uid://dqcpo4h6g0ic6"
+},
+"mat_ship_02": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_02.tres",
+"use_external/path": "uid://dmyl555br6la7"
+},
+"mat_ship_03": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_03.tres",
+"use_external/path": "uid://sdqximjg4y6p"
+},
+"mat_ship_04": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_04.tres",
+"use_external/path": "uid://u4tqjqk7l2qs"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1
