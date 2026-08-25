@@ -2,19 +2,33 @@ class_name Fih extends CharacterBody3D
 
 
 var _last_fin_key: Key
+var _acceleration_modifier: float = 0.0
 
 
 @onready var fin_timer: Timer = %FinTimer
 @onready var velocity_label: Label = %VelocityLabel
+@onready var camera: Camera3D = %Camera3D
 
 
 const SPEED: float = 2.5
+const TURBO_SPEED: float = 5.0
 const ACCELERATION: float = 0.01
-const DECELERATION: float = 0.1
+const DECELERATION: float = 0.01
 const TURBO_ACCELERATION: float = 0.25
 
 
+func _ready() -> void:
+	if not OS.is_debug_build():
+		velocity_label.hide()
+
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+
 func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		rotate_y(-event.relative.x * 0.001)
+		camera.rotate_x(event.relative.y * 0.001)
+
 	if event is InputEventKey and (event.is_action_pressed(&"A") or event.is_action_pressed(&"D")):
 		if fin_timer.is_stopped():
 			_last_fin_key = event.physical_keycode
@@ -29,16 +43,22 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _flap_fin() -> void:
 	fin_timer.start()
-	velocity.z = move_toward(velocity.z, SPEED * 2, TURBO_ACCELERATION)
+	velocity = velocity.move_toward(-camera.global_basis.z * TURBO_SPEED, TURBO_ACCELERATION * _acceleration_modifier)
 	move_and_slide()
 
 
 func _physics_process(_delta: float) -> void:
+	var dot_product: float = camera.global_basis.z.dot(velocity)
+	#_acceleration_modifier = dot_product / 2 if dot_product > 0.0 else 0.0 # NOTE: chujowe, nowa wersja lepsza
+	_acceleration_modifier = remap(dot_product, 0, 5, 1, 2)
+	_acceleration_modifier = clampf(_acceleration_modifier, 1, 2)
+	print(_acceleration_modifier)
+
 	if fin_timer.is_stopped():
 		if Input.is_action_pressed(&"W"):
-			velocity.z = move_toward(velocity.z, SPEED, ACCELERATION)
+			velocity = velocity.move_toward(-camera.global_basis.z * SPEED, ACCELERATION * _acceleration_modifier)
 		else:
-			velocity.z = move_toward(velocity.z, 0, DECELERATION)
+			velocity = velocity.move_toward(Vector3.ZERO, DECELERATION)
 
 	move_and_slide()
 
