@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://v67f47nmemcw"]
+
+[ext_resource type="PackedScene" uid="uid://24nv6cn6ubvy" path="res://Models/Enemies/meshes/Shark.glb" id="1_baigp"]
+
+[node name="Shark" unique_id=1528879968 instance=ExtResource("1_baigp")]
+
+[node name="Skeleton3D" parent="Shark_Rig" parent_id_path=PackedInt32Array(811576526) index="0" unique_id=1100147595]
+bones/0/rotation = Quaternion(-0.7057374, 0.0439858, 0.0439858, 0.7057374)
+bones/1/rotation = Quaternion(0.0037173822, 0.0005149596, 0.13330445, 0.9910681)
+bones/4/rotation = Quaternion(1.4527921e-09, 0.0011181047, 0.14804871, 0.98897946)
+bones/5/rotation = Quaternion(-1.6236749e-09, 0.000116022275, 0.0154401865, 0.9998808)
+bones/6/rotation = Quaternion(0.00012777171, 0.0016590401, 0.20324379, 0.9791268)
+bones/7/rotation = Quaternion(0.702361, -1.5139942e-15, -1.5139941e-15, 0.71182096)

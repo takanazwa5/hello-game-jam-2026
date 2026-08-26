@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://1ppfnu46xxpy"]
+
+[ext_resource type="Texture2D" uid="uid://bmmhadjn266lb" path="res://Models/Enemies/textures/tex_Crab_Base_color.png" id="1_otdyf"]
+
+[resource]
+resource_name = "mat_Krab"
+shading_mode = 2
+albedo_texture = ExtResource("1_otdyf")
+texture_filter = 2

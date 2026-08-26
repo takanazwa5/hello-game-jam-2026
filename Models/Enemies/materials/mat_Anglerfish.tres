@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cxnlo33u4mndc"]
+
+[ext_resource type="Texture2D" uid="uid://p4bmumqp6tyg" path="res://Models/Enemies/textures/tex_Anglerfish_Base_color.png" id="1_yho2m"]
+
+[resource]
+resource_name = "mat_Anglerfish"
+shading_mode = 2
+albedo_texture = ExtResource("1_yho2m")
+texture_filter = 2
