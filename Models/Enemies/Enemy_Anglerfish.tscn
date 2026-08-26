@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://lodsvqvapoj7"]
+
+[ext_resource type="PackedScene" uid="uid://xp3bf2offkyf" path="res://Models/Enemies/meshes/Anglerfish.glb" id="1_wkn1a"]
+
+[node name="Anglerfish" unique_id=1200089179 instance=ExtResource("1_wkn1a")]
+
+[node name="Skeleton3D" parent="Anglerfish_Rig" parent_id_path=PackedInt32Array(1975282768) index="0" unique_id=613922771]
+bones/0/rotation = Quaternion(-0.7045259, -0.060360182, -0.060360182, 0.7045259)
+bones/1/rotation = Quaternion(0.9763167, -9.95248e-08, -4.663502e-07, 0.21634626)
+bones/2/rotation = Quaternion(0.003741207, -0.00027694204, -0.07169027, 0.99741995)
+bones/3/rotation = Quaternion(0.1620051, -0.13885808, -0.22245693, 0.9513074)
+bones/4/rotation = Quaternion(0.16200514, 0.13885808, 0.22245693, 0.9513074)
+bones/5/rotation = Quaternion(9.773033e-09, -0.0006635964, -0.08786714, 0.99613196)
+bones/6/rotation = Quaternion(-2.0405366e-08, 0.0014194315, 0.18889672, 0.98199594)
+bones/7/rotation = Quaternion(0.00013015854, 0.00059427356, 0.072802685, 0.99734616)
