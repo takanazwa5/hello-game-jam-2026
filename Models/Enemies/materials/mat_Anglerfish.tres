@@ -1,9 +1,15 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cxnlo33u4mndc"]
 
 [ext_resource type="Texture2D" uid="uid://p4bmumqp6tyg" path="res://Models/Enemies/textures/tex_Anglerfish_Base_color.png" id="1_yho2m"]
+[ext_resource type="Texture2D" uid="uid://ds3nvnx0er3wx" path="res://Models/Enemies/textures/tex_Anglerfish_Emissive.png" id="2_vlmqv"]
 
 [resource]
 resource_name = "mat_Anglerfish"
 shading_mode = 2
 albedo_texture = ExtResource("1_yho2m")
+emission_enabled = true
+emission = Color(1.4439225e-06, 0.5510038, 0.71636754, 1)
+emission_energy_multiplier = 5.0
+emission_operator = 1
+emission_texture = ExtResource("2_vlmqv")
 texture_filter = 2
