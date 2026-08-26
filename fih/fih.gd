@@ -76,3 +76,4 @@ func _physics_process(_delta: float) -> void:
 
 func _process(_delta: float) -> void:
 	velocity_label.text = "%.2f" % velocity.length()
+	camera.rotation_degrees.x = clampf(camera.rotation_degrees.x, -90, 90)
