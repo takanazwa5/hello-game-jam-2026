@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b83xp1eyd8ixi"
-path="res://.godot/imported/anemoneY.glb-a41aed2b91deb5754fc3231c3619a0e2.scn"
+uid="uid://kikedb1bq3dm"
+path="res://.godot/imported/Apogon_Kardynal.glb-787ccb2d33b0fc25a9adae3216a80a86.scn"
 
 [deps]
 
-source_file="res://Models/Anemones/anemoneY.glb"
-dest_files=["res://.godot/imported/anemoneY.glb-a41aed2b91deb5754fc3231c3619a0e2.scn"]
+source_file="res://Models/Fish/meshes/Apogon_Kardynal.glb"
+dest_files=["res://.godot/imported/Apogon_Kardynal.glb-787ccb2d33b0fc25a9adae3216a80a86.scn"]
 
 [params]
 
@@ -41,10 +41,10 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"mat_anemone_2": {
+"mat_Rybki": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Anemones/mat_anemone_2.tres",
-"use_external/path": "uid://ogmkq3qtn5l5"
+"use_external/fallback_path": "res://Models/Fish/materials/mat_Rybki.tres",
+"use_external/path": "uid://bx4kl0854j0a"
 }
 }
 }
