@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bx4kl0854j0a"]
+
+[ext_resource type="Texture2D" uid="uid://bhb7dbyi883lx" path="res://Models/Fish/textures/tex_Rybki_Base_color.png" id="1_q6c7l"]
+
+[resource]
+resource_name = "mat_Rybki"
+shading_mode = 2
+albedo_texture = ExtResource("1_q6c7l")
+texture_filter = 2

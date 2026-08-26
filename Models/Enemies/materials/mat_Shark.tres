@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cplp2fl5vqja6"]
+
+[ext_resource type="Texture2D" uid="uid://8wj1425kot2s" path="res://Models/Enemies/textures/tex_Shark_Base_color.png" id="1_fuj1a"]
+
+[resource]
+resource_name = "mat_zarlacz"
+shading_mode = 2
+albedo_texture = ExtResource("1_fuj1a")
+texture_filter = 2

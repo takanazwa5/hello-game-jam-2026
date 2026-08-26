@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvfjnctdna3cj"
-path.s3tc="res://.godot/imported/anemone_1.png-8d33c89395023f144d1672c08fb2bcb8.s3tc.ctex"
+uid="uid://8wj1425kot2s"
+path.s3tc="res://.godot/imported/tex_Shark_Base_color.png-1168f4cc16be040f5e8e5d23fa95740e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Anemones/Textures/anemone_1.png"
-dest_files=["res://.godot/imported/anemone_1.png-8d33c89395023f144d1672c08fb2bcb8.s3tc.ctex"]
+source_file="res://Models/Enemies/textures/tex_Shark_Base_color.png"
+dest_files=["res://.godot/imported/tex_Shark_Base_color.png-1168f4cc16be040f5e8e5d23fa95740e.s3tc.ctex"]
 
 [params]
 
