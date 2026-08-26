@@ -8,6 +8,7 @@ var _acceleration_modifier: float = 0.0
 @onready var fin_timer: Timer = %FinTimer
 @onready var velocity_label: Label = %VelocityLabel
 @onready var camera: Camera3D = %Camera3D
+@onready var camera_rig: Node3D = %CameraRig
 
 
 const SPEED: float = 2.5
@@ -15,6 +16,7 @@ const TURBO_SPEED: float = 5.0
 const ACCELERATION: float = 0.01
 const DECELERATION: float = 0.01
 const TURBO_ACCELERATION: float = 0.25
+const FIN_FLAP_CAMERA_SHAKE_INTENSITY: float = 2.5
 
 
 func _ready() -> void:
@@ -27,7 +29,7 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * 0.001)
-		camera.rotate_x(event.relative.y * 0.001)
+		camera.rotate_x(-event.relative.y * 0.001)
 
 	if event is InputEventKey and (event.is_action_pressed(&"A") or event.is_action_pressed(&"D")):
 		if fin_timer.is_stopped():
@@ -42,6 +44,14 @@ func _unhandled_input(event: InputEvent) -> void:
 		_flap_fin()
 
 func _flap_fin() -> void:
+	var tween: Tween = create_tween()
+	var rotation_val: float
+	if _last_fin_key == Key.KEY_A:
+		rotation_val = 180 + FIN_FLAP_CAMERA_SHAKE_INTENSITY
+	else:
+		rotation_val = 180 - FIN_FLAP_CAMERA_SHAKE_INTENSITY
+	tween.tween_property(camera_rig, ^"rotation_degrees:y", rotation_val, 0.15)
+	tween.tween_property(camera_rig, ^"rotation_degrees:y", 180, 0.15)
 	fin_timer.start()
 	velocity = velocity.move_toward(-camera.global_basis.z * TURBO_SPEED, TURBO_ACCELERATION + _acceleration_modifier)
 	move_and_slide()
