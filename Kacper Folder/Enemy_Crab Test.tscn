@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cuiy7smdq65c"]
+
+[ext_resource type="PackedScene" uid="uid://qopad5bpm4a5" path="res://Models/Enemies/meshes/Crab.glb" id="1_6oybt"]
+[ext_resource type="Shader" uid="uid://dgc7nvou6kcic" path="res://Kacper Folder/PSXShader.gdshader" id="2_tvq3p"]
+[ext_resource type="Texture2D" uid="uid://bmmhadjn266lb" path="res://Models/Enemies/textures/tex_Crab_Base_color.png" id="3_4ag44"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bbfmc"]
+render_priority = 0
+shader = ExtResource("2_tvq3p")
+shader_parameter/affine_mapping = false
+shader_parameter/albedo = ExtResource("3_4ag44")
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.0
+shader_parameter/resolution = Vector2i(160, 120)
+
+[node name="Crab" unique_id=123366098 instance=ExtResource("1_6oybt")]
+
+[node name="Skeleton3D" parent="Crab_Rig" parent_id_path=PackedInt32Array(1228333764) index="0" unique_id=1945966470]
+bones/0/position = Vector3(-3.6033605e-14, 4.199253, -1.086526)
+bones/0/rotation = Quaternion(0.49999997, 0.50000006, 0.49999997, 0.49999997)
+bones/1/rotation = Quaternion(0.16577336, -0.53259945, -0.14732009, 0.81679493)
+bones/2/rotation = Quaternion(-0.038590003, 0.57027906, 0.32377592, 0.753964)
+bones/3/rotation = Quaternion(-0.15715379, 0.016847515, -0.045633633, 0.9863755)
+bones/4/rotation = Quaternion(0.0076750475, -0.010941399, 0.036368825, 0.9992491)
+bones/5/rotation = Quaternion(0.69502807, 0.66702116, -0.22370793, -0.14823511)
+bones/6/rotation = Quaternion(-0.053934254, -0.5831467, -0.45389912, 0.67157024)
+bones/7/rotation = Quaternion(-0.37623784, -0.037525937, -0.08639574, 0.9217227)
+bones/8/rotation = Quaternion(-0.11717577, -0.010549529, 0.041859116, 0.99217254)
+bones/9/rotation = Quaternion(0.41552326, -0.34428144, -0.5371447, 0.648295)
+bones/10/rotation = Quaternion(-0.018639436, 0.8116923, 0.41913858, 0.4063632)
+bones/11/rotation = Quaternion(-0.38313243, 0.13102302, 0.17419986, 0.89760625)
+bones/12/rotation = Quaternion(-0.37084833, -0.025586486, 0.17533477, 0.91163296)
+bones/14/rotation = Quaternion(0.018639497, 0.8116923, 0.41913855, -0.4063632)
+bones/15/rotation = Quaternion(-0.38313222, -0.13102303, -0.17419982, 0.8976064)
+bones/17/rotation = Quaternion(-0.28362468, 0.51202977, 0.7092504, -0.3928695)
+bones/18/rotation = Quaternion(-5.518549e-05, 0.9456722, 0.32508242, 0.0050604003)
+bones/21/rotation = Quaternion(-0.7092505, -0.39286965, 0.2836244, 0.5120297)
+bones/22/rotation = Quaternion(5.500162e-05, 0.9456721, 0.32508263, -0.00506039)
+bones/23/rotation = Quaternion(-0.5046811, -0.15328513, -0.18894388, 0.8283121)
+bones/25/rotation = Quaternion(-0.1352381, 0.47367, 0.83681804, -0.23892036)
+bones/26/rotation = Quaternion(0.058185365, -0.7115315, -0.34009904, 0.6121029)
+bones/27/rotation = Quaternion(-0.50452435, -0.099716395, -0.122452, 0.848833)
+bones/29/rotation = Quaternion(0.8368182, 0.23892082, -0.13523759, -0.4736696)
+bones/30/rotation = Quaternion(0.05818524, 0.7115314, 0.3400995, 0.6121028)
+bones/31/rotation = Quaternion(-0.5045251, 0.099716336, 0.122452304, 0.8488324)
+bones/33/rotation = Quaternion(0.011596481, 0.43555576, 0.89976823, 0.023955626)
+bones/34/rotation = Quaternion(-0.12352842, -0.26678297, -0.27653515, 0.9149295)
+bones/35/rotation = Quaternion(-0.34110513, -0.09124697, -0.3434181, 0.87027884)
+bones/37/rotation = Quaternion(0.8997683, -0.023955662, 0.01159649, -0.4355556)
+bones/38/rotation = Quaternion(-0.12352835, 0.2667827, 0.2765349, 0.9149296)
+bones/39/rotation = Quaternion(-0.341105, 0.09124708, 0.34341803, 0.8702789)
+bones/41/position = Vector3(0.76195645, 2.419823, 7.6635647)
+bones/41/rotation = Quaternion(0.32897893, -0.48985487, 0.46170044, -0.66230494)
+bones/42/position = Vector3(-3.8418474, 5.9356523, 4.7495646)
+bones/42/rotation = Quaternion(0.43384326, 0.5335674, -0.45458984, -0.5660688)
+
+[node name="krab_pacyficzny" parent="Crab_Rig/Skeleton3D" index="0" unique_id=2124924619]
+surface_material_override/0 = SubResource("ShaderMaterial_bbfmc")
