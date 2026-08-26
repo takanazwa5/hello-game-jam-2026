@@ -52,7 +52,7 @@ func _physics_process(_delta: float) -> void:
 	_acceleration_modifier = dot_product / 10 if dot_product > 0.0 else 0.0
 	#_acceleration_modifier = remap(dot_product, 0, 5, 1, 2)
 	#_acceleration_modifier = clampf(_acceleration_modifier, 1, 2)
-	print(_acceleration_modifier)
+	#print(_acceleration_modifier)
 
 	if fin_timer.is_stopped():
 		if Input.is_action_pressed(&"W"):
