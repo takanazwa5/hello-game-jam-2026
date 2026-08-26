@@ -16,7 +16,7 @@ const TURBO_SPEED: float = 5.0
 const ACCELERATION: float = 0.01
 const DECELERATION: float = 0.01
 const TURBO_ACCELERATION: float = 0.25
-const FIN_FLAP_CAMERA_SHAKE_INTENSITY: float = 2.5
+const FIN_FLAP_CAMERA_SHAKE_INTENSITY: float = 1.25
 
 
 func _ready() -> void:
@@ -42,6 +42,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 		_last_fin_key = event.physical_keycode
 		_flap_fin()
+
 
 func _flap_fin() -> void:
 	var tween: Tween = create_tween()
