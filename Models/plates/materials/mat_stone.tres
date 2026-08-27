@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://g7x8ls4wyorq"]
+
+[ext_resource type="Texture2D" uid="uid://ngpqwoqrpu7v" path="res://Models/plates/textures/stone.png" id="1_hqfpp"]
+
+[resource]
+resource_name = "mat_stone"
+cull_mode = 2
+shading_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("1_hqfpp")
+texture_filter = 2

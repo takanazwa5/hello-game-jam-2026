@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bnccmnd46tgsg"]
+
+[ext_resource type="Texture2D" uid="uid://5viddalrcsxk" path="res://Models/anemones/textures/anemone_clean_1.png" id="1_jgdeu"]
+
+[resource]
+resource_name = "mat_anemone"
+transparency = 4
+cull_mode = 2
+shading_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("1_jgdeu")
+texture_filter = 2

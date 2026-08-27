@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dd6mi2ffngy8x"]
+
+[ext_resource type="Texture2D" uid="uid://ch7wl5av31g2e" path="res://Models/plates/textures/sand.png" id="1_p4yua"]
+
+[resource]
+resource_name = "mat_sand"
+cull_mode = 2
+shading_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("1_p4yua")
+texture_filter = 2
