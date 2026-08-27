@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://u4tqjqk7l2qs"]
+
+[ext_resource type="Texture2D" uid="uid://c7pnxv317gdug" path="res://Models/Ship/Textures/statek_Material_04_BaseColor.png" id="1_d0p2u"]
+[ext_resource type="Texture2D" uid="uid://djodsn5o05y2k" path="res://Models/Ship/Textures/statek_Material_04_Roughness.png" id="2_bapii"]
+
+[resource]
+resource_name = "mat_ship_04"
+cull_mode = 2
+albedo_texture = ExtResource("1_d0p2u")
+roughness_texture = ExtResource("2_bapii")
