@@ -2,10 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://xuean8p2wl55" path="res://Models/Anemones/anemoneB.glb" id="1_o66na"]
 [ext_resource type="AnimationLibrary" uid="uid://on3gkdm20081" path="res://Models/Anemones/anemone_rig.glb" id="2_1duia"]
+[ext_resource type="Script" uid="uid://cyobk3eya21wa" path="res://anemone/anemone.gd" id="2_xk5yd"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ttdih"]
+height = 1.3817749
 
 [node name="AnemoneB" unique_id=816874683 instance=ExtResource("1_o66na")]
+script = ExtResource("2_xk5yd")
 
-[node name="Skeleton3D" parent="Armature_001" parent_id_path=PackedInt32Array(1899813882) index="0" unique_id=880653224]
+[node name="Skeleton3D" parent="Armature_001" parent_id_path=PackedInt32Array(1239579014) index="0" unique_id=688103112]
 bones/1/rotation = Quaternion(-0.2879062, 0.7082098, -0.25604025, 0.5916015)
 bones/2/rotation = Quaternion(0.112080105, -0.030303739, 0.4912034, 0.8632722)
 bones/3/rotation = Quaternion(-0.13964276, 0.6233588, -0.43152475, 0.63695383)
@@ -49,3 +54,25 @@ bones/39/rotation = Quaternion(-0.24395268, -0.0633444, 0.96658504, -0.046774898
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=1873529898]
 libraries/anemone_rig = ExtResource("2_1duia")
 autoplay = &"anemone_rig/anim_armature_idle"
+
+[node name="CleaningArea" type="Area3D" parent="." index="2" unique_id=1524933319]
+unique_name_in_owner = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CleaningArea" index="0" unique_id=27697369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7173767, 0)
+shape = SubResource("CylinderShape3D_ttdih")
+
+[node name="CleanLabel" type="Label3D" parent="." index="3" unique_id=623002018]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3032207, 0)
+billboard = 1
+text = "Czysty"
+
+[node name="CleanTimer" type="Timer" parent="." index="4" unique_id=1087891156]
+unique_name_in_owner = true
+one_shot = true
+
+[node name="DeathTimer" type="Timer" parent="." index="5" unique_id=167917487]
+unique_name_in_owner = true
+wait_time = 30.0
+one_shot = true
