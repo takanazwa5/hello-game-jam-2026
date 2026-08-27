@@ -6,13 +6,13 @@
 [node name="Aniol_Imperialny" unique_id=1869594264 instance=ExtResource("1_v228k")]
 
 [node name="Skeleton3D" parent="Fish_Rig" parent_id_path=PackedInt32Array(1784308395) index="0" unique_id=755940528]
-bones/0/rotation = Quaternion(-0.7055521, 0.046863828, 0.046863828, 0.7055521)
-bones/1/rotation = Quaternion(0.0037507566, -2.8483022e-05, -0.0073732235, 0.99996585)
-bones/2/rotation = Quaternion(0.14274323, -0.15971692, -0.34437782, 0.9140672)
-bones/3/rotation = Quaternion(0.16548324, 0.1344563, 0.1979152, 0.9567478)
-bones/6/rotation = Quaternion(-8.0977e-11, -0.00023461266, -0.031065153, 0.9995174)
-bones/7/rotation = Quaternion(2.3763405e-10, -0.0022027164, -0.29313636, 0.95606816)
-bones/8/rotation = Quaternion(0.00012458867, -0.0024281035, -0.29745913, 0.95473146)
+bones/0/rotation = Quaternion(-0.70599717, -0.03959869, -0.03959869, 0.70599717)
+bones/1/rotation = Quaternion(0.0037177107, -0.0005124382, -0.13265169, 0.9911557)
+bones/2/rotation = Quaternion(0.15742475, -0.14432313, -0.2534541, 0.9434773)
+bones/3/rotation = Quaternion(0.16489103, 0.13522276, 0.2021634, 0.95585346)
+bones/6/rotation = Quaternion(-1.2879126e-10, -0.0012241107, -0.162085, 0.9867761)
+bones/7/rotation = Quaternion(-2.7707666e-11, -0.00035026128, -0.046612587, 0.99891305)
+bones/8/rotation = Quaternion(0.00012697211, -0.0018840979, -0.23081475, 0.972996)
 
 [node name="AnimationPlayer" parent="." index="1" unique_id=222052792]
 libraries/Fish_Rig = ExtResource("2_e6i77")
