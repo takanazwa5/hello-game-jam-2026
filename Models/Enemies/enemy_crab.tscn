@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://yc18o4qp8xsi"]
 
-[ext_resource type="PackedScene" uid="uid://qopad5bpm4a5" path="res://Models/Enemies/meshes/Crab.glb" id="1_mtysg"]
+[ext_resource type="PackedScene" uid="uid://qopad5bpm4a5" path="res://Models/Enemies/meshes/crab.glb" id="1_mtysg"]
 
 [node name="Crab" unique_id=123366098 instance=ExtResource("1_mtysg")]
 

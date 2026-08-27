@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://24nv6cn6ubvy"
-path="res://.godot/imported/Shark.glb-f12279921449f3e682c87b6834f75dd8.scn"
+path="res://.godot/imported/shark.glb-9c72b4b6598742e5a69b8f6e011f46e3.scn"
 
 [deps]
 
-source_file="res://Models/Enemies/meshes/Shark.glb"
-dest_files=["res://.godot/imported/Shark.glb-f12279921449f3e682c87b6834f75dd8.scn"]
+source_file="res://Models/Enemies/meshes/shark.glb"
+dest_files=["res://.godot/imported/shark.glb-9c72b4b6598742e5a69b8f6e011f46e3.scn"]
 
 [params]
 

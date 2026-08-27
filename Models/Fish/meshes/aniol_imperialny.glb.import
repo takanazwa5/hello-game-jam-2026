@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://db6kv8bekgdnm"
-path="res://.godot/imported/Aniol_Imperialny.glb-7d0e64852f535df50304b0eb22f05bcc.scn"
+path="res://.godot/imported/aniol_imperialny.glb-7661a4f87548d81388e7677db8ab6d94.scn"
 
 [deps]
 
-source_file="res://Models/Fish/meshes/Aniol_Imperialny.glb"
-dest_files=["res://.godot/imported/Aniol_Imperialny.glb-7d0e64852f535df50304b0eb22f05bcc.scn"]
+source_file="res://Models/Fish/meshes/aniol_imperialny.glb"
+dest_files=["res://.godot/imported/aniol_imperialny.glb-7661a4f87548d81388e7677db8ab6d94.scn"]
 
 [params]
 
@@ -45,6 +45,17 @@ _subresources={
 "use_external/enabled": true,
 "use_external/fallback_path": "res://Models/Fish/materials/mat_Rybki.tres",
 "use_external/path": "uid://bx4kl0854j0a"
+}
+},
+"meshes": {
+"aniol_imperialny_aniol_imperialny": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Particles/meshes/aniol_imperialny.tres",
+"save_to_file/path": "uid://vo3mv4kd27ds"
 }
 }
 }

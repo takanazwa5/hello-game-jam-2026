@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://do6pjyx361eo1"
-path="res://.godot/imported/Blazenek_Okoniowy.glb-557e6e0f8d4a26c7af1b7b11a1fc0d7c.scn"
+path="res://.godot/imported/blazenek_okoniowy.glb-20abb44bd43d8714677bf0cac40cf4b2.scn"
 
 [deps]
 
-source_file="res://Models/Fish/meshes/Blazenek_Okoniowy.glb"
-dest_files=["res://.godot/imported/Blazenek_Okoniowy.glb-557e6e0f8d4a26c7af1b7b11a1fc0d7c.scn"]
+source_file="res://Models/Fish/meshes/blazenek_okoniowy.glb"
+dest_files=["res://.godot/imported/blazenek_okoniowy.glb-20abb44bd43d8714677bf0cac40cf4b2.scn"]
 
 [params]
 
@@ -45,6 +45,17 @@ _subresources={
 "use_external/enabled": true,
 "use_external/fallback_path": "res://Models/Fish/materials/mat_Rybki.tres",
 "use_external/path": "uid://bx4kl0854j0a"
+}
+},
+"meshes": {
+"blazenek_okoniowy_blazenek_okoniowy": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Particles/meshes/blazenek_okoniowy.tres",
+"save_to_file/path": "uid://c6h8gexcyq4be"
 }
 }
 }
