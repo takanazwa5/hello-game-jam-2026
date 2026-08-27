@@ -14,9 +14,11 @@ var _acceleration_modifier: float = 0.0
 const SPEED: float = 2.5
 const TURBO_SPEED: float = 5.0
 const ACCELERATION: float = 0.01
-const DECELERATION: float = 0.01
+const DECELERATION: float = 0.05
 const TURBO_ACCELERATION: float = 0.25
 const FIN_FLAP_CAMERA_SHAKE_INTENSITY: float = 1.25
+const STOPPING_POWER: float = 0.075
+const VERTICAL_ACCELERATION: float = 0.1
 
 
 func _ready() -> void:
@@ -70,6 +72,13 @@ func _physics_process(_delta: float) -> void:
 			velocity = velocity.move_toward(-camera.global_basis.z * SPEED, ACCELERATION + _acceleration_modifier)
 		else:
 			velocity = velocity.move_toward(Vector3.ZERO, DECELERATION)
+
+	if Input.is_action_pressed(&"S"):
+		velocity = velocity.move_toward(Vector3.ZERO, STOPPING_POWER)
+
+	var vertical_input: float = Input.get_axis(&"Ctrl", &"Space")
+	velocity.y += vertical_input * VERTICAL_ACCELERATION
+	velocity.y = clampf(velocity.y, -5, 5)
 
 	move_and_slide()
 
