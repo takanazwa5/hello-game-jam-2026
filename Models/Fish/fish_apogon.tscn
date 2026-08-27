@@ -5,7 +5,7 @@
 
 [node name="Apogon_Kardynal" unique_id=275966405 instance=ExtResource("1_sotvk")]
 
-[node name="Skeleton3D" parent="Fish_Rig" parent_id_path=PackedInt32Array(1031221038) index="0" unique_id=1379582540]
+[node name="Skeleton3D" parent="Fish_Rig" parent_id_path=PackedInt32Array(996997750) index="0" unique_id=465246731]
 bones/0/rotation = Quaternion(-0.7045259, -0.060360182, -0.060360182, 0.7045259)
 bones/1/rotation = Quaternion(0.003741207, -0.0002769421, -0.071690276, 0.99741995)
 bones/2/rotation = Quaternion(0.16200513, -0.13885805, -0.222457, 0.95130736)
@@ -14,5 +14,5 @@ bones/6/rotation = Quaternion(-1.1321526e-10, -0.0006635971, -0.08786715, 0.9961
 bones/7/rotation = Quaternion(1.4818712e-11, 0.0014194276, 0.18889673, 0.98199594)
 bones/8/rotation = Quaternion(0.00013014938, 0.0005942743, 0.072802685, 0.99734616)
 
-[node name="AnimationPlayer" parent="." index="1" unique_id=1861545511]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=2091486293]
 libraries/Fish_Rig = ExtResource("2_g7s0c")
