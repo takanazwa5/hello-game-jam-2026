@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://qyw2tiy6frbk"]
 
-[ext_resource type="PackedScene" uid="uid://ch5ot8etecykf" path="res://Models/Anemones/anemoneG.glb" id="1_acekt"]
-[ext_resource type="AnimationLibrary" uid="uid://on3gkdm20081" path="res://Models/Anemones/anemone_rig.glb" id="2_xbd5i"]
+[ext_resource type="PackedScene" path="res://Models/Anemones/anemoneG.glb" id="1_acekt"]
+[ext_resource type="AnimationLibrary" uid="uid://on3gkdm20081" path="res://Models/anemones/meshes/anemone_rig.glb" id="2_xbd5i"]
 
 [node name="AnemoneG" unique_id=1477895149 instance=ExtResource("1_acekt")]
 

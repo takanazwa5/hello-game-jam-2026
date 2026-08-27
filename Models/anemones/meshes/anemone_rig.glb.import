@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="animation_library"
 importer_version=1
-type="PackedScene"
-uid="uid://24nv6cn6ubvy"
-path="res://.godot/imported/Shark.glb-f12279921449f3e682c87b6834f75dd8.scn"
+type="AnimationLibrary"
+uid="uid://on3gkdm20081"
+path="res://.godot/imported/anemone_rig.glb-bf15dcbfc65022d943207b2ddfb84c23.res"
 
 [deps]
 
-source_file="res://Models/Enemies/meshes/Shark.glb"
-dest_files=["res://.godot/imported/Shark.glb-f12279921449f3e682c87b6834f75dd8.scn"]
+source_file="res://Models/anemones/meshes/anemone_rig.glb"
+dest_files=["res://.godot/imported/anemone_rig.glb-bf15dcbfc65022d943207b2ddfb84c23.res"]
 
 [params]
 
@@ -41,7 +41,7 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "animations": {
-"Fish_Swimming": {
+"anim_armature_idle": {
 "save_to_file/enabled": false,
 "save_to_file/fallback_path": "",
 "save_to_file/keep_custom_tracks": "",
@@ -2096,13 +2096,6 @@ _subresources={
 "slice_99/save_to_file/path": "",
 "slice_99/start_frame": 0,
 "slices/amount": 0
-}
-},
-"materials": {
-"mat_zarlacz": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Enemies/materials/mat_Shark.tres",
-"use_external/path": "uid://cplp2fl5vqja6"
 }
 }
 }

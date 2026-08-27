@@ -2,10 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dsmq3h1opun6d" path="res://testing_grounds/testing_grounds.tscn" id="1_bb0ch"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="2_ewmae"]
-[ext_resource type="PackedScene" uid="uid://xuean8p2wl55" path="res://Models/Anemones/anemoneB.glb" id="3_eljhn"]
-[ext_resource type="PackedScene" uid="uid://ch5ot8etecykf" path="res://Models/Anemones/anemoneG.glb" id="4_22f6v"]
-[ext_resource type="PackedScene" uid="uid://cxvtphbb45iuv" path="res://Models/Anemones/anemoneP.glb" id="5_osjc8"]
-[ext_resource type="PackedScene" uid="uid://b83xp1eyd8ixi" path="res://Models/Anemones/anemoneY.glb" id="6_lj186"]
 
 [node name="MovementTest" type="Node" unique_id=333719031]
 
@@ -14,15 +10,3 @@
 [node name="Fih" parent="TestingGrounds" unique_id=761742824 instance=ExtResource("2_ewmae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)
 motion_mode = 1
-
-[node name="anemoneB2" parent="." unique_id=1421518744 instance=ExtResource("3_eljhn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6945944, 0, 4.6558895)
-
-[node name="anemoneG2" parent="." unique_id=1197776477 instance=ExtResource("4_22f6v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2129679, 0, 12.182708)
-
-[node name="anemoneP2" parent="." unique_id=475212252 instance=ExtResource("5_osjc8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9599864, 0, -0.16080308)
-
-[node name="anemoneY2" parent="." unique_id=530850759 instance=ExtResource("6_lj186")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5629969, 0, -4.688712)
