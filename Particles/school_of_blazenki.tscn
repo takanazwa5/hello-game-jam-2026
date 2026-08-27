@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ddew8tad2ethi"]
+
+[ext_resource type="ArrayMesh" uid="uid://c6h8gexcyq4be" path="res://Particles/meshes/blazenek_okoniowy.tres" id="1_b6npw"]
+
+[sub_resource type="Curve" id="Curve_uswom"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.10486891, 1), 0.0, 0.0, 0, 0, Vector2(0.50187266, 1), 0.0, 0.0, 0, 0, Vector2(0.8951311, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_nxea6"]
+curve = SubResource("Curve_uswom")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_m8677"]
+emission_shape_scale = Vector3(1.5, 3, 0.25)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+use_rotation_3d = true
+rotation_3d_min = Vector3(0, 0, 0)
+rotation_3d_max = Vector3(0, 0, 0)
+gravity = Vector3(0, 0, 1)
+linear_accel_min = 0.99999774
+linear_accel_max = 1.9999977
+alpha_curve = SubResource("CurveTexture_nxea6")
+
+[node name="SchoolOfBlazenki" type="GPUParticles3D" unique_id=1690833338]
+amount = 15
+lifetime = 3.0
+randomness = 0.25
+process_material = SubResource("ParticleProcessMaterial_m8677")
+draw_pass_1 = ExtResource("1_b6npw")

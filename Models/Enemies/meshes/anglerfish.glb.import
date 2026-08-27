@@ -1,15 +1,15 @@
 [remap]
 
-importer="animation_library"
+importer="scene"
 importer_version=1
-type="AnimationLibrary"
-uid="uid://h3uypxvj1b4m"
-path="res://.godot/imported/Fish_Rig.glb-22c6ebe16acdfb19f7de9f766061cab0.res"
+type="PackedScene"
+uid="uid://xp3bf2offkyf"
+path="res://.godot/imported/anglerfish.glb-e8c427d56e0a5dd4bede07700c1b891b.scn"
 
 [deps]
 
-source_file="res://Models/Fish/meshes/Fish_Rig.glb"
-dest_files=["res://.godot/imported/Fish_Rig.glb-22c6ebe16acdfb19f7de9f766061cab0.res"]
+source_file="res://Models/Enemies/meshes/anglerfish.glb"
+dest_files=["res://.godot/imported/anglerfish.glb-e8c427d56e0a5dd4bede07700c1b891b.scn"]
 
 [params]
 
@@ -2096,6 +2096,13 @@ _subresources={
 "slice_99/save_to_file/path": "",
 "slice_99/start_frame": 0,
 "slices/amount": 0
+}
+},
+"materials": {
+"mat_Anglerfish": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Enemies/materials/mat_Anglerfish.tres",
+"use_external/path": "uid://cxnlo33u4mndc"
 }
 }
 }

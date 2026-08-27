@@ -1,9 +1,18 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bx4kl0854j0a"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bx4kl0854j0a"]
 
+[ext_resource type="Shader" uid="uid://b7tq55cy2m4q3" path="res://Particles/shaders/fish_animation.gdshader" id="1_m4grq"]
 [ext_resource type="Texture2D" uid="uid://bhb7dbyi883lx" path="res://Models/Fish/textures/tex_Rybki_Base_color.png" id="1_q6c7l"]
 
 [resource]
 resource_name = "mat_Rybki"
-shading_mode = 2
-albedo_texture = ExtResource("1_q6c7l")
-texture_filter = 2
+render_priority = 0
+shader = ExtResource("1_m4grq")
+shader_parameter/time_scale = 5.0
+shader_parameter/side_to_side = 0.05
+shader_parameter/pivot = 0.05
+shader_parameter/wave = 0.1
+shader_parameter/twist = 0.2
+shader_parameter/mask_black = 0.0
+shader_parameter/mask_white = -0.5
+shader_parameter/custom_texture = ExtResource("1_q6c7l")
+shader_parameter/use_vertex_color_as_albedo = false

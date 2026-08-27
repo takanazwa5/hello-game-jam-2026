@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cmvwfasaufd64"
-path="res://.godot/imported/Garbik_Pasiasty.glb-acb6b9becc06eac5936bdf8d0ae3b0d2.scn"
+uid="uid://kikedb1bq3dm"
+path="res://.godot/imported/apogon_kardynal.glb-3ddd411ff24943172ef2238195b80bf3.scn"
 
 [deps]
 
-source_file="res://Models/Fish/meshes/Garbik_Pasiasty.glb"
-dest_files=["res://.godot/imported/Garbik_Pasiasty.glb-acb6b9becc06eac5936bdf8d0ae3b0d2.scn"]
+source_file="res://Models/Fish/meshes/apogon_kardynal.glb"
+dest_files=["res://.godot/imported/apogon_kardynal.glb-3ddd411ff24943172ef2238195b80bf3.scn"]
 
 [params]
 
@@ -45,6 +45,17 @@ _subresources={
 "use_external/enabled": true,
 "use_external/fallback_path": "res://Models/Fish/materials/mat_Rybki.tres",
 "use_external/path": "uid://bx4kl0854j0a"
+}
+},
+"meshes": {
+"apogon_kardynal_apogon_kardynal": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 20.0,
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://Particles/meshes/apogon_kardynal.tres",
+"save_to_file/path": "uid://buqvllbrueuhf"
 }
 }
 }
