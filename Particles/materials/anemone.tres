@@ -1,7 +1,0 @@
-[gd_resource type="ShaderMaterial" format=3 uid="uid://b6xtdplnsc7pt"]
-
-[ext_resource type="Shader" uid="uid://doloikufys0i4" path="res://Particles/shaders/anemone_textures.gdshader" id="1_tou2r"]
-
-[resource]
-shader = ExtResource("1_tou2r")
-shader_parameter/blend = 0.0

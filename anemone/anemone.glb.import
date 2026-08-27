@@ -1,21 +1,21 @@
 [remap]
 
-importer="animation_library"
+importer="scene"
 importer_version=1
-type="AnimationLibrary"
-uid="uid://on3gkdm20081"
-path="res://.godot/imported/anemone_rig.glb-b0917d2e6e55ce8a8de046c4ea985019.res"
+type="PackedScene"
+uid="uid://dkc6fkji01gpu"
+path="res://.godot/imported/anemone.glb-b3e9f1f4f01bee816016bcc3e64397c4.scn"
 
 [deps]
 
-source_file="res://Models/Anemones/anemone_rig.glb"
-dest_files=["res://.godot/imported/anemone_rig.glb-b0917d2e6e55ce8a8de046c4ea985019.res"]
+source_file="res://anemone/anemone.glb"
+dest_files=["res://.godot/imported/anemone.glb-b3e9f1f4f01bee816016bcc3e64397c4.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
-nodes/root_script=null
+nodes/root_script=Resource("uid://cyobk3eya21wa", "res://anemone/anemone.gd")
 mesh_library/use_node_names_as_mesh_names=false
 array_mesh/deduplicate_surfaces=true
 nodes/apply_root_scale=true
@@ -2096,6 +2096,13 @@ _subresources={
 "slice_99/save_to_file/path": "",
 "slice_99/start_frame": 0,
 "slices/amount": 0
+}
+},
+"materials": {
+"mat_anemone": {
+"use_external/enabled": false,
+"use_external/fallback_path": "res://anemone/mat_anemone.tres",
+"use_external/path": "uid://ubxgx1yv751d"
 }
 }
 }

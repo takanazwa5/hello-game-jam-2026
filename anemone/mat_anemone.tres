@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ubxgx1yv751d"]
+
+[ext_resource type="Shader" uid="uid://c6n527875a0i3" path="res://anemone/anemone_shader.tres" id="1_dyjd8"]
+
+[resource]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("1_dyjd8")
+shader_parameter/Dirtiness = 0.0

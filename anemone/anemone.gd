@@ -13,9 +13,20 @@ var _is_clean: bool = true
 @onready var clean_label: Label3D = %CleanLabel
 @onready var clean_timer: Timer = %CleanTimer
 @onready var death_timer: Timer = %DeathTimer
+@onready var mesh_instance: MeshInstance3D = %anemoneP
 
 
 func _ready() -> void:
+	var random_type: int = randi_range(1, 4)
+	print("chosen %s for %s" % [random_type, name])
+	var clean_texture_chosen: Texture2D = load("res://anemone/textures/anemone_clean_%s.png" % random_type)
+	var dirty_texture_chosen: Texture2D = load("res://anemone/textures/anemone_dirty_%s.png" % random_type)
+	var shader_material: ShaderMaterial = mesh_instance.get_surface_override_material(0)
+	shader_material.set_shader_parameter(&"TextureClean", clean_texture_chosen)
+	shader_material.set_shader_parameter(&"TextureDirty", dirty_texture_chosen)
+	print("%s has %s\n" % [name, shader_material.get_shader_parameter(&"TextureClean")])
+
+
 	if not OS.is_debug_build():
 		clean_label.hide()
 

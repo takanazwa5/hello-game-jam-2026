@@ -2,10 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dsmq3h1opun6d" path="res://testing_grounds/testing_grounds.tscn" id="1_bb0ch"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="2_ewmae"]
-[ext_resource type="PackedScene" uid="uid://cq8m1fo7rslbt" path="res://anemone/anemone_b.tscn" id="3_eljhn"]
-[ext_resource type="PackedScene" uid="uid://qyw2tiy6frbk" path="res://anemone/anemone_g.tscn" id="4_22f6v"]
-[ext_resource type="PackedScene" uid="uid://v4kncqi157gf" path="res://anemone/anemone_p.tscn" id="5_osjc8"]
-[ext_resource type="PackedScene" uid="uid://be8fjeeanxvhl" path="res://anemone/anemone_y.tscn" id="6_lj186"]
+[ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="3_ewmae"]
 
 [node name="MovementTest" type="Node" unique_id=333719031]
 
@@ -15,14 +12,14 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)
 motion_mode = 1
 
-[node name="AnemoneB" parent="." unique_id=816874683 instance=ExtResource("3_eljhn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6076603, 0, 10.75254)
+[node name="Anemone" parent="." unique_id=2006091342 instance=ExtResource("3_ewmae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4734516, 0, 18.30668)
 
-[node name="AnemoneG" parent="." unique_id=1477895149 instance=ExtResource("4_22f6v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.186614, 0, 8.3935585)
+[node name="Anemone2" parent="." unique_id=1892887350 instance=ExtResource("3_ewmae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5842166, 0, 12.05475)
 
-[node name="AnemoneP" parent="." unique_id=664033198 instance=ExtResource("5_osjc8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.153802, 0, -0.97733486)
+[node name="Anemone3" parent="." unique_id=343117505 instance=ExtResource("3_ewmae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6868677, 0, 6.419242)
 
-[node name="AnemoneY" parent="." unique_id=1713155989 instance=ExtResource("6_lj186")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8726397, 0, -3.6516078)
+[node name="Anemone4" parent="." unique_id=895945953 instance=ExtResource("3_ewmae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.842669, 0, -3.2845478)
