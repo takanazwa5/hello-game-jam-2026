@@ -10,10 +10,8 @@ var _is_clean: bool = false # na true wszystkie maja wait_time z node'a
 var _shader_material: ShaderMaterial
 var _tween: Tween
 
+
 @onready var hide_area: Area3D = %HideArea
-
-
-
 @onready var cleaning_area: Area3D = %CleaningArea
 @onready var clean_label: Label3D = %CleanLabel
 @onready var clean_timer: Timer = %CleanTimer
@@ -31,7 +29,6 @@ func _ready() -> void:
 	_shader_material.set_shader_parameter(&"TextureClean", clean_texture_chosen)
 	_shader_material.set_shader_parameter(&"TextureDirty", dirty_texture_chosen)
 	print("%s has %s\n" % [name, _shader_material.get_shader_parameter(&"TextureClean")])
-
 
 	if not OS.is_debug_build():
 		clean_label.hide()
@@ -98,6 +95,7 @@ func _on_clean_timer_timeout() -> void:
 func _on_death_timer_timeout() -> void:
 	_die()
 
+
 func _is_player(body: Node3D) -> bool:
 	return body is Fih
 
@@ -105,14 +103,14 @@ func _is_player(body: Node3D) -> bool:
 func _on_hide_area_body_entered(body: Node3D) -> void:
 	if not _is_player(body):
 		return
-		
+
 	_set_player_hidden(body, true)
 
 
 func _on_hide_area_body_exited(body: Node3D) -> void:
 	if not _is_player(body):
 		return
-		
+
 	_set_player_hidden(body, false)
 
 

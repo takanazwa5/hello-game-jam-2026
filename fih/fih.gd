@@ -1,20 +1,6 @@
 class_name Fih extends CharacterBody3D
 
 
-var _last_fin_key: Key
-var _acceleration_modifier: float = 0.0
-var _idle_time: float = 0.0
-var _pending_look_yaw: float = 0.0
-var _pending_look_pitch: float = 0.0
-var _is_hidden: bool = false
-
-
-@onready var fin_timer: Timer = %FinTimer
-@onready var velocity_label: Label = %VelocityLabel
-@onready var camera: Camera3D = %Camera3D
-@onready var camera_rig: Node3D = %CameraRig
-
-
 const SPEED: float = 2.5
 const TURBO_SPEED: float = 5.0
 const ACCELERATION: float = 0.01
@@ -23,9 +9,7 @@ const TURBO_ACCELERATION: float = 0.25
 const FIN_FLAP_CAMERA_SHAKE_INTENSITY: float = 1.25
 const STOPPING_POWER: float = 0.075
 const VERTICAL_ACCELERATION: float = 0.1
-
 const MOUSE_LOOK_SMOOTHING: float = 10.0
-
 const IDLE_BOB_AMPLITUDE: float = 0.02
 const IDLE_BOB_FREQUENCY: float = 0.35
 const IDLE_SWAY_AMPLITUDE_DEG: float = 0.6
@@ -35,7 +19,20 @@ const IDLE_DRIFT_FREQUENCY: float = 0.13
 const SWIM_BOB_AMPLITUDE: float = 0.03
 const SWIM_BOB_FREQUENCY: float = 1.6
 
+
+var _last_fin_key: Key
+var _acceleration_modifier: float = 0.0
+var _idle_time: float = 0.0
+var _pending_look_yaw: float = 0.0
+var _pending_look_pitch: float = 0.0
+var _is_hidden: bool = false
 var _camera_rig_base_position: Vector3
+
+
+@onready var fin_timer: Timer = %FinTimer
+@onready var velocity_label: Label = %VelocityLabel
+@onready var camera: Camera3D = %Camera3D
+@onready var camera_rig: Node3D = %CameraRig
 
 
 func _ready() -> void:
@@ -105,7 +102,7 @@ func _process(delta: float) -> void:
 	_apply_idle_and_swim_motion(delta)
 
 	camera.rotation_degrees.x = clampf(camera.rotation_degrees.x, -90, 90)
-	
+
 	# print(_is_hidden)
 
 
@@ -119,8 +116,10 @@ func _apply_smooth_look(delta: float) -> void:
 	_pending_look_yaw -= yaw_step
 	_pending_look_pitch -= pitch_step
 
+
 func is_hidden() -> bool:
 	return _is_hidden
+
 
 func _apply_idle_and_swim_motion(delta: float) -> void:
 	_idle_time += delta

@@ -43,27 +43,27 @@ _subresources={
 "materials": {
 "mat_rocks": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Ship/materials/mat_rocks.tres",
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_rocks.tres",
 "use_external/path": "uid://di5g4527h34c5"
 },
 "mat_ship_01": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Ship/materials/mat_ship_01.tres",
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_01.tres",
 "use_external/path": "uid://dqcpo4h6g0ic6"
 },
 "mat_ship_02": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Ship/materials/mat_ship_02.tres",
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_02.tres",
 "use_external/path": "uid://dmyl555br6la7"
 },
 "mat_ship_03": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Ship/materials/mat_ship_03.tres",
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_03.tres",
 "use_external/path": "uid://sdqximjg4y6p"
 },
 "mat_ship_04": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/Ship/materials/mat_ship_04.tres",
+"use_external/fallback_path": "res://Models/Ship/Materials/mat_ship_04.tres",
 "use_external/path": "uid://u4tqjqk7l2qs"
 }
 }

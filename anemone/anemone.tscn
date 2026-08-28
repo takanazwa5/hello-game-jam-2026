@@ -1,54 +1,14 @@
 [gd_scene format=3 uid="uid://dfnie27cpth43"]
 
 [ext_resource type="PackedScene" uid="uid://dkc6fkji01gpu" path="res://anemone/anemone.glb" id="1_k7qmx"]
+[ext_resource type="Shader" uid="uid://c6n527875a0i3" path="res://anemone/anemone_shader.tres" id="2_4jfv6"]
 [ext_resource type="Texture2D" uid="uid://cjayk6qel47pe" path="res://anemone/textures/anemone_dirty_4.png" id="2_ff88u"]
 [ext_resource type="Texture2D" uid="uid://cv1uyllwc4ati" path="res://anemone/textures/anemone_clean_4.png" id="3_70tqi"]
 
-[sub_resource type="VisualShaderNodeMix" id="VisualShaderNodeMix_70tqi"]
-output_port_for_preview = 0
-default_input_values = [0, Quaternion(0, 0, 0, 0), 1, Quaternion(1, 1, 1, 1), 2, Quaternion(0.5, 0.5, 0.5, 0.5)]
-op_type = 5
-
-[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_4jfv6"]
-source = 5
-texture = ExtResource("2_ff88u")
-
-[sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_4pot5"]
-parameter_name = "Dirtiness"
-hint = 1
-default_value_enabled = true
-
-[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_mes1e"]
-parameter_name = "TextureClean"
-texture_filter = 3
-
-[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_cev0v"]
-source = 5
-
-[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_kvop8"]
-parameter_name = "TextureDirty"
-texture_filter = 3
-
-[sub_resource type="VisualShader" id="VisualShader_mhi6r"]
-modes/cull = 2
-nodes/fragment/2/node = SubResource("VisualShaderNodeMix_70tqi")
-nodes/fragment/2/position = Vector2(-80, 120)
-nodes/fragment/4/node = SubResource("VisualShaderNodeTexture_4jfv6")
-nodes/fragment/4/position = Vector2(-480, 180)
-nodes/fragment/5/node = SubResource("VisualShaderNodeFloatParameter_4pot5")
-nodes/fragment/5/position = Vector2(-580, 580)
-nodes/fragment/6/node = SubResource("VisualShaderNodeTexture2DParameter_mes1e")
-nodes/fragment/6/position = Vector2(-900, -200)
-nodes/fragment/7/node = SubResource("VisualShaderNodeTexture_cev0v")
-nodes/fragment/7/position = Vector2(-500, -80)
-nodes/fragment/8/node = SubResource("VisualShaderNodeTexture2DParameter_kvop8")
-nodes/fragment/8/position = Vector2(-900, 180)
-nodes/fragment/connections = PackedInt32Array(2, 0, 0, 0, 5, 0, 2, 2, 4, 0, 2, 1, 6, 0, 7, 2, 7, 0, 2, 0, 8, 0, 4, 2)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_70tqi"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4pot5"]
 resource_local_to_scene = true
 render_priority = 0
-shader = SubResource("VisualShader_mhi6r")
+shader = ExtResource("2_4jfv6")
 shader_parameter/TextureClean = ExtResource("3_70tqi")
 shader_parameter/TextureDirty = ExtResource("2_ff88u")
 shader_parameter/Dirtiness = 0.0
@@ -60,11 +20,11 @@ height = 1.4272461
 
 [node name="Anemone" unique_id=2006091342 instance=ExtResource("1_k7qmx")]
 
-[node name="anemoneP" parent="armature_001/Skeleton3D" parent_id_path=PackedInt32Array(1781018314) index="0" unique_id=1582378931]
+[node name="anemoneP" parent="armature_001/Skeleton3D" parent_id_path=PackedInt32Array(1197596951) index="0" unique_id=1415778513]
 unique_name_in_owner = true
-surface_material_override/0 = SubResource("ShaderMaterial_70tqi")
+surface_material_override/0 = SubResource("ShaderMaterial_4pot5")
 
-[node name="AnimationPlayer" parent="." index="1" unique_id=1307725851]
+[node name="AnimationPlayer" parent="." index="1" unique_id=741097989]
 autoplay = &"anim_armature_idle"
 
 [node name="CleanLabel" type="Label3D" parent="." index="2" unique_id=1083711860]
