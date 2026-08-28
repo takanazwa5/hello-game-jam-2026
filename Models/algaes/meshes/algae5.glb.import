@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="ArrayMesh"
 importer_version=1
-type="PackedScene"
+type="ArrayMesh"
 uid="uid://bqldgu1g2y8a7"
-path="res://.godot/imported/algae5.glb-d5c6211a6e99bfead86b7aa8f2232593.scn"
+path="res://.godot/imported/algae5.glb-d5c6211a6e99bfead86b7aa8f2232593.res"
 
 [deps]
 
 source_file="res://Models/algaes/meshes/algae5.glb"
-dest_files=["res://.godot/imported/algae5.glb-d5c6211a6e99bfead86b7aa8f2232593.scn"]
+dest_files=["res://.godot/imported/algae5.glb-d5c6211a6e99bfead86b7aa8f2232593.res"]
 
 [params]
 

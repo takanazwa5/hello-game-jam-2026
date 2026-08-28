@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="ArrayMesh"
 importer_version=1
-type="PackedScene"
+type="ArrayMesh"
 uid="uid://djrckb1sj75a5"
-path="res://.godot/imported/remains_01.glb-fced321ad59ba22ac469cde04a5a5981.scn"
+path="res://.godot/imported/remains_01.glb-fced321ad59ba22ac469cde04a5a5981.res"
 
 [deps]
 
 source_file="res://Models/Trash/meshes/remains_01.glb"
-dest_files=["res://.godot/imported/remains_01.glb-fced321ad59ba22ac469cde04a5a5981.scn"]
+dest_files=["res://.godot/imported/remains_01.glb-fced321ad59ba22ac469cde04a5a5981.res"]
 
 [params]
 

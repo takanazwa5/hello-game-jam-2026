@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="ArrayMesh"
 importer_version=1
-type="PackedScene"
+type="ArrayMesh"
 uid="uid://e0uu14yfjqvg"
-path="res://.godot/imported/rock_01.glb-00ba7550b81c25d5e6eeac7a27b58e3c.scn"
+path="res://.godot/imported/rock_01.glb-00ba7550b81c25d5e6eeac7a27b58e3c.res"
 
 [deps]
 
 source_file="res://Models/Rocks/rock_01.glb"
-dest_files=["res://.godot/imported/rock_01.glb-00ba7550b81c25d5e6eeac7a27b58e3c.scn"]
+dest_files=["res://.godot/imported/rock_01.glb-00ba7550b81c25d5e6eeac7a27b58e3c.res"]
 
 [params]
 
