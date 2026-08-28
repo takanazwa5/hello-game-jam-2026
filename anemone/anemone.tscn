@@ -45,7 +45,7 @@ nodes/fragment/8/node = SubResource("VisualShaderNodeTexture2DParameter_kvop8")
 nodes/fragment/8/position = Vector2(-900, 180)
 nodes/fragment/connections = PackedInt32Array(2, 0, 0, 0, 5, 0, 2, 2, 4, 0, 2, 1, 6, 0, 7, 2, 7, 0, 2, 0, 8, 0, 4, 2)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_qmxdf"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_70tqi"]
 resource_local_to_scene = true
 render_priority = 0
 shader = SubResource("VisualShader_mhi6r")
@@ -56,13 +56,15 @@ shader_parameter/Dirtiness = 0.0
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ttdih"]
 height = 1.4272461
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_7dy88"]
+
 [node name="Anemone" unique_id=2006091342 instance=ExtResource("1_k7qmx")]
 
-[node name="anemoneP" parent="armature_001/Skeleton3D" parent_id_path=PackedInt32Array(1197596951) index="0" unique_id=1415778513]
+[node name="anemoneP" parent="armature_001/Skeleton3D" parent_id_path=PackedInt32Array(1781018314) index="0" unique_id=1582378931]
 unique_name_in_owner = true
-surface_material_override/0 = SubResource("ShaderMaterial_qmxdf")
+surface_material_override/0 = SubResource("ShaderMaterial_70tqi")
 
-[node name="AnimationPlayer" parent="." index="1" unique_id=741097989]
+[node name="AnimationPlayer" parent="." index="1" unique_id=1307725851]
 autoplay = &"anim_armature_idle"
 
 [node name="CleanLabel" type="Label3D" parent="." index="2" unique_id=1083711860]
@@ -93,3 +95,14 @@ unique_name_in_owner = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CleaningArea" index="0" unique_id=2061066140]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.720459, 0)
 shape = SubResource("CylinderShape3D_ttdih")
+
+[node name="HideArea" type="Area3D" parent="." index="7" unique_id=2045826812]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29417682, 2.5409677, -0.04724872)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HideArea" index="0" unique_id=115036409]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
+shape = SubResource("SphereShape3D_7dy88")
+
+[connection signal="body_entered" from="HideArea" to="." method="_on_hide_area_body_entered"]
+[connection signal="body_exited" from="HideArea" to="." method="_on_hide_area_body_exited"]

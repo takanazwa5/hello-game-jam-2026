@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bivki47rxqe3i"]
 
-[ext_resource type="PackedScene" uid="uid://xp3bf2offkyf" path="res://Models/Enemies/meshes/Anglerfish.glb" id="1_ks26y"]
+[ext_resource type="PackedScene" uid="uid://xp3bf2offkyf" path="res://Models/Enemies/meshes/anglerfish.glb" id="1_ks26y"]
 [ext_resource type="Shader" uid="uid://dgc7nvou6kcic" path="res://Kacper Folder/PSXShader.gdshader" id="2_5jkfn"]
 [ext_resource type="Texture2D" uid="uid://p4bmumqp6tyg" path="res://Models/Enemies/textures/tex_Anglerfish_Base_color.png" id="3_3fgns"]
 
@@ -15,7 +15,7 @@ shader_parameter/resolution = Vector2i(320, 240)
 
 [node name="Anglerfish" unique_id=1200089179 instance=ExtResource("1_ks26y")]
 
-[node name="Skeleton3D" parent="Anglerfish_Rig" parent_id_path=PackedInt32Array(1063288527) index="0" unique_id=474429190]
+[node name="Skeleton3D" parent="Anglerfish_Rig" parent_id_path=PackedInt32Array(94747522) index="0" unique_id=1420615343]
 bones/0/rotation = Quaternion(-0.7071068, 1.4687481e-16, 1.4687481e-16, 0.7071068)
 bones/1/rotation = Quaternion(0.9763167, -1.0316187e-07, -4.6554393e-07, 0.21634626)
 bones/2/rotation = Quaternion(0.0037508586, -7.791e-19, -2.0771088e-16, 0.99999297)
@@ -25,5 +25,5 @@ bones/5/rotation = Quaternion(1.0011718e-08, 5.1704964e-26, -5.5418762e-33, 1)
 bones/6/rotation = Quaternion(-2.0489097e-08, -2.2115092e-32, 1.0718035e-32, 1)
 bones/7/rotation = Quaternion(9.080395e-09, 2.51095e-33, -4.7520847e-33, 1)
 
-[node name="Anglerfish" parent="Anglerfish_Rig/Skeleton3D" index="0" unique_id=1020822966]
+[node name="Anglerfish" parent="Anglerfish_Rig/Skeleton3D" index="0" unique_id=177920816]
 surface_material_override/0 = SubResource("ShaderMaterial_mf27v")

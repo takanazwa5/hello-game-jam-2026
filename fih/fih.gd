@@ -3,6 +3,10 @@ class_name Fih extends CharacterBody3D
 
 var _last_fin_key: Key
 var _acceleration_modifier: float = 0.0
+var _idle_time: float = 0.0
+var _pending_look_yaw: float = 0.0
+var _pending_look_pitch: float = 0.0
+var _is_hidden: bool = false
 
 
 @onready var fin_timer: Timer = %FinTimer
@@ -20,18 +24,32 @@ const FIN_FLAP_CAMERA_SHAKE_INTENSITY: float = 1.25
 const STOPPING_POWER: float = 0.075
 const VERTICAL_ACCELERATION: float = 0.1
 
+const MOUSE_LOOK_SMOOTHING: float = 10.0
+
+const IDLE_BOB_AMPLITUDE: float = 0.02
+const IDLE_BOB_FREQUENCY: float = 0.35
+const IDLE_SWAY_AMPLITUDE_DEG: float = 0.6
+const IDLE_SWAY_FREQUENCY: float = 0.22
+const IDLE_DRIFT_AMPLITUDE_DEG: float = 0.35
+const IDLE_DRIFT_FREQUENCY: float = 0.13
+const SWIM_BOB_AMPLITUDE: float = 0.03
+const SWIM_BOB_FREQUENCY: float = 1.6
+
+var _camera_rig_base_position: Vector3
+
 
 func _ready() -> void:
 	if not OS.is_debug_build():
 		velocity_label.hide()
 
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	_camera_rig_base_position = camera_rig.position
 
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		rotate_y(-event.relative.x * 0.001)
-		camera.rotate_x(-event.relative.y * 0.001)
+		_pending_look_yaw += -event.relative.x * 0.001
+		_pending_look_pitch += -event.relative.y * 0.001
 
 	if event is InputEventKey and (event.is_action_pressed(&"A") or event.is_action_pressed(&"D")):
 		if fin_timer.is_stopped():
@@ -63,9 +81,6 @@ func _flap_fin() -> void:
 func _physics_process(_delta: float) -> void:
 	var dot_product: float = camera.global_basis.z.dot(velocity)
 	_acceleration_modifier = dot_product / 10 if dot_product > 0.0 else 0.0
-	#_acceleration_modifier = remap(dot_product, 0, 5, 1, 2)
-	#_acceleration_modifier = clampf(_acceleration_modifier, 1, 2)
-	#print(_acceleration_modifier)
 
 	if fin_timer.is_stopped():
 		if Input.is_action_pressed(&"W"):
@@ -83,6 +98,42 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	velocity_label.text = "%.2f" % velocity.length()
+
+	_apply_smooth_look(delta)
+	_apply_idle_and_swim_motion(delta)
+
 	camera.rotation_degrees.x = clampf(camera.rotation_degrees.x, -90, 90)
+	
+	# print(_is_hidden)
+
+
+func _apply_smooth_look(delta: float) -> void:
+	var yaw_step: float = _pending_look_yaw * clampf(delta * MOUSE_LOOK_SMOOTHING, 0.0, 1.0)
+	var pitch_step: float = _pending_look_pitch * clampf(delta * MOUSE_LOOK_SMOOTHING, 0.0, 1.0)
+
+	rotate_y(yaw_step)
+	camera.rotate_x(pitch_step)
+
+	_pending_look_yaw -= yaw_step
+	_pending_look_pitch -= pitch_step
+
+func is_hidden() -> bool:
+	return _is_hidden
+
+func _apply_idle_and_swim_motion(delta: float) -> void:
+	_idle_time += delta
+
+	var speed_ratio: float = clampf(velocity.length() / SPEED, 0.0, 1.0)
+
+	var idle_bob: float = sin(_idle_time * IDLE_BOB_FREQUENCY * TAU) * IDLE_BOB_AMPLITUDE
+	var swim_bob: float = sin(_idle_time * SWIM_BOB_FREQUENCY * TAU) * SWIM_BOB_AMPLITUDE * speed_ratio
+	var vertical_offset: float = idle_bob * (1.0 - speed_ratio * 0.5) + swim_bob
+
+	var idle_sway_deg: float = sin(_idle_time * IDLE_SWAY_FREQUENCY * TAU) * IDLE_SWAY_AMPLITUDE_DEG * (1.0 - speed_ratio * 0.6)
+	var idle_drift_deg: float = sin(_idle_time * IDLE_DRIFT_FREQUENCY * TAU + PI * 0.5) * IDLE_DRIFT_AMPLITUDE_DEG * (1.0 - speed_ratio * 0.6)
+
+	camera_rig.position = _camera_rig_base_position + Vector3(0.0, vertical_offset, 0.0)
+	camera_rig.rotation_degrees.z = idle_sway_deg
+	camera_rig.rotation_degrees.x = idle_drift_deg

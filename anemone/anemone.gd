@@ -10,6 +10,9 @@ var _is_clean: bool = false # na true wszystkie maja wait_time z node'a
 var _shader_material: ShaderMaterial
 var _tween: Tween
 
+@onready var hide_area: Area3D = %HideArea
+
+
 
 @onready var cleaning_area: Area3D = %CleaningArea
 @onready var clean_label: Label3D = %CleanLabel
@@ -94,3 +97,25 @@ func _on_clean_timer_timeout() -> void:
 
 func _on_death_timer_timeout() -> void:
 	_die()
+
+func _is_player(body: Node3D) -> bool:
+	return body is Fih
+
+
+func _on_hide_area_body_entered(body: Node3D) -> void:
+	if not _is_player(body):
+		return
+		
+	_set_player_hidden(body, true)
+
+
+func _on_hide_area_body_exited(body: Node3D) -> void:
+	if not _is_player(body):
+		return
+		
+	_set_player_hidden(body, false)
+
+
+func _set_player_hidden(body: Node3D, hidden: bool) -> void:
+	if "_is_hidden" in body:
+		body._is_hidden = hidden

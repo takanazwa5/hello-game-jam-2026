@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://emlmu62j5d35"]
+
+[ext_resource type="Shader" uid="uid://c78y1qpgkq1h0" path="res://Kacper Folder/VHSShader.gdshader" id="1_ph363"]
+[ext_resource type="Environment" uid="uid://blufbe8sl3i0x" path="res://Settings/new_environment.tres" id="2_xs5lt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7dy88"]
+shader = ExtResource("1_ph363")
+shader_parameter/overlay = false
+shader_parameter/scanlines_opacity = 0.0
+shader_parameter/scanlines_width = 0.0150000007125
+shader_parameter/grille_opacity = 0.0
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = false
+shader_parameter/roll_speed = 0.64
+shader_parameter/roll_size = 0.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.02000000095
+shader_parameter/noise_opacity = 0.0590000028025
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.03
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = false
+shader_parameter/warp_amount = 0.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 1.135
+shader_parameter/vignette_opacity = 0.406000019285
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_urft8"]
+
+[sub_resource type="Compositor" id="Compositor_3elb6"]
+
+[node name="Enviroment and Shader" type="Node" unique_id=1521632719]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1183821514]
+material = SubResource("ShaderMaterial_7dy88")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = 1.0
+offset_right = 17.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1870970660]
+environment = ExtResource("2_xs5lt")
+camera_attributes = SubResource("CameraAttributesPractical_urft8")
+compositor = SubResource("Compositor_3elb6")

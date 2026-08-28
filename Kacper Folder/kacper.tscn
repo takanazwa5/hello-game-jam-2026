@@ -1,56 +1,29 @@
 [gd_scene format=3 uid="uid://cdo43431kxuct"]
 
 [ext_resource type="Shader" uid="uid://dw8ioscir2v06" path="res://Kacper Folder/fisheye.gdshader" id="1_263pk"]
-[ext_resource type="PackedScene" uid="uid://xuean8p2wl55" path="res://Models/Anemones/anemoneB.glb" id="1_vawme"]
-[ext_resource type="PackedScene" uid="uid://lodsvqvapoj7" path="res://Models/Enemies/Enemy_Anglerfish.tscn" id="2_ny5rf"]
-[ext_resource type="Shader" uid="uid://c78y1qpgkq1h0" path="res://Kacper Folder/VHSShader.gdshader" id="2_xg1y0"]
-[ext_resource type="Environment" uid="uid://blufbe8sl3i0x" path="res://Kacper Folder/new_environment.tres" id="6_3elb6"]
-[ext_resource type="PackedScene" uid="uid://v67f47nmemcw" path="res://Models/Enemies/Enemy_Shark.tscn" id="6_263pk"]
-[ext_resource type="PackedScene" uid="uid://yc18o4qp8xsi" path="res://Models/Enemies/Enemy_Crab.tscn" id="7_cxj6j"]
+[ext_resource type="PackedScene" uid="uid://emlmu62j5d35" path="res://Settings/enviroment_and_shader.tscn" id="2_263pk"]
+[ext_resource type="PackedScene" uid="uid://lodsvqvapoj7" path="res://Models/Enemies/enemy_anglerfish.tscn" id="2_ny5rf"]
+[ext_resource type="Script" uid="uid://d334fprqi26t4" path="res://Models/Enemies/enemy_anglerfish.gd" id="4_cxj6j"]
+[ext_resource type="PackedScene" uid="uid://v67f47nmemcw" path="res://Models/Enemies/enemy_shark.tscn" id="6_263pk"]
+[ext_resource type="PackedScene" uid="uid://yc18o4qp8xsi" path="res://Models/Enemies/enemy_crab.tscn" id="7_cxj6j"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="8_3elb6"]
+[ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="8_urft8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_263pk"]
 shader = ExtResource("1_263pk")
 shader_parameter/effect_amount = 1.8000002042499998
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_7dy88"]
-shader = ExtResource("2_xg1y0")
-shader_parameter/overlay = false
-shader_parameter/scanlines_opacity = 0.0
-shader_parameter/scanlines_width = 0.0150000007125
-shader_parameter/grille_opacity = 0.0
-shader_parameter/resolution = Vector2(640, 480)
-shader_parameter/pixelate = false
-shader_parameter/roll = false
-shader_parameter/roll_speed = 0.64
-shader_parameter/roll_size = 0.0
-shader_parameter/roll_variation = 1.8
-shader_parameter/distort_intensity = 0.02000000095
-shader_parameter/noise_opacity = 0.0590000028025
-shader_parameter/noise_speed = 5.0
-shader_parameter/static_noise_intensity = 0.06
-shader_parameter/aberration = 0.03
-shader_parameter/brightness = 1.4
-shader_parameter/discolor = false
-shader_parameter/warp_amount = 0.0
-shader_parameter/clip_warp = false
-shader_parameter/vignette_intensity = 1.135
-shader_parameter/vignette_opacity = 0.406000019285
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_7dy88"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_263pk"]
 albedo_color = Color(0.9647059, 0.7921569, 0.62352943, 1)
 
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_urft8"]
-
-[sub_resource type="Compositor" id="Compositor_3elb6"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_7dy88"]
 
 [node name="Kacper" type="Node3D" unique_id=1201478182]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2012866895]
-light_color = Color(0.101960786, 0.09803922, 0.19607843, 1)
-light_energy = 0.8
+light_color = Color(0.16470589, 0.18431373, 0.30588236, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=439463797]
 visible = false
@@ -61,36 +34,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1314293724]
-material = SubResource("ShaderMaterial_7dy88")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 17.0
-offset_top = 1.0
-offset_right = 17.0
-offset_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
+[node name="Enviroment and Shader" parent="." unique_id=1521632719 instance=ExtResource("2_263pk")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1834148514]
 transform = Transform3D(90.630775, 0, 42.26183, 0, 100, 0, -42.26183, 0, 90.630775, 0, 0, 0)
 mesh = SubResource("PlaneMesh_7dy88")
 surface_material_override/0 = SubResource("StandardMaterial3D_263pk")
-
-[node name="Anglerfish" parent="." unique_id=1200089179 instance=ExtResource("2_ny5rf")]
-transform = Transform3D(0.5431744, 0.16882902, 0.82247084, 0, 0.9795753, -0.20107792, -0.8396198, 0.10922039, 0.53208023, 9.761565, 2.9597893, -1.1250172)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Anglerfish" unique_id=1272607288]
-transform = Transform3D(1.0000001, 5.2154064e-08, -4.7683716e-07, -4.4703484e-08, 1, 8.195639e-08, 5.364418e-07, -1.0430813e-07, 1, -0.18408394, 0.6051717, 4.98706)
-light_color = Color(0, 0.8039216, 0.9764706, 1)
-light_energy = 0.1
-shadow_enabled = true
-shadow_blur = 10.0
-
-[node name="anemoneB2" parent="." unique_id=888926287 instance=ExtResource("1_vawme")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.942776, 0, 1.3897305)
 
 [node name="Crab" parent="." unique_id=123366098 instance=ExtResource("7_cxj6j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8654423, -4.7683716e-07, -1.7771721)
@@ -102,7 +51,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1487346, 4.162245, -12.2038
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)
 motion_mode = 1
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1479916419]
-environment = ExtResource("6_3elb6")
-camera_attributes = SubResource("CameraAttributesPractical_urft8")
-compositor = SubResource("Compositor_3elb6")
+[node name="Anemone" parent="." unique_id=2006091342 instance=ExtResource("8_urft8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.151898, 0, 6.363309)
+
+[node name="Angler Fish Enemy" type="CharacterBody3D" parent="." unique_id=37224592 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1062586, 0)
+script = ExtResource("4_cxj6j")
+player = NodePath("../Fih")
+turn_smoothing = 0.25
+
+[node name="Model Root" type="Node3D" parent="Angler Fish Enemy" unique_id=1378196612]
+
+[node name="MeshRoot" parent="Angler Fish Enemy/Model Root" unique_id=1200089179 instance=ExtResource("2_ny5rf")]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.22710717, 0, 1.6251485)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Angler Fish Enemy/Model Root/MeshRoot" unique_id=1272607288]
+transform = Transform3D(1.0000001, 5.2154064e-08, -4.7683716e-07, -5.2154064e-08, 1, 9.685755e-08, 5.364418e-07, -1.1175871e-07, 1, -0.18408346, 0.6051712, 4.98706)
+light_color = Color(0, 0.8039216, 0.9764706, 1)
+light_energy = 0.1
+shadow_enabled = true
+shadow_blur = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Angler Fish Enemy" unique_id=929949124]
+transform = Transform3D(0.5431744, 0.16882902, 0.82247084, 0, 0.9795753, -0.20107792, -0.8396198, 0.10922039, 0.53208023, 9.761565, 2.9597893, -1.1250172)
+shape = SubResource("SphereShape3D_7dy88")
+
+[node name="SpawnTimer" type="Timer" parent="Angler Fish Enemy" unique_id=829757528]
