@@ -5,6 +5,8 @@
 [resource]
 resource_name = "mat_rocks"
 cull_mode = 2
+shading_mode = 2
 albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
 albedo_texture = ExtResource("1_k3unl")
 roughness = 0.9
+texture_filter = 4

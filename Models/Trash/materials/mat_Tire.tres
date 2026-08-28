@@ -1,6 +1,13 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cppw4ccgf8i73"]
 
+[ext_resource type="Texture2D" uid="uid://uktflqh4vcn4" path="res://Models/Trash/textures/tex_Tire_Base_Color.png" id="1_cec0x"]
+[ext_resource type="Texture2D" uid="uid://nb3qyn2hh61u" path="res://Models/Trash/textures/tex_Tire_Roughness.png" id="2_yybbh"]
+
 [resource]
 resource_name = "mat_Tire"
 cull_mode = 2
-albedo_color = Color(0.01818562, 0.9063355, 0.8185384, 1)
+shading_mode = 2
+albedo_texture = ExtResource("1_cec0x")
+roughness = 0.91
+roughness_texture = ExtResource("2_yybbh")
+texture_filter = 4

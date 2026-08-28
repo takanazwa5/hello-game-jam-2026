@@ -1,6 +1,13 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cj260pinphhkt"]
 
+[ext_resource type="Texture2D" uid="uid://dplkub3sjy51j" path="res://Models/Trash/textures/tex_Canister_Base_Color.png" id="1_qqsnj"]
+[ext_resource type="Texture2D" uid="uid://c30xt3wa2pgq6" path="res://Models/Trash/textures/tex_Canister_Roughness.png" id="2_05h5v"]
+
 [resource]
 resource_name = "mat_Canister"
 cull_mode = 2
-albedo_color = Color(0.90633965, 0.8896275, 0, 1)
+shading_mode = 2
+albedo_texture = ExtResource("1_qqsnj")
+roughness = 0.78
+roughness_texture = ExtResource("2_05h5v")
+texture_filter = 4

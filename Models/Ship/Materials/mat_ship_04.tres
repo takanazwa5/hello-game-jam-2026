@@ -6,5 +6,7 @@
 [resource]
 resource_name = "mat_ship_04"
 cull_mode = 2
+shading_mode = 2
 albedo_texture = ExtResource("1_d0p2u")
 roughness_texture = ExtResource("2_bapii")
+texture_filter = 4

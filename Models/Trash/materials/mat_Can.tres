@@ -1,6 +1,13 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bh1t062chlajr"]
 
+[ext_resource type="Texture2D" uid="uid://c6rwyidwb3o8s" path="res://Models/Trash/textures/tex_Can_Base_Color.png" id="1_6dxir"]
+[ext_resource type="Texture2D" uid="uid://cd8vomjmmrr32" path="res://Models/Trash/textures/tex_Can_Roughness.png" id="2_sv4gu"]
+
 [resource]
 resource_name = "mat_Can"
 cull_mode = 2
-albedo_color = Color(0, 0.9063355, 0.041862413, 1)
+shading_mode = 2
+albedo_texture = ExtResource("1_6dxir")
+roughness = 0.73
+roughness_texture = ExtResource("2_sv4gu")
+texture_filter = 4
