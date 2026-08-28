@@ -28,7 +28,7 @@ parameter_name = "TextureDirty"
 texture_filter = 3
 
 [resource]
-resource_local_to_scene = true
+modes/cull = 2
 nodes/fragment/2/node = SubResource("VisualShaderNodeMix_rnspq")
 nodes/fragment/2/position = Vector2(-80, 120)
 nodes/fragment/4/node = SubResource("VisualShaderNodeTexture_m8p4f")

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://duagkvhg06hv2"
-path="res://.godot/imported/Plate3.glb-abef933b34838b7508cc9e6776814e06.scn"
+path="res://.godot/imported/Plate3.glb-fe3aa9357e57c7ad3f1bbd3db4f13f49.scn"
 
 [deps]
 
-source_file="res://Models/plates/Plate3.glb"
-dest_files=["res://.godot/imported/Plate3.glb-abef933b34838b7508cc9e6776814e06.scn"]
+source_file="res://Models/Plates/Plate3.glb"
+dest_files=["res://.godot/imported/Plate3.glb-fe3aa9357e57c7ad3f1bbd3db4f13f49.scn"]
 
 [params]
 
