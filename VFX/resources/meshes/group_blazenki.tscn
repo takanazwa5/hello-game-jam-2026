@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bdw3g6yhahp3i"]
+
+[ext_resource type="ArrayMesh" uid="uid://c6h8gexcyq4be" path="res://VFX/resources/meshes/blazenek_okoniowy.tres" id="1_6k0l8"]
+
+[node name="GroupBlazenki" type="Node3D" unique_id=719337942]
+
+[node name="Blazenek1" type="MeshInstance3D" parent="." unique_id=1378599561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22006065, -0.44262546, 0.17316878)
+instance_shader_parameters/vertical_bend_offset = 1.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek2" type="MeshInstance3D" parent="." unique_id=389812997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3423953, -0.25261343, 1.6044643)
+instance_shader_parameters/vertical_bend_offset = 2.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek3" type="MeshInstance3D" parent="." unique_id=164691427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21759033, 0.6701604, 0.20566761)
+instance_shader_parameters/vertical_bend_offset = 3.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek4" type="MeshInstance3D" parent="." unique_id=759208246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8458358, 1.0091379, 0.554966)
+instance_shader_parameters/vertical_bend_offset = 4.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek5" type="MeshInstance3D" parent="." unique_id=1033020031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86164844, 0.15623933, -0.41017818)
+instance_shader_parameters/vertical_bend_offset = 5.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek6" type="MeshInstance3D" parent="." unique_id=1739553493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27828264, 2.3662004, -0.012310982)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek7" type="MeshInstance3D" parent="." unique_id=2058174945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029469639, -1.251432, 0.89913034)
+instance_shader_parameters/vertical_bend_offset = 7.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek8" type="MeshInstance3D" parent="." unique_id=1509828922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47379005, 1.9782717, 0.72777236)
+instance_shader_parameters/vertical_bend_offset = 8.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek9" type="MeshInstance3D" parent="." unique_id=790792388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2010789, 0.2508042, -0.22102964)
+instance_shader_parameters/vertical_bend_offset = 9.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek10" type="MeshInstance3D" parent="." unique_id=31780100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8644645, -0.6663832, -0.8978941)
+instance_shader_parameters/vertical_bend_offset = 10.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek11" type="MeshInstance3D" parent="." unique_id=737337340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6991141, 0.3386193, -1.6942016)
+instance_shader_parameters/vertical_bend_offset = 11.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek12" type="MeshInstance3D" parent="." unique_id=2131535147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04565382, 1.06837, -1.3219867)
+instance_shader_parameters/vertical_bend_offset = 12.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek13" type="MeshInstance3D" parent="." unique_id=981997435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47806668, -1.5576243, -0.8968415)
+instance_shader_parameters/vertical_bend_offset = 13.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek14" type="MeshInstance3D" parent="." unique_id=771076427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7862737, -2.4453578, 0.43962997)
+instance_shader_parameters/vertical_bend_offset = 14.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek15" type="MeshInstance3D" parent="." unique_id=169382845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3922864, -0.9644239, 0.12972301)
+instance_shader_parameters/vertical_bend_offset = 15.0
+mesh = ExtResource("1_6k0l8")
+
+[node name="Blazenek16" type="MeshInstance3D" parent="." unique_id=888407798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5042318, -1.7531166, -0.6115696)
+instance_shader_parameters/vertical_bend_offset = 16.0
+mesh = ExtResource("1_6k0l8")

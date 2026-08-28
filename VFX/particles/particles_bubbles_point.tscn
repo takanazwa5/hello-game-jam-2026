@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b7lthhdhtirge"]
+
+[ext_resource type="Material" uid="uid://dtgyu88vkbtt" path="res://VFX/resources/materials/mat_bubble.tres" id="1_88eku"]
+
+[sub_resource type="Curve" id="Curve_jo4bi"]
+_data = [Vector2(0.6966292, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_mdv60"]
+curve = SubResource("Curve_jo4bi")
+
+[sub_resource type="Curve" id="Curve_h3aaf"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.6292135), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_stitd"]
+curve = SubResource("Curve_h3aaf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a7fh7"]
+lifetime_randomness = 0.25
+direction = Vector3(1, 1, 0)
+spread = 50.0
+initial_velocity_max = 0.19999999
+radial_velocity_min = 0.09997764
+radial_velocity_max = 0.49997765
+gravity = Vector3(0, 10, 0)
+linear_accel_min = 4.9999976
+linear_accel_max = 9.999997
+scale_max = 1.8
+scale_curve = SubResource("CurveTexture_stitd")
+alpha_curve = SubResource("CurveTexture_mdv60")
+turbulence_enabled = true
+turbulence_noise_strength = 0.1
+turbulence_noise_scale = 2.0
+turbulence_noise_speed = Vector3(1, 0, 0)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qqd51"]
+material = ExtResource("1_88eku")
+size = Vector2(0.3, 0.3)
+orientation = 2
+
+[node name="BubblesPoint" type="GPUParticles3D" unique_id=1571209497]
+transparency = 0.5
+cast_shadow = 0
+amount = 7
+speed_scale = 0.2
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_a7fh7")
+draw_pass_1 = SubResource("PlaneMesh_qqd51")

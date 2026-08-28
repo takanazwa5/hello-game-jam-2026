@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://b041fa8wqr0bf"]
+
+[ext_resource type="ArrayMesh" uid="uid://buqvllbrueuhf" path="res://VFX/resources/meshes/apogon_kardynal.tres" id="1_tpdn5"]
+
+[node name="GroupApogony" type="Node3D" unique_id=719337942]
+
+[node name="Apogon1" type="MeshInstance3D" parent="." unique_id=1378599561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21891421, -1.0262698, 0.65284556)
+instance_shader_parameters/vertical_bend_offset = 0.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon2" type="MeshInstance3D" parent="." unique_id=389812997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3423953, -0.25261343, 1.6044643)
+instance_shader_parameters/vertical_bend_offset = 1.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon3" type="MeshInstance3D" parent="." unique_id=164691427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21759033, 1.2882768, 0.12447274)
+instance_shader_parameters/vertical_bend_offset = 3.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon4" type="MeshInstance3D" parent="." unique_id=759208246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9613553, 1.0256213, 1.9875007)
+instance_shader_parameters/vertical_bend_offset = 4.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon5" type="MeshInstance3D" parent="." unique_id=1033020031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86164844, 0.15623933, -0.41017818)
+instance_shader_parameters/vertical_bend_offset = 5.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon6" type="MeshInstance3D" parent="." unique_id=1739553493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27828264, 3.0100775, 0.04821396)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon7" type="MeshInstance3D" parent="." unique_id=2058174945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029469639, -2.0369651, 0.2406689)
+instance_shader_parameters/vertical_bend_offset = 7.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon8" type="MeshInstance3D" parent="." unique_id=1509828922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47379005, 2.0013757, 1.3977863)
+instance_shader_parameters/vertical_bend_offset = 8.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon9" type="MeshInstance3D" parent="." unique_id=790792388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2010789, 0.2508042, -0.22102964)
+instance_shader_parameters/vertical_bend_offset = 9.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon10" type="MeshInstance3D" parent="." unique_id=31780100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8644645, -0.8627664, -0.9441015)
+instance_shader_parameters/vertical_bend_offset = 10.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon11" type="MeshInstance3D" parent="." unique_id=737337340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4796269, 0.36801946, -2.0924902)
+instance_shader_parameters/vertical_bend_offset = 11.0
+mesh = ExtResource("1_tpdn5")
+
+[node name="Apogon12" type="MeshInstance3D" parent="." unique_id=2131535147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.265141, 1.7481949, -1.6063633)
+instance_shader_parameters/vertical_bend_offset = 12.0
+mesh = ExtResource("1_tpdn5")

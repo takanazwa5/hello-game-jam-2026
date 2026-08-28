@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="ArrayMesh"
 importer_version=1
-type="PackedScene"
+type="ArrayMesh"
 uid="uid://cy7v1puwikihy"
-path="res://.godot/imported/Coral4.glb-83665de4a72ff9f0fd25d5b89e275add.scn"
+path="res://.godot/imported/Coral4.glb-83665de4a72ff9f0fd25d5b89e275add.res"
 
 [deps]
 
 source_file="res://Models/Corals/Coral4.glb"
-dest_files=["res://.godot/imported/Coral4.glb-83665de4a72ff9f0fd25d5b89e275add.scn"]
+dest_files=["res://.godot/imported/Coral4.glb-83665de4a72ff9f0fd25d5b89e275add.res"]
 
 [params]
 
@@ -39,7 +39,15 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"materials": {
+"mat_corals": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Corals/materials/mat_corals.tres",
+"use_external/path": "uid://badb3kx3rh7bg"
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1
 gltf/texture_map_mode=1

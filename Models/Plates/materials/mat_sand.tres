@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dd6mi2ffngy8x"]
+
+[ext_resource type="Texture2D" uid="uid://ch7wl5av31g2e" path="res://Models/Plates/textures/sand.png" id="1_5xo02"]
+
+[resource]
+resource_name = "mat_sand"
+albedo_texture = ExtResource("1_5xo02")
+uv1_triplanar = true
+texture_filter = 2
