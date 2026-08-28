@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://br7fd3aav6li6"]
+
+[ext_resource type="PackedScene" uid="uid://0lalv60333n8" path="res://Particles/meshes/group_anioly.tscn" id="1_3j4en"]
+
+[sub_resource type="Animation" id="Animation_7t6ro"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_o8p4t"]
+resource_name = "school_of_fish_anim"
+length = 30.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -5, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 30)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hpjxn"]
+_data = {
+&"RESET": SubResource("Animation_7t6ro"),
+&"school_of_fish_anim": SubResource("Animation_o8p4t")
+}
+
+[sub_resource type="Curve3D" id="Curve3D_m8677"]
+closed = true
+_data = {
+"points": PackedVector3Array(-2.4906626, 0.895164, -3.599697, 2.4906626, -0.895164, 3.599697, 13.036023, 0, -11.135908, 7.2113814, -3.044456, -2.8458943, -7.2113814, 3.044456, 2.8458943, 11.048509, 0, 4.8209615, 6.5303917, 0, -4.770027, -6.5303917, 0, 4.770027, -6.8958693, 0, 10.385993, -0.068870544, 2.4087038, 6.9658184, 0.068870544, -2.4087038, -6.9658184, -18.70736, 0, -2.7883623, -8.753863, -6.011717, 2.2748356, 8.753863, 6.011717, -2.2748356, -2.9776335, 0, -17.098438),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="SchoolOfAnioly" type="Node3D" unique_id=409765902]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1554386343]
+libraries/ = SubResource("AnimationLibrary_hpjxn")
+
+[node name="Path3D" type="Path3D" parent="." unique_id=358467894]
+curve = SubResource("Curve3D_m8677")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=317267031]
+transform = Transform3D(0.8222241, 0.11397876, 0.557367, 1.1174219e-08, 0.9795566, -0.20032215, -0.5689042, 0.16473088, 0.8055496, 13.036023, 0, -11.135908)
+use_model_front = true
+
+[node name="GroupOfAnioly" parent="Path3D/PathFollow3D" unique_id=719337942 instance=ExtResource("1_3j4en")]

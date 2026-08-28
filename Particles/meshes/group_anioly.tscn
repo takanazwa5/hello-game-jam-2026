@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://0lalv60333n8"]
+
+[ext_resource type="ArrayMesh" uid="uid://vo3mv4kd27ds" path="res://Particles/meshes/aniol_imperialny.tres" id="1_iiu3f"]
+
+[node name="GroupAnioly" type="Node3D" unique_id=719337942]
+
+[node name="Aniol1" type="MeshInstance3D" parent="." unique_id=1378599561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2461765, -1.2019646, -0.56009233)
+instance_shader_parameters/vertical_bend_offset = 1.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol2" type="MeshInstance3D" parent="." unique_id=389812997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98744977, -0.25261343, 2.0602376)
+instance_shader_parameters/vertical_bend_offset = 2.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol3" type="MeshInstance3D" parent="." unique_id=164691427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6284641, 0.6701604, 0.20566761)
+instance_shader_parameters/vertical_bend_offset = 3.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol4" type="MeshInstance3D" parent="." unique_id=759208246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3487579, 1.0641322, -1.2206264)
+instance_shader_parameters/vertical_bend_offset = 4.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol5" type="MeshInstance3D" parent="." unique_id=1033020031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5131118, 1.7880874, 1.1064098)
+instance_shader_parameters/vertical_bend_offset = 5.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol6" type="MeshInstance3D" parent="." unique_id=1739553493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07397032, 3.1177928, -0.858624)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol7" type="MeshInstance3D" parent="." unique_id=2058174945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029469639, -2.288967, 0.89913034)
+instance_shader_parameters/vertical_bend_offset = 7.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol8" type="MeshInstance3D" parent="." unique_id=1509828922]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47379005, 3.2790954, 2.142241)
+instance_shader_parameters/vertical_bend_offset = 8.0
+mesh = ExtResource("1_iiu3f")
