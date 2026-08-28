@@ -1,12 +1,12 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://g75n5gvt0oc4"]
 
-[ext_resource type="Texture2D" uid="uid://bikfeq57bic1x" path="res://Models/Rocks/textures/tex_Rock_Base_Color.png" id="1_k3unl"]
+[ext_resource type="Texture2D" uid="uid://ngpqwoqrpu7v" path="res://Models/Plates/textures/stone.png" id="1_k3unl"]
 
 [resource]
 resource_name = "mat_rocks"
-cull_mode = 2
 shading_mode = 2
-albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
 albedo_texture = ExtResource("1_k3unl")
-roughness = 0.9
+uv1_scale = Vector3(0.05, 0.05, 0.05)
+uv1_triplanar = true
+uv1_world_triplanar = true
 texture_filter = 4

@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://g7x8ls4wyorq"]
-
-[ext_resource type="Texture2D" uid="uid://ngpqwoqrpu7v" path="res://Models/Plates/textures/stone.png" id="1_bncmq"]
-
-[resource]
-resource_name = "mat_stone"
-albedo_texture = ExtResource("1_bncmq")
-uv1_triplanar = true
-texture_filter = 2
