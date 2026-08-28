@@ -10,6 +10,7 @@ var _is_clean: bool = false # na true wszystkie maja wait_time z node'a
 var _shader_material: ShaderMaterial
 var _tween: Tween
 var _fih_in_cleaning_area: bool = false
+var _is_checking_skill: bool = false
 
 
 @onready var hide_area: Area3D = %HideArea
@@ -21,6 +22,7 @@ var _fih_in_cleaning_area: bool = false
 @onready var closed_collision: CollisionShape3D = %ClosedCollision
 @onready var cleaning_area: Area3D = %CleaningArea
 @onready var can_clean_label: Label = %CanCleanLabel
+@onready var skillcheck: Skillcheck = %Skillcheck
 
 
 func _ready() -> void:
@@ -41,17 +43,17 @@ func _ready() -> void:
 	clean_timer.timeout.connect(_on_clean_timer_timeout)
 	cleaning_area.body_entered.connect(_on_cleaning_area_body_entered)
 	cleaning_area.body_exited.connect(_on_cleaning_area_body_exited)
+	skillcheck.passed.connect(_on_skillcheck_passed)
 
 	_make_clean()
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if skillcheck.visible: return
 	if event.is_action_pressed(&"E"):
-		if _is_fih_inside:
-			_make_clean()
-
-		if not _is_clean and _fih_in_cleaning_area:
-			_make_clean()
+		if _is_fih_inside or (not _is_clean and _fih_in_cleaning_area):
+			_is_checking_skill = true
+			skillcheck.start()
 
 
 func _process(_delta: float) -> void:
@@ -114,3 +116,9 @@ func _on_cleaning_area_body_entered(body: Node3D) -> void:
 func _on_cleaning_area_body_exited(body: Node3D) -> void:
 	if body is Fih:
 		_fih_in_cleaning_area = false
+
+
+func _on_skillcheck_passed() -> void:
+	if _is_checking_skill:
+		_make_clean()
+		_is_checking_skill = false

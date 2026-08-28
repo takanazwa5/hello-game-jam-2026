@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dsmq3h1opun6d" path="res://testing_grounds/testing_grounds.tscn" id="1_bb0ch"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="2_ewmae"]
 [ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="3_ewmae"]
+[ext_resource type="PackedScene" uid="uid://4d7t7y5st3nw" path="res://skillcheck/skillcheck.tscn" id="4_q518v"]
 
 [node name="MovementTest" type="Node" unique_id=333719031]
 
@@ -22,3 +23,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6868677, 0, 6.419242)
 
 [node name="Anemone4" parent="." unique_id=895945953 instance=ExtResource("3_ewmae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.842669, 0, -3.2845478)
+
+[node name="Skillcheck" parent="." unique_id=1804647029 instance=ExtResource("4_q518v")]
+unique_name_in_owner = true
+visible = false
