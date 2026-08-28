@@ -9,6 +9,7 @@ var _is_fih_inside: bool = false
 var _is_clean: bool = false # na true wszystkie maja wait_time z node'a
 var _shader_material: ShaderMaterial
 var _tween: Tween
+var _fih_in_cleaning_area: bool = false
 
 
 @onready var hide_area: Area3D = %HideArea
@@ -18,6 +19,8 @@ var _tween: Tween
 @onready var dirtiness_label: Label3D = %DirtinessLabel
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
 @onready var closed_collision: CollisionShape3D = %ClosedCollision
+@onready var cleaning_area: Area3D = %CleaningArea
+@onready var can_clean_label: Label = %CanCleanLabel
 
 
 func _ready() -> void:
@@ -36,6 +39,8 @@ func _ready() -> void:
 	hide_area.body_entered.connect(_on_hide_area_body_entered)
 	hide_area.body_exited.connect(_on_hide_area_body_exited)
 	clean_timer.timeout.connect(_on_clean_timer_timeout)
+	cleaning_area.body_entered.connect(_on_cleaning_area_body_entered)
+	cleaning_area.body_exited.connect(_on_cleaning_area_body_exited)
 
 	_make_clean()
 
@@ -45,22 +50,29 @@ func _unhandled_input(event: InputEvent) -> void:
 		if _is_fih_inside:
 			_make_clean()
 
+		if not _is_clean and _fih_in_cleaning_area:
+			_make_clean()
+
 
 func _process(_delta: float) -> void:
 	clean_label.text = "CZYSTY" if _is_clean else "BRUDNY"
 	if _is_clean: clean_label.text += " %.2f" % clean_timer.time_left
 	dirtiness_label.text = "Dirtiness %.2f" % _shader_material.get_shader_parameter(&"Dirtiness")
+	if OS.is_debug_build():
+		if (not _is_clean and _fih_in_cleaning_area) or _is_fih_inside: can_clean_label.show()
+		else: can_clean_label.hide()
 
 
 func _make_clean() -> void:
-	animation_player.play_backwards(&"anim_anemone_closing")
-	await animation_player.animation_finished
-	animation_player.play(&"anim_armature_idle")
+	var wait_time: float = clean_timer.wait_time if _is_clean else randf_range(CLEAN_TIME_MIN, CLEAN_TIME_MAX)
+	_is_clean = true
+	if animation_player.current_animation == &"anim_anemone_closed":
+		animation_player.play_backwards(&"anim_anemone_closing")
+		await animation_player.animation_finished
+		animation_player.play(&"anim_armature_idle")
 	closed_collision.disabled = true
 	clean_label.text = "CZYSTY"
-	var wait_time: float = clean_timer.wait_time if _is_clean else randf_range(CLEAN_TIME_MIN, CLEAN_TIME_MAX)
 	clean_timer.start(wait_time)
-	_is_clean = true
 	if is_instance_valid(_tween): _tween.kill()
 	_shader_material.set_shader_parameter(&"Dirtiness", 0.0)
 	_tween = create_tween()
@@ -69,11 +81,11 @@ func _make_clean() -> void:
 
 
 func _make_dirty() -> void:
+	_is_clean = false
 	animation_player.play(&"anim_anemone_closing")
 	await animation_player.animation_finished
 	animation_player.play(&"anim_anemone_closed")
 	closed_collision.disabled = false
-	_is_clean = false
 	clean_label.text = "BRUDNY"
 	print("anemone %s dirty" % self)
 
@@ -92,3 +104,13 @@ func _on_hide_area_body_exited(body: Node3D) -> void:
 	if body is Fih:
 		_is_fih_inside = false
 		body.set_hidden(false)
+
+
+func _on_cleaning_area_body_entered(body: Node3D) -> void:
+	if body is Fih:
+		_fih_in_cleaning_area = true
+
+
+func _on_cleaning_area_body_exited(body: Node3D) -> void:
+	if body is Fih:
+		_fih_in_cleaning_area = false

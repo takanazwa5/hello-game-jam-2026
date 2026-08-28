@@ -22,6 +22,9 @@ data = PackedVector3Array(0.021080013, 0.93044585, 0.56880003, -0.33197576, 1.50
 [sub_resource type="SphereShape3D" id="SphereShape3D_ttdih"]
 radius = 0.6921625
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_3asyf"]
+radius = 0.9679217
+
 [node name="Anemone" unique_id=2006091342 instance=ExtResource("1_k7qmx")]
 
 [node name="Skeleton3D" parent="armature_001" parent_id_path=PackedInt32Array(1629237702) index="0" unique_id=1102314183]
@@ -109,3 +112,25 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22770143, 1.9816878, -0.04844308)
 shape = SubResource("SphereShape3D_ttdih")
 disabled = true
+
+[node name="CleaningArea" type="Area3D" parent="." index="7" unique_id=1739678561]
+unique_name_in_owner = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CleaningArea" index="0" unique_id=435368466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2409491, 2.0213907, -0.05075097)
+shape = SubResource("SphereShape3D_3asyf")
+debug_color = Color(1, 1, 0, 1)
+
+[node name="CanCleanLabel" type="Label" parent="." index="8" unique_id=1361885482]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 15.0
+offset_top = -11.5
+offset_right = 104.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_constants/outline_size = 4
+text = "CAN CLEAN"
