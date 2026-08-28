@@ -10,7 +10,6 @@
 
 [node name="Fih" parent="TestingGrounds" unique_id=761742824 instance=ExtResource("2_ewmae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)
-motion_mode = 1
 
 [node name="Anemone" parent="." unique_id=2006091342 instance=ExtResource("3_ewmae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4734516, 0, 18.30668)

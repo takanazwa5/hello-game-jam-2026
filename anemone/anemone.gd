@@ -12,7 +12,6 @@ var _tween: Tween
 
 
 @onready var hide_area: Area3D = %HideArea
-@onready var cleaning_area: Area3D = %CleaningArea
 @onready var clean_label: Label3D = %CleanLabel
 @onready var clean_timer: Timer = %CleanTimer
 @onready var death_timer: Timer = %DeathTimer
@@ -33,8 +32,8 @@ func _ready() -> void:
 	if not OS.is_debug_build():
 		clean_label.hide()
 
-	cleaning_area.body_entered.connect(_on_cleaning_area_body_entered)
-	cleaning_area.body_exited.connect(_on_cleaning_area_body_exited)
+	hide_area.body_entered.connect(_on_hide_area_body_entered)
+	hide_area.body_exited.connect(_on_hide_area_body_exited)
 	clean_timer.timeout.connect(_on_clean_timer_timeout)
 	death_timer.timeout.connect(_on_death_timer_timeout)
 
@@ -78,16 +77,6 @@ func _die() -> void:
 	queue_free()
 
 
-func _on_cleaning_area_body_entered(body: Node3D) -> void:
-	if body is Fih:
-		_is_fih_inside = true
-
-
-func _on_cleaning_area_body_exited(body: Node3D) -> void:
-	if body is Fih:
-		_is_fih_inside = false
-
-
 func _on_clean_timer_timeout() -> void:
 	_make_dirty()
 
@@ -96,24 +85,13 @@ func _on_death_timer_timeout() -> void:
 	_die()
 
 
-func _is_player(body: Node3D) -> bool:
-	return body is Fih
-
-
 func _on_hide_area_body_entered(body: Node3D) -> void:
-	if not _is_player(body):
-		return
-
-	_set_player_hidden(body, true)
+	if body is Fih:
+		_is_fih_inside = true
+		body.set_hidden(true)
 
 
 func _on_hide_area_body_exited(body: Node3D) -> void:
-	if not _is_player(body):
-		return
-
-	_set_player_hidden(body, false)
-
-
-func _set_player_hidden(body: Node3D, hidden: bool) -> void:
-	if "_is_hidden" in body:
-		body._is_hidden = hidden
+	if body is Fih:
+		_is_fih_inside = false
+		body.set_hidden(false)

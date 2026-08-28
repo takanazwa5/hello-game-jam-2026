@@ -25,7 +25,7 @@ var _acceleration_modifier: float = 0.0
 var _idle_time: float = 0.0
 var _pending_look_yaw: float = 0.0
 var _pending_look_pitch: float = 0.0
-var _is_hidden: bool = false
+var _is_hidden: bool = false: set = set_hidden, get = is_hidden
 var _camera_rig_base_position: Vector3
 
 
@@ -119,6 +119,10 @@ func _apply_smooth_look(delta: float) -> void:
 
 func is_hidden() -> bool:
 	return _is_hidden
+
+
+func set_hidden(hidden: bool) -> void:
+	_is_hidden = hidden
 
 
 func _apply_idle_and_swim_motion(delta: float) -> void:
