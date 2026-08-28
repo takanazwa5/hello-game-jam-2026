@@ -14,9 +14,10 @@ var _tween: Tween
 @onready var hide_area: Area3D = %HideArea
 @onready var clean_label: Label3D = %CleanLabel
 @onready var clean_timer: Timer = %CleanTimer
-@onready var death_timer: Timer = %DeathTimer
 @onready var mesh_instance: MeshInstance3D = %anemoneP
 @onready var dirtiness_label: Label3D = %DirtinessLabel
+@onready var animation_player: AnimationPlayer = %AnimationPlayer
+@onready var closed_collision: CollisionShape3D = %ClosedCollision
 
 
 func _ready() -> void:
@@ -35,7 +36,6 @@ func _ready() -> void:
 	hide_area.body_entered.connect(_on_hide_area_body_entered)
 	hide_area.body_exited.connect(_on_hide_area_body_exited)
 	clean_timer.timeout.connect(_on_clean_timer_timeout)
-	death_timer.timeout.connect(_on_death_timer_timeout)
 
 	_make_clean()
 
@@ -48,12 +48,15 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _process(_delta: float) -> void:
 	clean_label.text = "CZYSTY" if _is_clean else "BRUDNY"
-	clean_label.text += " %.2f" % clean_timer.time_left if _is_clean else " %.2f" % death_timer.time_left
+	if _is_clean: clean_label.text += " %.2f" % clean_timer.time_left
 	dirtiness_label.text = "Dirtiness %.2f" % _shader_material.get_shader_parameter(&"Dirtiness")
 
 
 func _make_clean() -> void:
-	death_timer.stop()
+	animation_player.play_backwards(&"anim_anemone_closing")
+	await animation_player.animation_finished
+	animation_player.play(&"anim_armature_idle")
+	closed_collision.disabled = true
 	clean_label.text = "CZYSTY"
 	var wait_time: float = clean_timer.wait_time if _is_clean else randf_range(CLEAN_TIME_MIN, CLEAN_TIME_MAX)
 	clean_timer.start(wait_time)
@@ -66,23 +69,17 @@ func _make_clean() -> void:
 
 
 func _make_dirty() -> void:
+	animation_player.play(&"anim_anemone_closing")
+	await animation_player.animation_finished
+	animation_player.play(&"anim_anemone_closed")
+	closed_collision.disabled = false
 	_is_clean = false
 	clean_label.text = "BRUDNY"
-	death_timer.start()
-	print("anemone %s dirty, %.2f sec left" % [self, death_timer.wait_time])
-
-
-func _die() -> void:
-	print("anemone %s died" % self)
-	queue_free()
+	print("anemone %s dirty" % self)
 
 
 func _on_clean_timer_timeout() -> void:
 	_make_dirty()
-
-
-func _on_death_timer_timeout() -> void:
-	_die()
 
 
 func _on_hide_area_body_entered(body: Node3D) -> void:
