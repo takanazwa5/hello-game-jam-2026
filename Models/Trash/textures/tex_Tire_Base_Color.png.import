@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqf7dr3n31pfn"
-path.s3tc="res://.godot/imported/statek_Material_02_Roughness.png-634f43c3ef76eca78e98abd8c9b3d1bd.s3tc.ctex"
+uid="uid://uktflqh4vcn4"
+path.s3tc="res://.godot/imported/tex_Tire_Base_Color.png-d58e5e5a59eb77d5248b26129e193109.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Ship/Textures/statek_Material_02_Roughness.png"
-dest_files=["res://.godot/imported/statek_Material_02_Roughness.png-634f43c3ef76eca78e98abd8c9b3d1bd.s3tc.ctex"]
+source_file="res://Models/Trash/textures/tex_Tire_Base_Color.png"
+dest_files=["res://.godot/imported/tex_Tire_Base_Color.png-d58e5e5a59eb77d5248b26129e193109.s3tc.ctex"]
 
 [params]
 

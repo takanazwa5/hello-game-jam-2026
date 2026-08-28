@@ -1,7 +1,7 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://sdqximjg4y6p"]
 
-[ext_resource type="Texture2D" uid="uid://dr0u7bmt7ml8w" path="res://Models/Ship/Textures/statek_Material_03_BaseColor.png" id="1_ee5ul"]
-[ext_resource type="Texture2D" uid="uid://b5o5ccwnntx4b" path="res://Models/Ship/Textures/statek_Material_03_Roughness.png" id="2_i48y2"]
+[ext_resource type="Texture2D" uid="uid://dr0u7bmt7ml8w" path="res://Models/Ship/textures/tex_Ship_03_Base_Color.png.png" id="1_ee5ul"]
+[ext_resource type="Texture2D" uid="uid://b5o5ccwnntx4b" path="res://Models/Ship/textures/tex_Ship_03_Roughness.png" id="2_i48y2"]
 
 [resource]
 resource_name = "mat_ship_03"

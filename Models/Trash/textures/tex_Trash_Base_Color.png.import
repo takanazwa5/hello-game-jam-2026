@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bikfeq57bic1x"
-path.s3tc="res://.godot/imported/rock_BaseColor.png-5f702a9574b6c5e693f336c2d40129a8.s3tc.ctex"
+uid="uid://bcntdfh3w2tyj"
+path.s3tc="res://.godot/imported/tex_Trash_Base_Color.png-966bbdd060b16f934f149864db28f3f5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Rocks/Textures/rock_BaseColor.png"
-dest_files=["res://.godot/imported/rock_BaseColor.png-5f702a9574b6c5e693f336c2d40129a8.s3tc.ctex"]
+source_file="res://Models/Trash/textures/tex_Trash_Base_Color.png"
+dest_files=["res://.godot/imported/tex_Trash_Base_Color.png-966bbdd060b16f934f149864db28f3f5.s3tc.ctex"]
 
 [params]
 

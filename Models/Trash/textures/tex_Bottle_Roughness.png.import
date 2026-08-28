@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7pnxv317gdug"
-path.s3tc="res://.godot/imported/statek_Material_04_BaseColor.png-ef9b89fe1aeae5fba591c127200853c8.s3tc.ctex"
+uid="uid://cwhokf2mow5kq"
+path.s3tc="res://.godot/imported/tex_Bottle_Roughness.png-9ad2da2430e3477b753e7e3561faea1f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Ship/Textures/statek_Material_04_BaseColor.png"
-dest_files=["res://.godot/imported/statek_Material_04_BaseColor.png-ef9b89fe1aeae5fba591c127200853c8.s3tc.ctex"]
+source_file="res://Models/Trash/textures/tex_Bottle_Roughness.png"
+dest_files=["res://.godot/imported/tex_Bottle_Roughness.png-9ad2da2430e3477b753e7e3561faea1f.s3tc.ctex"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfigyjadfjk2c"
-path.s3tc="res://.godot/imported/statek_Material_01_Roughness.png-8978af99687e0b641c3b24cc8dcad93f.s3tc.ctex"
+uid="uid://ds5yfcm5quxr2"
+path.s3tc="res://.godot/imported/tex_Ship_01_Base_Color.png-bc80f549e986f1036aa28873ff035902.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Ship/Textures/statek_Material_01_Roughness.png"
-dest_files=["res://.godot/imported/statek_Material_01_Roughness.png-8978af99687e0b641c3b24cc8dcad93f.s3tc.ctex"]
+source_file="res://Models/Ship/textures/tex_Ship_01_Base_Color.png"
+dest_files=["res://.godot/imported/tex_Ship_01_Base_Color.png-bc80f549e986f1036aa28873ff035902.s3tc.ctex"]
 
 [params]
 

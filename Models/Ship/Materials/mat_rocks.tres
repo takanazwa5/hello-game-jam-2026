@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://di5g4527h34c5"]
 
-[ext_resource type="Texture2D" uid="uid://bikfeq57bic1x" path="res://Models/Rocks/Textures/rock_BaseColor.png" id="1_xx2tl"]
+[ext_resource type="Texture2D" uid="uid://bikfeq57bic1x" path="res://Models/Rocks/textures/tex_Rock_Base_Color.png" id="1_xx2tl"]
 
 [resource]
 resource_name = "mat_rocks"
