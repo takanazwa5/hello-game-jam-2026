@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="HelloGameJam2026"
-run/main_scene="uid://dh4q135cuc2ed"
+run/main_scene="uid://c1lvmyn2qmtx5"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -22,7 +22,7 @@ var _is_checking_skill: bool = false
 @onready var closed_collision: CollisionShape3D = %ClosedCollision
 @onready var cleaning_area: Area3D = %CleaningArea
 @onready var can_clean_label: Label = %CanCleanLabel
-@onready var skillcheck: Skillcheck = %Skillcheck
+@onready var skillcheck: Skillcheck = Skillcheck.instance
 
 
 func _ready() -> void:

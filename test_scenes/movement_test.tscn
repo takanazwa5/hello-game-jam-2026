@@ -1,13 +1,23 @@
 [gd_scene format=3 uid="uid://cqhq6ekdi8kjq"]
 
-[ext_resource type="PackedScene" uid="uid://dsmq3h1opun6d" path="res://testing_grounds/testing_grounds.tscn" id="1_bb0ch"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="2_ewmae"]
 [ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="3_ewmae"]
 [ext_resource type="PackedScene" uid="uid://4d7t7y5st3nw" path="res://skillcheck/skillcheck.tscn" id="4_q518v"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_63eki"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uomrg"]
+albedo_texture = SubResource("PlaceholderTexture2D_63eki")
+uv1_triplanar = true
+
 [node name="MovementTest" type="Node" unique_id=333719031]
 
-[node name="TestingGrounds" parent="." unique_id=1422870158 instance=ExtResource("1_bb0ch")]
+[node name="TestingGrounds" type="Node3D" parent="." unique_id=1422870158]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="TestingGrounds" unique_id=1596554364]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 239.33447)
+size = Vector3(10, 0.001, 500)
+material = SubResource("StandardMaterial3D_uomrg")
 
 [node name="Fih" parent="TestingGrounds" unique_id=761742824 instance=ExtResource("2_ewmae")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)

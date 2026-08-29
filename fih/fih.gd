@@ -94,6 +94,10 @@ func _physics_process(_delta: float) -> void:
 
 	move_and_slide()
 
+	if get_slide_collision_count() > 0:
+		var collision: KinematicCollision3D = get_slide_collision(0)
+		velocity = velocity.slide(collision.get_normal())
+
 
 func _process(delta: float) -> void:
 	velocity_label.text = "%.2f" % velocity.length()

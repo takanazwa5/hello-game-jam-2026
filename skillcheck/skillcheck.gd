@@ -4,17 +4,24 @@ class_name Skillcheck extends Control
 signal passed
 
 
-const POINTER_SPEED: int = 180 # deg/s
-const MARGIN: float = 19.0 # how far can pointer rotation be from circle rotation in deg
+const POINTER_SPEED: int = 210 # deg/s
+const MARGIN: float = 13.0 # how far can pointer rotation be from circle rotation in deg
+
+
+static var instance: Skillcheck
 
 
 @onready var circle: TextureRect = %Circle
 @onready var pointer: TextureRect = %Pointer
 
 
+func _init() -> void:
+	instance = self
+
+
 func start() -> void:
 	pointer.rotation = 0
-	circle.rotation_degrees = randi_range(0, 360)
+	circle.rotation_degrees = randi_range(30, 330)
 	show()
 
 
