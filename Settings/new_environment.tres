@@ -1,9 +1,10 @@
 [gd_resource type="Environment" format=3 uid="uid://blufbe8sl3i0x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cxj6j"]
-sky_top_color = Color(0, 0.2147179, 0.38389716, 1)
-sky_horizon_color = Color(1.6364455e-06, 0.483738, 0.599474, 1)
-ground_horizon_color = Color(0.3647059, 0.3647059, 0.3647059, 1)
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Sky" id="Sky_263pk"]
 sky_material = SubResource("ProceduralSkyMaterial_cxj6j")
@@ -17,5 +18,6 @@ glow_enabled = true
 glow_intensity = 1.0
 glow_bloom = 1.0
 volumetric_fog_enabled = true
+volumetric_fog_density = 0.03
 volumetric_fog_albedo = Color(0.5334919, 0.8734416, 0.9596996, 1)
 volumetric_fog_length = 200.0
