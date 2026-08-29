@@ -4,12 +4,12 @@ importer="ArrayMesh"
 importer_version=1
 type="ArrayMesh"
 uid="uid://duagkvhg06hv2"
-path="res://.godot/imported/plate3.glb-11fd21f101457fe70c89fd62acd1736e.res"
+path="res://.godot/imported/plate3.glb-cfb0a08c5729187de6391d098335713d.res"
 
 [deps]
 
-source_file="res://Models/plates/plate3.glb"
-dest_files=["res://.godot/imported/plate3.glb-11fd21f101457fe70c89fd62acd1736e.res"]
+source_file="res://Models/Plates/plate3.glb"
+dest_files=["res://.godot/imported/plate3.glb-cfb0a08c5729187de6391d098335713d.res"]
 
 [params]
 
@@ -43,7 +43,7 @@ _subresources={
 "materials": {
 "mat_sand": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Models/plates/materials/seabed.tres",
+"use_external/fallback_path": "res://Models/Plates/materials/seabed.tres",
 "use_external/path": "uid://ck1q7r88g1kij"
 }
 }
