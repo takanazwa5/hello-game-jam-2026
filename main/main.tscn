@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c1lvmyn2qmtx5"]
 
+[ext_resource type="Script" uid="uid://bt1aup4c1wxu6" path="res://main/main.gd" id="1_d8vpj"]
 [ext_resource type="ArrayMesh" uid="uid://duagkvhg06hv2" path="res://Models/Plates/plate3.glb" id="1_oagth"]
 [ext_resource type="ArrayMesh" uid="uid://dq6iqj4am004u" path="res://Models/Ship/meshes/ship.glb" id="2_n53tw"]
 [ext_resource type="ArrayMesh" uid="uid://bq8okwm0rtsx1" path="res://Models/Rocks/rock_set_03.glb" id="3_d00gp"]
@@ -440,6 +441,7 @@ _data = {
 point_count = 4
 
 [node name="Main" type="Node" unique_id=2106466385]
+script = ExtResource("1_d8vpj")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1085153872]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9037671, 8.240482, 2.433053)
@@ -1112,3 +1114,26 @@ transform = Transform3D(1.0000001, -7.450581e-09, 0, 7.450581e-09, 1, 0, -2.9802
 transform = Transform3D(1.0000004, -2.2351742e-08, 0, -7.450581e-09, 1, 0, -5.9604645e-08, -1.1175871e-08, 1, -1.376091, 2.3183508, 3.5481348)
 
 [node name="BubblesScattered3" parent="Path3D6/PathFollow3D/GroupApogony" unique_id=321170322 instance=ExtResource("13_ue0mw")]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1408961366]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.666687
+offset_top = -33.0
+offset_right = 44.666656
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1684813524]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Graj"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1116193887]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Wyjdź"
