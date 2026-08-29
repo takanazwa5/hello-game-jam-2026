@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://yofjydp5cult"]
 
+[ext_resource type="Script" uid="uid://cxusxcfa6o6dw" path="res://Models/Level/level.gd" id="1_y6yt5"]
 [ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="2_228jq"]
 [ext_resource type="ArrayMesh" uid="uid://duagkvhg06hv2" path="res://Models/Plates/plate3.glb" id="2_ku0es"]
 [ext_resource type="ArrayMesh" uid="uid://bmruuamvpm6x6" path="res://Models/Plates/plate1.glb" id="2_se82u"]
@@ -290,7 +291,11 @@ _data = {
 }
 point_count = 3
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ttdih"]
+size = Vector3(47.896675, 46.544617, 1.8764648)
+
 [node name="Level" type="Node3D" unique_id=1600406036]
+script = ExtResource("1_y6yt5")
 
 [node name="Anemones" type="Node3D" parent="." unique_id=127608357]
 
@@ -2152,7 +2157,7 @@ autoplay = &"school_of_fish_anim"
 curve = SubResource("Curve3D_3h5ww")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfBlazenki/Path3D" unique_id=2061555308]
-transform = Transform3D(0.9993002, -0.009644068, -0.03125993, -1.3967542e-09, 0.9554087, -0.29475915, 0.032713313, 0.29459935, 0.9549036, 31.360382, -13.155338, -13.662781)
+transform = Transform3D(0.9992999, -0.009644068, -0.03125993, -1.3967537e-09, 0.9554087, -0.29475915, 0.0327133, 0.29459935, 0.9549036, 31.360382, -13.155338, -13.662781)
 use_model_front = true
 
 [node name="GroupOfBlazenki" parent="Fish/SchoolOfBlazenki/Path3D/PathFollow3D" unique_id=1429879838 instance=ExtResource("38_3h5ww")]
@@ -2211,12 +2216,14 @@ use_model_front = true
 transform = Transform3D(1.0001496, 0, 0, 0, 1.0001619, 0, 0, 0, 1.000151, 0, 0, 0)
 
 [node name="EndCutscene" type="Node3D" parent="." unique_id=2105164121]
+unique_name_in_owner = true
 visible = false
 
 [node name="1_Blazenek" type="Node3D" parent="EndCutscene" unique_id=1809386371]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.577003, 30.25076, -144.80812)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="EndCutscene/1_Blazenek" unique_id=574780783]
+[node name="EndCutsceneAnim1" type="AnimationPlayer" parent="EndCutscene/1_Blazenek" unique_id=574780783]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_4vy2l")
 autoplay = &"school_of_fish_anim"
 
@@ -2225,7 +2232,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5118065, 0)
 curve = SubResource("Curve3D_rkvba")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="EndCutscene/1_Blazenek/Path3D" unique_id=2095286817]
-transform = Transform3D(0.5279287, 0.12323969, -0.84010977, 1.1174131e-08, 0.9892451, 0.14511903, 0.8491053, -0.07662393, 0.5223358, -2.1453686, 4.9193497, -26.275925)
+transform = Transform3D(0.5279302, 0.12323971, -0.84011316, 1.1174162e-08, 0.9892453, 0.1451196, 0.8491076, -0.07662395, 0.5223379, -2.1453686, 4.9193497, -26.275925)
 use_model_front = true
 
 [node name="BlazenekOkoniowy" type="MeshInstance3D" parent="EndCutscene/1_Blazenek/Path3D/PathFollow3D" unique_id=1534412794]
@@ -2234,7 +2241,8 @@ mesh = ExtResource("43_4vy2l")
 [node name="Grupa_Blazenkow" type="Node3D" parent="EndCutscene" unique_id=1886082270]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.577003, 30.25076, -144.80812)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="EndCutscene/Grupa_Blazenkow" unique_id=971329072]
+[node name="EndCutsceneAnim2" type="AnimationPlayer" parent="EndCutscene/Grupa_Blazenkow" unique_id=971329072]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_4vy2l")
 autoplay = &"school_of_fish_anim"
 
@@ -2243,7 +2251,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5118065, 0)
 curve = SubResource("Curve3D_qf3ym")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="EndCutscene/Grupa_Blazenkow/Path3D" unique_id=131320410]
-transform = Transform3D(0.52409106, -0.08293319, -0.84743613, -3.7247327e-09, 0.9950769, -0.09738524, 0.8514865, 0.051045492, 0.52159804, 4.559841, 7.484642, -74.272675)
+transform = Transform3D(0.5240896, -0.082933314, -0.8474374, -3.7247223e-09, 0.9950784, -0.09738539, 0.8514841, 0.051045567, 0.5215988, 4.559841, 7.484642, -74.272675)
 use_model_front = true
 
 [node name="GroupBlazenki" parent="EndCutscene/Grupa_Blazenkow/Path3D/PathFollow3D" unique_id=811559489 instance=ExtResource("38_3h5ww")]
+
+[node name="EndCutsceneCamera" type="Camera3D" parent="EndCutscene" unique_id=1601263315]
+unique_name_in_owner = true
+transform = Transform3D(0.8571719, -0.058303043, -0.5117197, 0, 0.9935719, -0.113203116, 0.5150304, 0.09703453, 0.85166186, 17.71817, 31.039593, -142.24316)
+
+[node name="EndGameArea" type="Area3D" parent="." unique_id=1214806643]
+unique_name_in_owner = true
+transform = Transform3D(0.86982644, 0, -0.49335784, 0, 1, 0, 0.49335784, 0, 0.86982644, 10.321817, 30.827858, -124.779015)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EndGameArea" unique_id=731345953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5084991, 14.636566, -1.677269)
+shape = SubResource("BoxShape3D_ttdih")
+debug_color = Color(0, 0, 1, 1)

@@ -215,7 +215,8 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0
 
 [node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=1758125523]
 unique_name_in_owner = true
-transform = Transform3D(0.9746978, -2.980232e-08, -0.22352612, 0.074832976, 0.94229484, 0.32631323, 0.2106275, -0.33478388, 0.9184529, -0.37076172, 0.4795496, 1.8175921)
+transform = Transform3D(0.97469777, -2.9802319e-08, -0.22352612, 0.074832976, 0.9422948, 0.32631323, 0.21062748, -0.33478388, 0.9184529, -0.37076172, 0.4795496, 1.8175921)
+current = true
 
 [node name="FinTimer" type="Timer" parent="." unique_id=1662488199]
 unique_name_in_owner = true
