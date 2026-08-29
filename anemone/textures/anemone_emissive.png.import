@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck4vsf3pa76ma"
-path.s3tc="res://.godot/imported/anemone_clean_2.png-622eb75f58b8a9ce021f48d3c0f91a1d.s3tc.ctex"
+uid="uid://dckwhfya1nugg"
+path.s3tc="res://.godot/imported/anemone_emissive.png-45b1eb5c3312af3d3f9023a7e8ee73f1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://anemone/textures/anemone_clean_2.png"
-dest_files=["res://.godot/imported/anemone_clean_2.png-622eb75f58b8a9ce021f48d3c0f91a1d.s3tc.ctex"]
+source_file="res://anemone/textures/anemone_emissive.png"
+dest_files=["res://.godot/imported/anemone_emissive.png-45b1eb5c3312af3d3f9023a7e8ee73f1.s3tc.ctex"]
 
 [params]
 

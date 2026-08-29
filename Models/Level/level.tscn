@@ -267,14 +267,11 @@ transform = Transform3D(0.7035042, -0.18465437, -0.6862831, 0.08362299, 0.980455
 [node name="Anemone7" parent="Anemones" unique_id=226674923 instance=ExtResource("2_228jq")]
 transform = Transform3D(-0.81282735, -0.15697187, -0.5609561, -0.26812088, 0.9557485, 0.1210617, 0.5171298, 0.2488063, -0.81894606, 13.358591, 21.93102, -65.99063)
 
-[node name="Anemone8" parent="Anemones" unique_id=1829227891 instance=ExtResource("2_228jq")]
-transform = Transform3D(-0.5364218, -0.17638342, -0.8253125, -0.22775309, 0.97188824, -0.05967839, 0.8126378, 0.15595472, -0.5615139, -28.534552, 11.640157, -46.84242)
-
 [node name="Anemone9" parent="Anemones" unique_id=127276568 instance=ExtResource("2_228jq")]
 transform = Transform3D(-0.19512798, 0.005646108, -0.9807616, 0.2450962, 0.9685363, -0.04318753, 0.94965947, -0.24880809, -0.19037238, -35.535873, 3.1763866, 8.41892)
 
 [node name="Anemone10" parent="Anemones" unique_id=1050349337 instance=ExtResource("2_228jq")]
-transform = Transform3D(-0.8572391, -0.068035275, -0.51040405, -0.14639056, 0.98253155, 0.11489905, 0.49367088, 0.17321432, -0.85222405, -3.503262, 7.7777357, -23.752329)
+transform = Transform3D(-0.39083368, 0.049254645, -0.9191425, -0.14639056, 0.98253155, 0.11489905, 0.90874577, 0.17946023, -0.37679592, 1.0346181, 9.190859, -29.058187)
 
 [node name="Anemone11" parent="Anemones" unique_id=1024097343 instance=ExtResource("2_228jq")]
 transform = Transform3D(-0.99484944, -0.010380984, 0.100833505, -3.4924597e-10, 0.9947423, 0.102410495, -0.10136645, 0.10188297, -0.9896187, 44.150097, 8.121346, -20.11559)
@@ -327,6 +324,10 @@ mesh = ExtResource("3_4vo3p")
 transform = Transform3D(1.7376907, 0, -3.6365163, 0, 4.4933524, 0, 3.069868, 0, 2.05844, -132.17607, -57.736313, 76.028564)
 mesh = ExtResource("3_4vo3p")
 
+[node name="Plate_T44" type="MeshInstance3D" parent="TallPlates" unique_id=1238568374]
+transform = Transform3D(-0.074225545, 0, -2.1330721, 0, 5.1011705, 0, 1.8006935, 0, -0.087926686, -132.07324, -57.180786, 41.72512)
+mesh = ExtResource("3_4vo3p")
+
 [node name="Plate_T10" type="MeshInstance3D" parent="TallPlates" unique_id=1863312111]
 transform = Transform3D(2.2056057, 2.8188617, 3.9142046, 0.0091180075, 8.367676, -1.8316162, -3.5542352, 1.7707292, 2.4242892, -173.92334, -148.29636, -98.09717)
 mesh = ExtResource("3_4vo3p")
@@ -375,12 +376,48 @@ mesh = ExtResource("2_se82u")
 transform = Transform3D(-1.8523543, -0.3207333, -2.5066254, -0.88099265, 2.5552056, 0.12335324, 2.5910847, 0.63950306, -1.7500339, -63.723206, -24.920486, -228.23528)
 mesh = ExtResource("2_se82u")
 
+[node name="Plate_T36" type="MeshInstance3D" parent="TallPlates" unique_id=1479037052]
+transform = Transform3D(-2.3945036, -0.39157215, -0.192671, -0.3337437, 3.1195617, 0.5194467, 0.1325835, 0.78074706, -2.1721392, -47.70242, -62.75167, -79.03687)
+mesh = ExtResource("2_se82u")
+
+[node name="Plate_T37" type="MeshInstance3D" parent="TallPlates" unique_id=1942607877]
+transform = Transform3D(-1.4146345, -0.2325028, -0.14421247, -0.19717047, 1.8522942, 0.3888011, 0.078328215, 0.46358222, -1.6258262, -32.42424, -2.7903624, -46.26935)
+mesh = ExtResource("2_se82u")
+
+[node name="Plate_T43" type="MeshInstance3D" parent="TallPlates" unique_id=132579557]
+transform = Transform3D(-0.77150714, -0.011055326, -0.55332255, -0.1218983, 1.4662801, 0.2623313, 0.4147455, 0.4103913, -0.9521852, -3.0367756, -5.8541155, -29.078789)
+mesh = ExtResource("2_se82u")
+
+[node name="Plate_T38" type="MeshInstance3D" parent="TallPlates" unique_id=629755797]
+transform = Transform3D(-1.261226, -0.068242006, -0.10148312, -0.17578854, 0.5436678, 0.2736015, 0.06983401, 0.13606624, -1.144103, -82.77289, 11.186871, -51.518578)
+mesh = ExtResource("2_se82u")
+
 [node name="Plate_T22" type="MeshInstance3D" parent="TallPlates" unique_id=1400003352]
 transform = Transform3D(-2.4753478, 0, 1.9531652, 0, 3.209703, 0, -1.9531652, 0, -2.4753478, -134.68658, -8.144976, -238.40611)
 mesh = ExtResource("2_se82u")
 
 [node name="Plate_T23" type="MeshInstance3D" parent="TallPlates" unique_id=483072814]
 transform = Transform3D(-2.064024, 0, 3.4940212, 0, 4.43585, 0, -2.9495769, 0, -2.4450097, -177.67734, -23.808348, -164.66809)
+mesh = ExtResource("3_4vo3p")
+
+[node name="Plate_T35" type="MeshInstance3D" parent="TallPlates" unique_id=766864770]
+transform = Transform3D(-1.4665924, 0, 2.482677, 0, 4.5033236, 0, -2.095822, 0, -1.7373018, -84.82699, -23.808348, -89.679245)
+mesh = ExtResource("3_4vo3p")
+
+[node name="Plate_T39" type="MeshInstance3D" parent="TallPlates" unique_id=1315847542]
+transform = Transform3D(-0.057541195, 0.3427965, -1.2666514, -0.18055747, 1.4492043, 0.301742, 1.2961493, 0.21709688, -0.014198012, 16.33179, 24.868551, -113.14838)
+mesh = ExtResource("2_se82u")
+
+[node name="Plate_T40" type="MeshInstance3D" parent="TallPlates" unique_id=488748082]
+transform = Transform3D(-0.032489065, 0.30096677, -1.0281662, -0.10194681, 1.2723652, 0.24493013, 0.7318349, 0.19060542, -0.011524905, 58.859863, 39.517822, -168.603)
+mesh = ExtResource("2_se82u")
+
+[node name="Plate_T41" type="MeshInstance3D" parent="TallPlates" unique_id=1467043668]
+transform = Transform3D(-0.0019132573, 0.15078777, -1.2347908, -0.00989835, 0.87131447, 0.21369314, 0.93342197, 0.009548828, -0.00026485324, 52.303043, 42.505527, -141.93706)
+mesh = ExtResource("2_se82u")
+
+[node name="Plate_T42" type="MeshInstance3D" parent="TallPlates" unique_id=205197083]
+transform = Transform3D(-1.5996422, 0, -0.9951635, 0, 3.9116337, 0, 0.8966507, 0, -1.7753924, 22.123566, 24.713364, -138.71768)
 mesh = ExtResource("3_4vo3p")
 
 [node name="Plate_T24" type="MeshInstance3D" parent="TallPlates" unique_id=35661526]
@@ -456,6 +493,10 @@ mesh = ExtResource("2_ku0es")
 
 [node name="Plate_L7" type="MeshInstance3D" parent="LargePlates" unique_id=1715506880]
 transform = Transform3D(-1.1454408, 1.0420767, -0.16702083, 0.2420287, 1.7779468, 0.64686173, 0.5215912, 1.4634506, -0.66694224, -127.25231, 26.827707, -158.87717)
+mesh = ExtResource("2_ku0es")
+
+[node name="Plate_L42" type="MeshInstance3D" parent="LargePlates" unique_id=1390387620]
+transform = Transform3D(-1.2379936, -1.8805467, -0.31981236, -0.5719992, 4.4330034, 0.1347584, 0.23496199, 0.8834244, -1.3569986, -107.85629, 5.51293, -114.08886)
 mesh = ExtResource("2_ku0es")
 
 [node name="Plate_L8" type="MeshInstance3D" parent="LargePlates" unique_id=591534160]
@@ -617,10 +658,6 @@ mesh = ExtResource("6_ybrex")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.814619, 2.9394388, 32.687927)
 mesh = ExtResource("6_ybrex")
 
-[node name="Rock_6" type="MeshInstance3D" parent="Rocks" unique_id=1001455441]
-transform = Transform3D(-0.16715872, 0, -1.9499058, 0, 1, 0, 0.98593, 0, -0.33059517, 14.772694, 0.94084454, 3.3203607)
-mesh = ExtResource("6_ybrex")
-
 [node name="Rock_7" type="MeshInstance3D" parent="Rocks" unique_id=103646247]
 transform = Transform3D(0.6368471, 0, -1.4708638, 0, 1.6028142, 0, 1.4708638, 0, 0.6368471, 117.72274, 13.062653, -36.483246)
 mesh = ExtResource("6_ybrex")
@@ -638,15 +675,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.5663, 3.5580907, 41.33053
 mesh = ExtResource("6_ybrex")
 
 [node name="Rock_11" type="MeshInstance3D" parent="Rocks" unique_id=1372152746]
-transform = Transform3D(-0.13712311, 0, -3.5648189, 0, 3.567455, 0, 3.5648189, 0, -0.13712311, -88.88635, -6.957089, -19.691877)
+transform = Transform3D(-0.109971866, 0, -2.4212165, 0, 2.8786013, 0, 2.8589623, 0, -0.09313369, 58.73651, 2.7476306, 36.983624)
 mesh = ExtResource("6_ybrex")
 
 [node name="Rock_12" type="MeshInstance3D" parent="Rocks" unique_id=59616729]
 transform = Transform3D(-0.10287449, 0, -2.67445, 0, 2.6764278, 0, 2.67445, 0, -0.10287449, -25.37959, 30.44725, -127.44509)
 mesh = ExtResource("6_ybrex")
 
+[node name="Rock_90" type="MeshInstance3D" parent="Rocks" unique_id=240093671]
+transform = Transform3D(-0.10287449, 0, -2.67445, 0, 2.6764278, 0, 2.67445, 0, -0.10287449, 5.906337, 25.030106, -90.30599)
+mesh = ExtResource("6_ybrex")
+
 [node name="Rock_84" type="MeshInstance3D" parent="Rocks" unique_id=1762396187]
-transform = Transform3D(-0.8586552, 0, -0.56334996, 0, 1.3614899, 0, 1.0565821, 0, -0.45781898, -121.6862, 10.307447, -98.48021)
+transform = Transform3D(-0.8586552, 0, -0.56334996, 0, 1.3614899, 0, 1.0565821, 0, -0.45781898, -126.466515, 7.3692303, -77.4294)
 mesh = ExtResource("6_ybrex")
 
 [node name="Rock_13" type="MeshInstance3D" parent="Rocks" unique_id=801834476]
@@ -762,7 +803,7 @@ transform = Transform3D(0.44626448, 0.098582275, 1.0480341, -0.24662605, 1.11643
 mesh = ExtResource("8_4vo3p")
 
 [node name="Rock_41" type="MeshInstance3D" parent="Rocks" unique_id=996807710]
-transform = Transform3D(-0.87414163, -0.19310264, -0.44563207, -0.21570504, 0.97645867, 0, 0.43514118, 0.09612506, -0.8952162, 36.729797, -2.069446, -25.212196)
+transform = Transform3D(-0.8525496, -0.21305618, -0.44563207, -0.21037695, 1.0773574, 0, 0.42439282, 0.10605778, -0.8952162, 74.611755, 8.022974, -52.965218)
 mesh = ExtResource("8_4vo3p")
 
 [node name="Rock_42" type="MeshInstance3D" parent="Rocks" unique_id=1280015408]
@@ -790,7 +831,7 @@ transform = Transform3D(1.3822222, 0, 0, 0, 1.3822222, 0, 0, 0, 1.3822222, 40.58
 mesh = ExtResource("11_c51m8")
 
 [node name="Rock_48" type="MeshInstance3D" parent="Rocks" unique_id=341812932]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.59248, 5.8571625, -49.489983)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -122.74915, 5.8571625, -49.166718)
 mesh = ExtResource("11_c51m8")
 
 [node name="Rock_49" type="MeshInstance3D" parent="Rocks" unique_id=1285189182]
@@ -838,11 +879,15 @@ transform = Transform3D(-0.26813352, -0.17831166, -0.9467363, -0.35333896, 0.932
 mesh = ExtResource("14_l8yjx")
 
 [node name="Rock_60" type="MeshInstance3D" parent="Rocks" unique_id=637752085]
-transform = Transform3D(2.2135556, 0.10137408, -0.28994724, -0.17943308, 1.3131026, -0.05163554, 0.27018467, 0.04151589, 2.3411753, -40.124256, 0.1933775, 1.2214093)
+transform = Transform3D(2.0070086, 0.091914855, -0.26289222, -0.16269016, 1.1905768, -0.046817422, 0.2449737, 0.03764204, 2.12272, -36.74896, 0.1933775, 1.7267213)
 mesh = ExtResource("14_l8yjx")
 
 [node name="Rock_83" type="MeshInstance3D" parent="Rocks" unique_id=922286413]
-transform = Transform3D(-1.3157494, -0.36061576, -2.5816066, -0.6711941, 2.397752, -0.10101433, 2.3892627, 0.4749905, -1.450048, -85.19393, 16.676086, -86.43793)
+transform = Transform3D(2.1116977, -1.2084811, -1.3103575, 0.7245755, 2.0640855, -1.4380022, 1.7046993, 0.6196765, 2.2344246, -61.733604, 4.9935102, -35.485847)
+mesh = ExtResource("14_l8yjx")
+
+[node name="Rock_89" type="MeshInstance3D" parent="Rocks" unique_id=2140956137]
+transform = Transform3D(1.7736428, 0.41079512, -2.0299263, -0.2281936, 3.0883887, 0.27708352, 1.9995813, -0.01192981, 1.8321807, 28.795038, 8.134242, -15.637537)
 mesh = ExtResource("14_l8yjx")
 
 [node name="Rock_61" type="MeshInstance3D" parent="Rocks" unique_id=1236702259]
@@ -942,7 +987,11 @@ transform = Transform3D(4.5014877, -1.6919099, -4.0166545, 0.7551241, 10.49638, 
 mesh = ExtResource("14_l8yjx")
 
 [node name="Rock_81" type="MeshInstance3D" parent="Rocks" unique_id=1877042282]
-transform = Transform3D(-0.8672043, -0.2668467, 0.42041582, -0.37817386, 0.9021964, -0.20742784, -0.32394627, -0.33887267, -0.883303, -110.57924, 7.7989655, -102.38591)
+transform = Transform3D(-0.8672043, -0.2668467, 0.42041582, -0.37817386, 0.9021964, -0.20742784, -0.32394627, -0.33887267, -0.883303, -41.84844, 20.658695, -79.094444)
+mesh = ExtResource("8_4vo3p")
+
+[node name="Rock_88" type="MeshInstance3D" parent="Rocks" unique_id=898445205]
+transform = Transform3D(-0.6205318, -0.22217332, 0.38085476, -0.27060392, 0.7511578, -0.18790892, -0.23180114, -0.2821413, -0.8001843, 107.29249, 9.558599, -51.483597)
 mesh = ExtResource("8_4vo3p")
 
 [node name="Trash" type="Node3D" parent="." unique_id=1305716318]
@@ -1118,7 +1167,7 @@ transform = Transform3D(0.7576271, 0.4984223, -0.42139807, -0.65257984, 0.566733
 mesh = ExtResource("28_asfil")
 
 [node name="Coral_16" type="MeshInstance3D" parent="Corals" unique_id=894693962]
-transform = Transform3D(0.99999994, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 10.164663, 24.970318, -84.182884)
+transform = Transform3D(0.98028225, -0.10053955, -0.17011312, -0.014085253, 0.82314414, -0.56765795, 0.19709964, 0.5588611, 0.8054975, 12.54177, 27.812784, -91.27908)
 mesh = ExtResource("28_asfil")
 
 [node name="Coral_17" type="MeshInstance3D" parent="Corals" unique_id=2027734280]
@@ -1505,7 +1554,7 @@ instance_shader_parameters/wave_offset = 4.0
 mesh = ExtResource("32_aq72t")
 
 [node name="Algae_30" type="MeshInstance3D" parent="Algae" unique_id=150706415]
-transform = Transform3D(1, 0, 0, 0, 0.7552928, 0, 0, 0, 1, -47.015266, 11.1366, -53.89593)
+transform = Transform3D(1, 0, 0, 0, 0.7552928, 0, 0, 0, 1, -52.196766, 14.795768, -70.444214)
 instance_shader_parameters/wave_offset = 4.0
 mesh = ExtResource("32_aq72t")
 
@@ -1565,7 +1614,7 @@ instance_shader_parameters/wave_offset = 4.0
 mesh = ExtResource("32_aq72t")
 
 [node name="Algae_42" type="MeshInstance3D" parent="Algae" unique_id=1651773491]
-transform = Transform3D(1, 0, 0, 0, 0.8672601, 0, 0, 0, 1, 34.644974, 20.422176, -76.4443)
+transform = Transform3D(1, 0, 0, 0, 0.8672601, 0, 0, 0, 1, 21.658691, 25.954609, -82.29039)
 instance_shader_parameters/wave_offset = 2.0
 mesh = ExtResource("32_aq72t")
 
@@ -1733,7 +1782,7 @@ transform = Transform3D(-0.542163, 0, -0.84027344, 0, 1, 0, 0.84027344, 0, -0.54
 mesh = ExtResource("33_vjsrr")
 
 [node name="Algae_79" type="MeshInstance3D" parent="Algae" unique_id=1270630350]
-transform = Transform3D(-0.9949991, 1.3473849e-08, -1.5421032, -0.39304692, 1.7746282, 0.2536026, 1.4911727, 0.46776074, -0.96213776, -48.856388, 1.4036138, -27.18702)
+transform = Transform3D(-0.9949991, 1.3473849e-08, -1.5421032, -0.39304692, 1.7746282, 0.2536026, 1.4911727, 0.46776074, -0.96213776, -53.249565, -0.52959657, -19.852636)
 mesh = ExtResource("33_vjsrr")
 
 [node name="Algae_80" type="MeshInstance3D" parent="Algae" unique_id=2032188573]
@@ -1793,11 +1842,11 @@ transform = Transform3D(0.6955198, -0.18836343, 0.69337684, 0.26140705, 0.965228
 mesh = ExtResource("34_asfil")
 
 [node name="Algae_94" type="MeshInstance3D" parent="Algae" unique_id=1497143589]
-transform = Transform3D(-0.0019020477, 0.00028395557, -0.9999981, 0.14765306, 0.9890392, 0, 0.9890374, -0.1476528, -0.0019231268, -26.81065, 11.103413, -44.859028)
+transform = Transform3D(-0.001902048, 0.00028395574, -0.9999982, -0.5837124, 0.8119593, 0.0013408117, 0.81195825, 0.5837138, -0.0013786369, -64.06079, -0.017033339, -19.745096)
 mesh = ExtResource("34_asfil")
 
 [node name="Algae_95" type="MeshInstance3D" parent="Algae" unique_id=1519077241]
-transform = Transform3D(-0.0019020477, 0.00028395557, -0.9999981, 0.14765306, 0.9890392, 0, 0.9890374, -0.1476528, -0.0019231268, -56.079758, 6.3842144, -37.7409)
+transform = Transform3D(-0.023537496, -0.14477979, -0.98918396, 0.14577733, 0.97838515, -0.14666797, 0.9890374, -0.1476528, -0.0019231268, -36.16881, 1.0002112, -8.851711)
 mesh = ExtResource("34_asfil")
 
 [node name="Algae_96" type="MeshInstance3D" parent="Algae" unique_id=1245270118]
@@ -1817,7 +1866,7 @@ transform = Transform3D(0.99668235, 0.08139246, 0, -0.08139249, 0.996682, 0, 0, 
 mesh = ExtResource("34_asfil")
 
 [node name="Algae_100" type="MeshInstance3D" parent="Algae" unique_id=1092109579]
-transform = Transform3D(0.10480422, 0.008558667, -0.99445605, -0.08139249, 0.996682, 0, 0.9911568, 0.08094122, 0.10515308, -4.1688023, 4.6937604, -16.358326)
+transform = Transform3D(0.10480422, 0.008558667, -0.99445605, -0.08139249, 0.996682, 0, 0.9911568, 0.08094122, 0.10515308, -0.8950176, 8.6963825, -22.603125)
 mesh = ExtResource("34_asfil")
 
 [node name="Algae_101" type="MeshInstance3D" parent="Algae" unique_id=396821992]
@@ -1913,7 +1962,7 @@ autoplay = &"school_of_fish_anim"
 curve = SubResource("Curve3D_y6yt5")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfAnioly/Path3D" unique_id=38454615]
-transform = Transform3D(0.79301393, 0.041114617, 0.6075673, 1.8623703e-09, 0.9975565, -0.0675065, -0.60896134, 0.05354111, 0.7911986, 38.723434, -10.001644, -39.789795)
+transform = Transform3D(0.79301393, 0.041114617, 0.6075682, 1.8623703e-09, 0.9975565, -0.0675066, -0.60896134, 0.05354111, 0.7911998, 38.723434, -10.001644, -39.789795)
 use_model_front = true
 
 [node name="GroupAnioly" parent="Fish/SchoolOfAnioly/Path3D/PathFollow3D" unique_id=1834075495 instance=ExtResource("37_luva5")]
@@ -1981,7 +2030,7 @@ autoplay = &"school_of_fish_anim"
 curve = SubResource("Curve3D_3h5ww")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfBlazenki/Path3D" unique_id=2061555308]
-transform = Transform3D(0.99930114, -0.009644068, -0.03125993, -1.3967555e-09, 0.9554087, -0.29475915, 0.032713342, 0.29459935, 0.9549036, 31.360382, -13.155338, -13.662781)
+transform = Transform3D(0.9993004, -0.009644068, -0.03125993, -1.3967545e-09, 0.9554087, -0.29475915, 0.03271332, 0.29459935, 0.9549036, 31.360382, -13.155338, -13.662781)
 use_model_front = true
 
 [node name="GroupOfBlazenki" parent="Fish/SchoolOfBlazenki/Path3D/PathFollow3D" unique_id=1429879838 instance=ExtResource("38_3h5ww")]
@@ -2092,6 +2141,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.42334, 9.385111, 42.450703
 
 [node name="BubblesScattered_15" parent="Bubbles" unique_id=883977112 instance=ExtResource("37_82sne")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104.004486, -0.092977524, -56.60686)
-
-[node name="BubblesScattered_16" parent="Bubbles" unique_id=1807601314 instance=ExtResource("37_82sne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.1715, 0.5047269, -1.0722847)
