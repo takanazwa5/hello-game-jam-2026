@@ -113,66 +113,51 @@ shadow_mesh = SubResource("ArrayMesh_artmt")
 
 [sub_resource type="Animation" id="Animation_nvf21"]
 length = 0.001
-tracks/0/type = "value"
+tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CameraRig/Camera3D:position")
+tracks/0/path = NodePath("CameraRig/Node3D/Camera3D:position:z")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.37076172, 0.4795496, 1.8175921)]
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.500221, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
-tracks/1/type = "value"
+tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("CameraRig/Camera3D:rotation")
+tracks/1/path = NodePath("CameraRig/Node3D:rotation:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-0.33240068, -0.2387313, 0.079249345)]
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-2.268928, 0, 0, 1.8130904, 0.11882901),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CameraRig/Node3D:rotation:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.5235988, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 
 [sub_resource type="Animation" id="Animation_artmt"]
 resource_name = "game_start"
-length = 3.0000000000000004
+length = 3.0
 step = 1.0
-tracks/0/type = "value"
+tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CameraRig/Camera3D:position")
-tracks/0/interp = 2
+tracks/0/path = NodePath("blazenek_okoniowy2")
+tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2, 3),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(-0.37076172, 0.4795496, 1.8175921), Vector3(-0.37076172, 0.4795496, 1.8175921), Vector3(0, 0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CameraRig/Camera3D:rotation")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 2, 3),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(-0.33240068, -0.2387313, 0.079249345), Vector3(-0.33240068, -0.2387313, 0.079249345), Vector3(0, 0, 0)]
-}
-tracks/2/type = "method"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("blazenek_okoniowy2")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
 "times": PackedFloat32Array(3),
 "transitions": PackedFloat32Array(1),
 "values": [{
@@ -180,19 +165,52 @@ tracks/2/keys = {
 "method": &"queue_free"
 }]
 }
-tracks/3/type = "method"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath(".")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
 "times": PackedFloat32Array(3),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [&"_can_move", true],
 "method": &"set"
 }]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CameraRig/Node3D:rotation:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(-2.268928, 0, 0, 1.9873917, -0.053805113, 0, -1.5680426, 1.3601248, 0, 0),
+"times": PackedFloat32Array(0, 3)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CameraRig/Node3D/Camera3D:position:z")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(1.4867235, 0, 0, 1.8018057, -0.16112506, 0, -0.59045076, 3.190046, 0, 0),
+"times": PackedFloat32Array(0, 3)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CameraRig/Node3D:rotation:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(-0.5235988, -0.23558927, -0.19183332, 1.3098718, 1.0665896, 0, -1.2535042, -1.0337328, 0, 0),
+"times": PackedFloat32Array(0, 3)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dxcub"]
@@ -211,11 +229,14 @@ debug_color = Color(1, 0, 0.69803923, 1)
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=658114578]
 unique_name_in_owner = true
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0.4)
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0, 0, 0.4)
 
-[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=1758125523]
+[node name="Node3D" type="Node3D" parent="CameraRig" unique_id=1231319822]
+transform = Transform3D(-0.6427876, 0.38302228, -0.6634139, 0, 0.8660255, 0.49999994, 0.7660444, 0.32139385, -0.55667037, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig/Node3D" unique_id=1758125523]
 unique_name_in_owner = true
-transform = Transform3D(0.97469777, -2.9802319e-08, -0.22352612, 0.074832976, 0.9422948, 0.32631323, 0.21062748, -0.33478388, 0.9184529, -0.37076172, 0.4795496, 1.8175921)
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, 0, 1.500221)
 current = true
 
 [node name="FinTimer" type="Timer" parent="." unique_id=1662488199]

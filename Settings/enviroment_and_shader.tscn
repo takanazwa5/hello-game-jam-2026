@@ -38,10 +38,6 @@ material = SubResource("ShaderMaterial_7dy88")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 17.0
-offset_top = 1.0
-offset_right = 17.0
-offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -50,3 +46,8 @@ mouse_filter = 2
 environment = ExtResource("2_xs5lt")
 camera_attributes = SubResource("CameraAttributesPractical_urft8")
 compositor = SubResource("Compositor_3elb6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=700607891]
+transform = Transform3D(0.87227756, -0.23426297, -0.42924672, 0.4890112, 0.41786852, 0.7656724, 0, -0.87778527, 0.47905454, 0, 0, 0)
+light_color = Color(0.54841316, 0.81372964, 0.824159, 1)
+light_energy = 0.2

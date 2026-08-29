@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://dtgyu88vkbtt" path="res://VFX/resources/materials/mat_bubble.tres" id="1_88eku"]
 
 [sub_resource type="Curve" id="Curve_jo4bi"]
-_data = [Vector2(0.6966292, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+_data = [Vector2(0.49673206, 0.30337083), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_mdv60"]
