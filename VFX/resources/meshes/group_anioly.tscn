@@ -43,3 +43,18 @@ mesh = ExtResource("1_iiu3f")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47379005, 3.2790954, 2.142241)
 instance_shader_parameters/vertical_bend_offset = 8.0
 mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol9" type="MeshInstance3D" parent="." unique_id=1121891161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96146405, 8.100656, -2.5027022)
+instance_shader_parameters/vertical_bend_offset = 8.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol11" type="MeshInstance3D" parent="." unique_id=1135850138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6744652, 6.2681427, -0.07263136)
+instance_shader_parameters/vertical_bend_offset = 8.0
+mesh = ExtResource("1_iiu3f")
+
+[node name="Aniol10" type="MeshInstance3D" parent="." unique_id=2071256551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.384863, -5.430172, 6.814942)
+instance_shader_parameters/vertical_bend_offset = 8.0
+mesh = ExtResource("1_iiu3f")
