@@ -36,52 +36,11 @@
 [ext_resource type="ArrayMesh" uid="uid://brwaxefuwc3l1" path="res://Models/algaes/meshes/algae3.glb" id="34_asfil"]
 [ext_resource type="ArrayMesh" uid="uid://c6w1flr0biojj" path="res://Models/algaes/meshes/algae4.glb" id="35_glbos"]
 [ext_resource type="PackedScene" uid="uid://b041fa8wqr0bf" path="res://VFX/resources/meshes/group_apogony.tscn" id="36_opmmn"]
+[ext_resource type="PackedScene" uid="uid://bxyx8l7aa8hbw" path="res://VFX/resources/meshes/group_garbiki.tscn" id="37_3h5ww"]
+[ext_resource type="PackedScene" uid="uid://4wy018l3xj62" path="res://VFX/particles/particles_bubbles_scattered.tscn" id="37_82sne"]
 [ext_resource type="PackedScene" uid="uid://0lalv60333n8" path="res://VFX/resources/meshes/group_anioly.tscn" id="37_luva5"]
 [ext_resource type="PackedScene" uid="uid://bdw3g6yhahp3i" path="res://VFX/resources/meshes/group_blazenki.tscn" id="38_3h5ww"]
-
-[sub_resource type="Animation" id="Animation_7t6ro"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
-[sub_resource type="Animation" id="Animation_o8p4t"]
-resource_name = "school_of_fish_anim"
-length = 30.0
-loop_mode = 1
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -5, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0, 30)
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_hpjxn"]
-_data = {
-&"RESET": SubResource("Animation_7t6ro"),
-&"school_of_fish_anim": SubResource("Animation_o8p4t")
-}
-
-[sub_resource type="Curve3D" id="Curve3D_m8677"]
-closed = true
-_data = {
-"points": PackedVector3Array(-4.2298985, 3.4849434, -2.3300781, 4.2298985, -3.4849434, 2.3300781, 17.209568, -0.23370743, -10.757034, 6.242758, -2.9754791, -1.8148651, -6.242758, 2.9754791, 1.8148651, 9.4087925, -0.34729767, 6.215866, 4.722906, -1.7210312, 0.6925354, -4.722906, 1.7210312, -0.6925354, -6.4871883, -0.7745285, 10.394562, 0.68945885, 0.760643, 3.529251, -0.68945885, -0.760643, -3.529251, -12.643568, 0.042617798, -1.9155273, -9.437498, -3.4630852, 1.6376495, 9.437498, 3.4630852, -1.6376495, -3.8615913, 3.3281975, -17.34114),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
-}
-point_count = 5
+[ext_resource type="PackedScene" uid="uid://b7lthhdhtirge" path="res://VFX/particles/particles_bubbles_point.tscn" id="41_w8p0i"]
 
 [sub_resource type="Animation" id="Animation_82sne"]
 length = 0.001
@@ -127,6 +86,66 @@ _data = {
 }
 point_count = 5
 
+[sub_resource type="Curve3D" id="Curve3D_luva5"]
+closed = true
+_data = {
+"points": PackedVector3Array(12.594109, -6.3423195, -3.781372, -12.594109, 6.3423195, 3.781372, 50.300644, 2.163311, -24.838257, 10.167725, 0.19345093, -1.2439117, -10.167725, -0.19345093, 1.2439117, 14.366531, -6.9473534, -20.358078, -1.7970276, 2.6796608, 15.087677, 1.7970276, -2.6796608, -15.087677, -9.447939, 10.884785, -47.63675, -15.49132, -2.029663, -6.675873, 15.49132, 2.029663, 6.675873, 22.12652, -11.5313835, -53.363068),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
+
+[sub_resource type="Animation" id="Animation_7t6ro"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_o8p4t"]
+resource_name = "school_of_fish_anim"
+length = 35.0
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -5.8333335, -0.1665081, 0.005555471, 0.00015857672, 1, -5, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 35, 35.033333)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hpjxn"]
+_data = {
+&"RESET": SubResource("Animation_7t6ro"),
+&"school_of_fish_anim": SubResource("Animation_o8p4t")
+}
+
+[sub_resource type="Curve3D" id="Curve3D_m8677"]
+closed = true
+_data = {
+"points": PackedVector3Array(7.2113814, -3.044456, -2.8458943, -7.2113814, 3.044456, 2.8458943, 13.887684, -0.2201767, 11.314453, 9.940638, -2.4627113, -0.63404846, -9.940638, 2.4627113, 0.63404846, -7.6826744, -3.0482826, 12.206696, -10.344746, 7.1985016, 4.406555, 10.344746, -7.1985016, -4.406555, -2.6459541, 2.3651047, -7.7810364),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
+
+[sub_resource type="Curve3D" id="Curve3D_82sne"]
+closed = true
+_data = {
+"points": PackedVector3Array(-15.062534, -5.4129105, -1.4075317, 15.062534, 5.4129105, 1.4075317, 16.859135, 17.468151, 63.076553, 4.0957947, -0.16686249, 8.821358, -4.0957947, 0.16686249, -8.821358, 30.504848, 22.04784, 35.66529, 14.499041, -0.20927429, -0.4073105, -14.499041, 0.20927429, 0.4073105, -12.984804, -3.7577133, 33.583252, 8.008602, -1.8216057, 6.571739, -8.008602, 1.8216057, -6.571739, -51.65617, 16.208351, 30.383598, -13.0383, 8.757629, 6.3565216, 13.0383, -8.757629, -6.3565216, -54.27617, 9.00135, -1.6237183, -0.74628925, -6.875183, -15.939133, 0.74628925, 6.875183, 15.939133, -12.611178, 0.48724747, 23.469894),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 6
+
 [sub_resource type="Animation" id="Animation_rkvba"]
 length = 0.001
 tracks/0/type = "bezier"
@@ -152,9 +171,9 @@ tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2),
+"handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -5, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0, 30)
+"times": PackedFloat32Array(0, 20)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_btcbx"]
@@ -163,10 +182,62 @@ _data = {
 &"school_of_fish_anim": SubResource("Animation_ltrux")
 }
 
+[sub_resource type="Curve3D" id="Curve3D_3h5ww"]
+closed = true
+_data = {
+"points": PackedVector3Array(0.4453354, 4.199192, -13.603729, -0.4453354, -4.199192, 13.603729, 31.360382, -13.155338, -13.662781, 2.2821484, -1.0730019, 11.4366, -2.2821484, 1.0730019, -11.4366, 7.9651413, -16.101591, -12.472046, -3.7942657, -0.42034912, 5.0989532, 3.7942657, 0.42034912, -5.0989532, 20.443726, -14.864368, -25.845718),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
+
 [sub_resource type="Curve3D" id="Curve3D_ex44p"]
 closed = true
 _data = {
-"points": PackedVector3Array(-2.4906626, 0.895164, -3.599697, 2.4906626, -0.895164, 3.599697, 13.036023, 0, -11.135908, 7.2113814, -3.044456, -2.8458943, -7.2113814, 3.044456, 2.8458943, 11.048509, 0, 4.8209615, 6.5303917, 0, -4.770027, -6.5303917, 0, 4.770027, -6.8958693, 0, 10.385993, -0.068870544, 2.4087038, 6.9658184, 0.068870544, -2.4087038, -6.9658184, -18.70736, 0, -2.7883623, -8.753863, -6.011717, 2.2748356, 8.753863, 6.011717, -2.2748356, -2.9776335, 0, -17.098438),
+"points": PackedVector3Array(-5.661186, -8.288277, -7.9681854, 5.661186, 8.288277, 7.9681854, 34.193996, 11.096996, -31.472061, 18.853706, 10.30703, 7.146469, -18.853706, -10.30703, -7.146469, 16.234035, 9.010601, -6.288147, 8.876213, -5.9935417, 17.068787, -8.876213, 5.9935417, -17.068787, -24.760338, -5.6576805, -9.0859375, -20.946152, 9.694187, -4.86882, 20.946152, -9.694187, 4.86882, -13.979354, -3.3337936, -53.07364),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
+
+[sub_resource type="Animation" id="Animation_4vy2l"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_y6yt5"]
+resource_name = "school_of_fish_anim"
+length = 15.566667
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -5, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 15.566667)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rkvba"]
+_data = {
+&"RESET": SubResource("Animation_4vy2l"),
+&"school_of_fish_anim": SubResource("Animation_y6yt5")
+}
+
+[sub_resource type="Curve3D" id="Curve3D_ltrux"]
+closed = true
+_data = {
+"points": PackedVector3Array(-4.2298985, 3.4849434, -2.3300781, 4.2298985, -3.4849434, 2.3300781, 17.209568, -0.23370743, -10.757034, 6.242758, -2.9754791, -1.8148651, -6.242758, 2.9754791, 1.8148651, 9.4087925, -0.34729767, 6.215866, 4.722906, -1.7210312, 0.6925354, -4.722906, 1.7210312, -0.6925354, -6.4871883, -0.7745285, 10.394562, 0.68945885, 0.760643, 3.529251, -0.68945885, -0.760643, -3.529251, -12.643568, 0.042617798, -1.9155273, -9.437498, -3.4630852, 1.6376495, 9.437498, 3.4630852, -1.6376495, -3.8615913, 3.3281975, -17.34114),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
@@ -1831,23 +1902,6 @@ mesh = ExtResource("35_glbos")
 
 [node name="Fish" type="Node3D" parent="." unique_id=756128950]
 
-[node name="SchoolOfApogony" type="Node3D" parent="Fish" unique_id=409765902]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.092974, 36.434814, -162.72055)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfApogony" unique_id=1554386343]
-libraries/ = SubResource("AnimationLibrary_hpjxn")
-autoplay = &"RESET"
-
-[node name="Path3D" type="Path3D" parent="Fish/SchoolOfApogony" unique_id=358467894]
-curve = SubResource("Curve3D_m8677")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfApogony/Path3D" unique_id=317267031]
-transform = Transform3D(0.4824234, 0.51247334, 0.7101643, -2.9797803e-08, 0.81077147, -0.5850927, -0.87576514, 0.28230068, 0.39120066, 17.209568, -0.23370743, -10.757034)
-use_model_front = true
-
-[node name="GroupApogony" parent="Fish/SchoolOfApogony/Path3D/PathFollow3D" unique_id=719337942 instance=ExtResource("36_opmmn")]
-transform = Transform3D(0.91254616, -0.10595086, 0.39538676, 0.1362569, 0.98961824, -0.049292978, -0.3859952, 0.09883988, 0.9173566, 0, 0, 0)
-
 [node name="SchoolOfAnioly" type="Node3D" parent="Fish" unique_id=1819686283]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.237915, 49.74004, -167.4481)
 
@@ -1859,22 +1913,185 @@ autoplay = &"school_of_fish_anim"
 curve = SubResource("Curve3D_y6yt5")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfAnioly/Path3D" unique_id=38454615]
-transform = Transform3D(0.79300284, 0.0411144, 0.60757184, 1.8623443e-09, 0.9975513, -0.067507, -0.6089528, 0.053540833, 0.79120445, 38.723434, -10.001644, -39.789795)
+transform = Transform3D(0.79301393, 0.041114617, 0.6075673, 1.8623703e-09, 0.9975565, -0.0675065, -0.60896134, 0.05354111, 0.7911986, 38.723434, -10.001644, -39.789795)
 use_model_front = true
 
 [node name="GroupAnioly" parent="Fish/SchoolOfAnioly/Path3D/PathFollow3D" unique_id=1834075495 instance=ExtResource("37_luva5")]
 
-[node name="SchoolOfBlazenki" type="Node3D" parent="." unique_id=687173113]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.985538, 47.008846, -136.89127)
+[node name="BubblesScattered" parent="Fish/SchoolOfAnioly/Path3D/PathFollow3D/GroupAnioly" unique_id=1827452263 instance=ExtResource("37_82sne")]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SchoolOfBlazenki" unique_id=968613393]
-libraries/ = SubResource("AnimationLibrary_btcbx")
+[node name="SchoolOfAnioly2" type="Node3D" parent="Fish" unique_id=2139881485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.483404, 41.463024, -113.77893)
 
-[node name="Path3D" type="Path3D" parent="SchoolOfBlazenki" unique_id=1310705982]
-curve = SubResource("Curve3D_ex44p")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfAnioly2" unique_id=732861920]
+libraries/ = SubResource("AnimationLibrary_4vy2l")
+autoplay = &"school_of_fish_anim"
 
-[node name="PathFollow3D" type="PathFollow3D" parent="SchoolOfBlazenki/Path3D" unique_id=2061555308]
-transform = Transform3D(0.82222885, 0.113979116, 0.5573678, 1.1174284e-08, 0.9795597, -0.20032245, -0.56890756, 0.16473138, 0.8055508, 13.036023, 0, -11.135908)
+[node name="Path3D" type="Path3D" parent="Fish/SchoolOfAnioly2" unique_id=175922160]
+curve = SubResource("Curve3D_luva5")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfAnioly2/Path3D" unique_id=844980951]
+transform = Transform3D(0.28752345, 0.41601577, -0.8625254, -1.4898902e-08, 0.90056527, 0.43436283, 0.95761526, -0.124908485, 0.25897276, 50.300644, 2.163311, -24.838257)
 use_model_front = true
 
-[node name="GroupOfBlazenki" parent="SchoolOfBlazenki/Path3D/PathFollow3D" unique_id=1429879838 instance=ExtResource("38_3h5ww")]
+[node name="GroupAnioly" parent="Fish/SchoolOfAnioly2/Path3D/PathFollow3D" unique_id=719337942 instance=ExtResource("37_luva5")]
+
+[node name="SchoolOfGarbiki" type="Node3D" parent="Fish" unique_id=409765902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.352833, 46.201332, -162.00038)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfGarbiki" unique_id=1554386343]
+libraries/ = SubResource("AnimationLibrary_hpjxn")
+autoplay = &"school_of_fish_anim"
+
+[node name="Path3D" type="Path3D" parent="Fish/SchoolOfGarbiki" unique_id=358467894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.669445, 10.302811, -41.42006)
+curve = SubResource("Curve3D_m8677")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfGarbiki/Path3D" unique_id=317267031]
+transform = Transform3D(0.3670305, 0.33995074, -0.86569077, 0, 0.9306469, 0.3654719, 0.930041, -0.13415784, 0.3416354, 13.887684, -0.2201767, 11.314453)
+use_model_front = true
+
+[node name="GroupGarbiki" parent="Fish/SchoolOfGarbiki/Path3D/PathFollow3D" unique_id=1101968145 instance=ExtResource("37_3h5ww")]
+
+[node name="SchoolOfGarbiki2" type="Node3D" parent="Fish" unique_id=1092579975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.782166, 33.048412, -116.09937)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfGarbiki2" unique_id=1186927782]
+libraries/ = SubResource("AnimationLibrary_hpjxn")
+autoplay = &"school_of_fish_anim"
+
+[node name="Path3D" type="Path3D" parent="Fish/SchoolOfGarbiki2" unique_id=1587444617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.669445, 10.302811, -41.42006)
+curve = SubResource("Curve3D_82sne")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfGarbiki2/Path3D" unique_id=1793503966]
+transform = Transform3D(0.09302705, -0.33537233, 0.937317, -1.4899012e-08, 0.9413916, 0.33683655, -0.9955187, -0.031339146, 0.08758833, 16.859135, 17.468151, 63.076553)
+use_model_front = true
+
+[node name="GroupGarbiki" parent="Fish/SchoolOfGarbiki2/Path3D/PathFollow3D" unique_id=1068039218 instance=ExtResource("37_3h5ww")]
+
+[node name="SchoolOfBlazenki" type="Node3D" parent="Fish" unique_id=687173113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.985538, 47.008846, -136.89127)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfBlazenki" unique_id=968613393]
+libraries/ = SubResource("AnimationLibrary_btcbx")
+autoplay = &"school_of_fish_anim"
+
+[node name="Path3D" type="Path3D" parent="Fish/SchoolOfBlazenki" unique_id=1310705982]
+curve = SubResource("Curve3D_3h5ww")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfBlazenki/Path3D" unique_id=2061555308]
+transform = Transform3D(0.99930114, -0.009644068, -0.03125993, -1.3967555e-09, 0.9554087, -0.29475915, 0.032713342, 0.29459935, 0.9549036, 31.360382, -13.155338, -13.662781)
+use_model_front = true
+
+[node name="GroupOfBlazenki" parent="Fish/SchoolOfBlazenki/Path3D/PathFollow3D" unique_id=1429879838 instance=ExtResource("38_3h5ww")]
+
+[node name="SchoolOfBlazenki2" type="Node3D" parent="Fish" unique_id=109284567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.985538, 47.008846, -136.89127)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfBlazenki2" unique_id=627024948]
+libraries/ = SubResource("AnimationLibrary_btcbx")
+autoplay = &"school_of_fish_anim"
+
+[node name="Path3D" type="Path3D" parent="Fish/SchoolOfBlazenki2" unique_id=327238336]
+curve = SubResource("Curve3D_ex44p")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfBlazenki2/Path3D" unique_id=409471149]
+transform = Transform3D(0.81507707, -0.37451696, 0.4416783, 2.9797793e-08, 0.7625875, 0.64664066, -0.57909054, -0.5271372, 0.6216676, 34.193996, 11.096996, -31.472061)
+use_model_front = true
+
+[node name="GroupOfBlazenki" parent="Fish/SchoolOfBlazenki2/Path3D/PathFollow3D" unique_id=1327002721 instance=ExtResource("38_3h5ww")]
+
+[node name="SchoolOfApogony" type="Node3D" parent="Fish" unique_id=4661133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.092974, 36.434814, -162.72055)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fish/SchoolOfApogony" unique_id=525119490]
+libraries/ = SubResource("AnimationLibrary_rkvba")
+autoplay = &"school_of_fish_anim"
+
+[node name="Path3D" type="Path3D" parent="Fish/SchoolOfApogony" unique_id=1648268212]
+curve = SubResource("Curve3D_ltrux")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Fish/SchoolOfApogony/Path3D" unique_id=982524336]
+transform = Transform3D(0.4824226, 0.5124716, 0.71015704, -2.9797754e-08, 0.8107687, -0.5850867, -0.87576365, 0.28229976, 0.39119667, 17.209568, -0.23370743, -10.757034)
+use_model_front = true
+
+[node name="GroupApogony" parent="Fish/SchoolOfApogony/Path3D/PathFollow3D" unique_id=1006061409 instance=ExtResource("36_opmmn")]
+transform = Transform3D(0.91254616, -0.10595086, 0.39538676, 0.1362569, 0.98961824, -0.049292978, -0.3859952, 0.09883988, 0.9173566, 0, 0, 0)
+
+[node name="Bubbles" type="Node3D" parent="." unique_id=1687071660]
+
+[node name="BubblesPoint_1" parent="Bubbles" unique_id=1571209497 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 18.534071, 29.76773, -164.17598)
+
+[node name="BubblesPoint_2" parent="Bubbles" unique_id=1079436817 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 37.219475, 28.365326, -150.33807)
+
+[node name="BubblesPoint_3" parent="Bubbles" unique_id=2034177797 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 19.821068, 28.56071, -130.25009)
+
+[node name="BubblesPoint_4" parent="Bubbles" unique_id=593022399 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 19.153646, 30.78443, -111.74759)
+
+[node name="BubblesPoint_5" parent="Bubbles" unique_id=225664243 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, -46.17221, 8.539413, 35.29317)
+
+[node name="BubblesPoint_6" parent="Bubbles" unique_id=824140889 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, -44.09361, 1.9936664, -5.3581924)
+
+[node name="BubblesPoint_7" parent="Bubbles" unique_id=321861789 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, -13.272391, 18.130928, -57.88211)
+
+[node name="BubblesPoint_8" parent="Bubbles" unique_id=399642586 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.490116e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 9.884465, 32.151787, -158.10474)
+
+[node name="BubblesPoint_9" parent="Bubbles" unique_id=1076598313 instance=ExtResource("41_w8p0i")]
+transform = Transform3D(1, 1.4901159e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 17.583244, 32.151787, -170.08485)
+
+[node name="BubblesScattered_1" parent="Bubbles" unique_id=223374137 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.557325, 26.064114, -125.911354)
+
+[node name="BubblesScattered_2" parent="Bubbles" unique_id=298116591 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.021664, 26.064114, -144.91206)
+
+[node name="BubblesScattered_3" parent="Bubbles" unique_id=1400598113 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.191349, 28.323233, -140.77216)
+
+[node name="BubblesScattered_4" parent="Bubbles" unique_id=271048137 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4676504, 32.157112, -166.21661)
+
+[node name="BubblesScattered_5" parent="Bubbles" unique_id=732156025 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.68463, 29.86845, -164.95592)
+
+[node name="BubblesScattered_6" parent="Bubbles" unique_id=1667714619 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.444777, 26.352488, -91.505066)
+
+[node name="BubblesScattered_7" parent="Bubbles" unique_id=2036549988 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.738438, 2.7304726, 5.257971)
+
+[node name="BubblesScattered_8" parent="Bubbles" unique_id=1094666948 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.328349, 2.7304702, 39.06603)
+
+[node name="BubblesScattered_9" parent="Bubbles" unique_id=239579319 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.505378, 29.944012, -115.5814)
+
+[node name="BubblesScattered_10" parent="Bubbles" unique_id=466498971 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24751079, 28.617096, -133.03052)
+
+[node name="BubblesScattered_11" parent="Bubbles" unique_id=44047663 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.429394, 12.40615, -34.070324)
+
+[node name="BubblesScattered_12" parent="Bubbles" unique_id=735837437 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.847477, 18.955242, -83.593094)
+
+[node name="BubblesScattered_13" parent="Bubbles" unique_id=10957946 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.86709, 6.8866186, -57.05471)
+
+[node name="BubblesScattered_14" parent="Bubbles" unique_id=1798147557 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.42334, 9.385111, 42.450703)
+
+[node name="BubblesScattered_15" parent="Bubbles" unique_id=883977112 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104.004486, -0.092977524, -56.60686)
+
+[node name="BubblesScattered_16" parent="Bubbles" unique_id=1807601314 instance=ExtResource("37_82sne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 121.1715, 0.5047269, -1.0722847)

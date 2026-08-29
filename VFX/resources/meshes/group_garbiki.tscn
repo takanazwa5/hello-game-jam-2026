@@ -4,62 +4,87 @@
 
 [node name="GroupGarbiki" type="Node3D" unique_id=719337942]
 
-[node name="Garbik1" type="MeshInstance3D" parent="." unique_id=1378599561]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1376279, 0.15405679, 0.53522784)
+[node name="Garbik_1" type="MeshInstance3D" parent="." unique_id=1378599561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.44348776, 0.24014783, 0.53522784)
 instance_shader_parameters/vertical_bend_offset = 0.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik2" type="MeshInstance3D" parent="." unique_id=389812997]
+[node name="Garbik_2" type="MeshInstance3D" parent="." unique_id=389812997]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3423953, -0.41759664, 1.8061111)
 instance_shader_parameters/vertical_bend_offset = 1.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik3" type="MeshInstance3D" parent="." unique_id=164691427]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.21759033, 1.4532605, 0.014483571)
+[node name="Garbik_3" type="MeshInstance3D" parent="." unique_id=164691427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.68636703, 3.1896389, 0.014483571)
 instance_shader_parameters/vertical_bend_offset = 3.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik4" type="MeshInstance3D" parent="." unique_id=759208246]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2287618, 1.0256213, 1.4328796)
+[node name="Garbik_4" type="MeshInstance3D" parent="." unique_id=759208246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3536464, 1.6105069, 1.4328796)
 instance_shader_parameters/vertical_bend_offset = 4.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik5" type="MeshInstance3D" parent="." unique_id=1033020031]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8418406, -0.30204824, -0.38003582)
+[node name="Garbik_5" type="MeshInstance3D" parent="." unique_id=1033020031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.79879653, -0.96925545, -0.38003582)
 instance_shader_parameters/vertical_bend_offset = 5.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik6" type="MeshInstance3D" parent="." unique_id=1739553493]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5159769, 3.0100775, 0.018502146)
+[node name="Garbik_6" type="MeshInstance3D" parent="." unique_id=1739553493]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5159769, 5.996795, 1.5118626)
 instance_shader_parameters/vertical_bend_offset = 6.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik7" type="MeshInstance3D" parent="." unique_id=2058174945]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029469639, -2.0369651, 0.23076499)
+[node name="Garbik_7" type="MeshInstance3D" parent="." unique_id=2058174945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63210785, -3.3914113, 0.23076499)
 instance_shader_parameters/vertical_bend_offset = 7.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik8" type="MeshInstance3D" parent="." unique_id=1509828922]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8600434, 2.0013757, 1.6850004)
-instance_shader_parameters/vertical_bend_offset = 8.0
-mesh = ExtResource("1_53giv")
-
-[node name="Garbik9" type="MeshInstance3D" parent="." unique_id=790792388]
+[node name="Garbik_8" type="MeshInstance3D" parent="." unique_id=790792388]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2010789, 0.2508042, -0.22102964)
 instance_shader_parameters/vertical_bend_offset = 9.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik10" type="MeshInstance3D" parent="." unique_id=31780100]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8644645, -1.4860375, -1.5307105)
+[node name="Garbik_9" type="MeshInstance3D" parent="." unique_id=31780100]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6550682, -1.9888206, -1.5307105)
 instance_shader_parameters/vertical_bend_offset = 10.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik11" type="MeshInstance3D" parent="." unique_id=737337340]
+[node name="Garbik_10" type="MeshInstance3D" parent="." unique_id=737337340]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4796269, 0.36801946, -2.0924902)
 instance_shader_parameters/vertical_bend_offset = 11.0
 mesh = ExtResource("1_53giv")
 
-[node name="Garbik12" type="MeshInstance3D" parent="." unique_id=2131535147]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.265141, 1.9498417, -1.6246939)
+[node name="Garbik_11" type="MeshInstance3D" parent="." unique_id=2131535147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22209501, 2.4448667, -1.796876)
 instance_shader_parameters/vertical_bend_offset = 12.0
+mesh = ExtResource("1_53giv")
+
+[node name="Garbik_12" type="MeshInstance3D" parent="." unique_id=1043061378]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48976803, 4.4531717, -5.9256506)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_53giv")
+
+[node name="Garbik_13" type="MeshInstance3D" parent="." unique_id=833641752]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0443342, -5.765639, 0.7212577)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_53giv")
+
+[node name="Garbik_14" type="MeshInstance3D" parent="." unique_id=1030466394]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7930663, 1.3501334, 0.018502116)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_53giv")
+
+[node name="Garbik_15" type="MeshInstance3D" parent="." unique_id=2009526514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4260924, -2.4275446, -4.198039)
+instance_shader_parameters/vertical_bend_offset = 6.0
+mesh = ExtResource("1_53giv")
+
+[node name="Garbik_16" type="MeshInstance3D" parent="." unique_id=148110246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.041076183, -2.072135, 4.353604)
+instance_shader_parameters/vertical_bend_offset = 1.0
+mesh = ExtResource("1_53giv")
+
+[node name="Garbik_17" type="MeshInstance3D" parent="." unique_id=66129385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78276646, -1.3997837, 1.2583799)
+instance_shader_parameters/vertical_bend_offset = 7.0
 mesh = ExtResource("1_53giv")
