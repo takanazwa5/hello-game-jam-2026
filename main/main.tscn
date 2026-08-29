@@ -13,6 +13,7 @@
 [ext_resource type="ArrayMesh" uid="uid://c6w1flr0biojj" path="res://Models/algaes/meshes/algae4.glb" id="11_wpvt5"]
 [ext_resource type="PackedScene" uid="uid://0lalv60333n8" path="res://VFX/resources/meshes/group_anioly.tscn" id="12_amlcg"]
 [ext_resource type="PackedScene" uid="uid://4wy018l3xj62" path="res://VFX/particles/particles_bubbles_scattered.tscn" id="13_ue0mw"]
+[ext_resource type="PackedScene" uid="uid://db6kv8bekgdnm" path="res://Models/Fish/meshes/aniol_imperialny.glb" id="14_d00gp"]
 [ext_resource type="ArrayMesh" uid="uid://dahup8if7c235" path="res://Models/Corals/Coral7.glb" id="14_vqjab"]
 [ext_resource type="ArrayMesh" uid="uid://rcwwec6526db" path="res://Models/Corals/Coral1.glb" id="15_h3axc"]
 [ext_resource type="ArrayMesh" uid="uid://qc4eacte0a56" path="res://Models/Trash/meshes/tire.glb" id="16_d7rgo"]
@@ -20,10 +21,11 @@
 [ext_resource type="ArrayMesh" uid="uid://bayd81qwf1apq" path="res://Models/Trash/meshes/remains_02.glb" id="18_phifs"]
 [ext_resource type="PackedScene" uid="uid://xp3bf2offkyf" path="res://Models/Enemies/meshes/anglerfish.glb" id="19_cgvj2"]
 [ext_resource type="ArrayMesh" uid="uid://busdonjeocg3v" path="res://Models/Rocks/rock_03.glb" id="20_t1yuj"]
-[ext_resource type="PackedScene" uid="uid://bdw3g6yhahp3i" path="res://VFX/resources/meshes/group_blazenki.tscn" id="21_4pcu1"]
+[ext_resource type="PackedScene" uid="uid://do6pjyx361eo1" path="res://Models/Fish/meshes/blazenek_okoniowy.glb" id="21_oagth"]
 [ext_resource type="PackedScene" uid="uid://bxyx8l7aa8hbw" path="res://VFX/resources/meshes/group_garbiki.tscn" id="22_7eg6f"]
 [ext_resource type="PackedScene" uid="uid://cmvwfasaufd64" path="res://Models/Fish/meshes/garbik_pasiasty.glb" id="23_rue0h"]
 [ext_resource type="PackedScene" uid="uid://b041fa8wqr0bf" path="res://VFX/resources/meshes/group_apogony.tscn" id="24_c5cfd"]
+[ext_resource type="PackedScene" uid="uid://kikedb1bq3dm" path="res://Models/Fish/meshes/apogon_kardynal.glb" id="25_n53tw"]
 
 [sub_resource type="Environment" id="Environment_c5gdo"]
 background_mode = 1
@@ -49,7 +51,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_o8p4t"]
 resource_name = "school_of_fish_anim"
-length = 7.4
+length = 6.6
 loop_mode = 1
 tracks/0/type = "bezier"
 tracks/0/imported = false
@@ -58,9 +60,9 @@ tracks/0/path = NodePath("Path3D/PathFollow3D:progress_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -5, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0.06666666, 7.366667)
+"handle_modes": PackedInt32Array(2, 2, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.1634989, 0, 0, 0, 1, -0.93650115, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 0.98099333, 6.6)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iesyu"]
@@ -117,7 +119,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 37.166668),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 139.04123]
+"values": [0.0, 136.68053]
 }
 
 [sub_resource type="Animation" id="Animation_p0n8t"]
@@ -146,7 +148,7 @@ _data = {
 [sub_resource type="Curve3D" id="Curve3D_o0hb3"]
 closed = true
 _data = {
-"points": PackedVector3Array(-4.480006, -0.18966246, 2.0694427, 4.480006, 0.18966246, -2.0694427, -6.432291, 4.3962393, -0.40197372, -4.7597504, 0.09207153, -3.5654507, 4.7597504, -0.09207153, 3.5654507, 6.259222, 5.603457, 18.375336, 2.0178375, -2.8135118, -4.2594833, -2.0178375, 2.8135118, 4.2594833, 33.9032, 2.690683, 37.219143, 5.297241, -1.2441144, 1.4281769, -5.297241, 1.2441144, -1.4281769, 19.984392, 5.2743855, 34.075165, 4.322384, 3.7552066, 5.7551975, -4.322384, -3.7552066, -5.7551975, 5.4948254, 5.508262, 23.371815, 3.5815802, 0.35114813, 2.7423744, -3.5815802, -0.35114813, -2.7423744, -9.466018, 6.5275383, 20.839897, -0.5067425, -0.22444344, 4.2034626, 0.5067425, 0.22444344, -4.2034626, -16.444016, 5.111596, 6.592907),
+"points": PackedVector3Array(-4.480006, -0.18966246, 2.0694427, 4.480006, 0.18966246, -2.0694427, -6.432291, 4.3962393, -0.40197372, -4.3449287, 0.29207563, -4.1920795, 4.3449287, -0.29207563, 4.1920795, 6.199356, 5.679526, 17.985441, 2.0178375, -2.8135118, -4.2594833, -2.0178375, 2.8135118, 4.2594833, 33.9032, 2.690683, 37.219143, 5.297241, -1.2441144, 1.4281769, -5.297241, 1.2441144, -1.4281769, 19.984392, 5.2743855, 34.075165, 6.040962, 3.8863857, 3.6074028, -6.040962, -3.8863857, -3.6074028, 5.4948254, 5.508262, 23.371815, 3.9783144, 0.62213326, 1.7782669, -3.9783144, -0.62213326, -1.7782669, -9.471914, 6.8889422, 19.180988, -1.317441, -0.28070354, 3.8955116, 1.317441, 0.28070354, -3.8955116, -15.985783, 5.143956, 6.7643414),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 7
@@ -176,10 +178,39 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer7/Path3D7/PathFollow3D:progress_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_n53tw"]
+resource_name = "blazenek_01_menu_anim"
+length = 16.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer7/Path3D7/PathFollow3D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3.6333334, 12.966666, 16.188408),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 1.0]
+}
 
 [sub_resource type="Animation" id="Animation_eorms"]
 resource_name = "blazenki_menu_anim"
-length = 8.733334
+length = 11.033334
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -188,10 +219,10 @@ tracks/0/path = NodePath("Path3D3/PathFollow3D:progress")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5666667, 8.733334),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.5666667, 8.733334, 11.033334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.0, 30.983927]
+"values": [0.0, 0.0, 30.983927, 30.983927]
 }
 
 [sub_resource type="Animation" id="Animation_t2dg8"]
@@ -213,16 +244,24 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b4h5o"]
 _data = {
 &"RESET": SubResource("Animation_h81yq"),
+&"blazenek_01_menu_anim": SubResource("Animation_n53tw"),
 &"blazenki_menu_anim": SubResource("Animation_eorms"),
 &"school_of_fish_anim": SubResource("Animation_t2dg8")
 }
 
 [sub_resource type="Curve3D" id="Curve3D_dbvex"]
 _data = {
-"points": PackedVector3Array(-8.174828, -1.9036436, -0.3650856, 8.174828, 1.9036436, 0.3650856, -18.402203, 7.7188454, -2.6120825, -7.217082, -0.6350136, -3.6403265, 7.217082, 0.6350136, 3.6403265, 12.212556, 7.2822313, -0.7496829),
-"tilts": PackedFloat32Array(0, 0)
+"points": PackedVector3Array(-1.1489916, -0.6185589, 2.303234, 1.1489916, 0.6185589, -2.303234, -16.506264, 2.936265, -4.7102027, -3.0905256, -1.8847957, -0.3839836, 3.0905256, 1.8847957, 0.3839836, -11.157592, 3.6962862, -9.685776, -3.976287, -1.1412058, -0.53664494, 3.976287, 1.1412058, 0.53664494, -2.8127747, 7.235757, 0.6245322, -7.217082, -0.6350136, -3.6403265, 7.217082, 0.6350136, 3.6403265, 11.69308, 10.8859625, -1.12711),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
 }
-point_count = 2
+point_count = 4
+
+[sub_resource type="Curve3D" id="Curve3D_n53tw"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -35.215584, 1.30587, -3.6152115, -5.6445484, 1.0302792, -6.127941, 5.6445484, -1.0302792, 6.127941, 11.11273, 2.52775, -5.730259, -3.2052383, 0.38171387, -2.9586878, 3.2052383, -0.38171387, 2.9586878, 20.209084, -3.8053856, 9.520301, -8.48893, -2.2612333, -0.9861717, 8.48893, 2.2612333, 0.9861717, 42.90072, -1.2989826, 15.490841, 0.1527214, -0.4111061, 0.05605316, -0.1527214, 0.4111061, -0.05605316, 52.27743, 3.7420807, 19.02842),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
 
 [sub_resource type="Animation" id="Animation_b4h5o"]
 length = 0.001
@@ -264,7 +303,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_pm5mm"]
 resource_name = "garbiki_02_menu_anim"
-length = 10.7917
+length = 14.933333
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -273,15 +312,15 @@ tracks/0/path = NodePath("Path3D5/PathFollow3D:progress")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 10.7917),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 10.795054, 14.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.0, 71.84151]
+"values": [0.0, 97.26344, 97.26344]
 }
 
 [sub_resource type="Animation" id="Animation_dbvex"]
 resource_name = "garbiki_menu_anim"
-length = 10.7
+length = 12.933333
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -290,10 +329,10 @@ tracks/0/path = NodePath("Path3D4/PathFollow3D:progress")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 10.7),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 10.673608, 12.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.0, 71.84151]
+"values": [0.0, 97.26344, 97.26344]
 }
 
 [sub_resource type="Animation" id="Animation_uysh8"]
@@ -322,10 +361,10 @@ _data = {
 
 [sub_resource type="Curve3D" id="Curve3D_dxffa"]
 _data = {
-"points": PackedVector3Array(9.376386, 0.3076172, -3.06814, -9.376386, -0.3076172, 3.06814, 33.31182, 2.973133, -5.4395714, 7.4599743, 0.52236176, -2.144989, -7.4599743, -0.52236176, 2.144989, 6.6871347, 1.6173306, 0.993309, 14.184559, 0.7958851, -1.7502518, -14.184559, -0.7958851, 1.7502518, -37.459843, -0.4456253, 4.8711452),
-"tilts": PackedFloat32Array(0, 0, 0)
+"points": PackedVector3Array(9.376386, 0.3076172, -3.06814, -9.376386, -0.3076172, 3.06814, 48.420002, 3.1041832, -7.574444, 7.4599743, 0.52236176, -2.144989, -7.4599743, -0.52236176, 2.144989, 24.599007, 1.0838718, -2.2092457, 16.098507, -0.34080887, -2.4233322, -16.098507, 0.34080887, 2.4233322, -11.86704, -1.0382614, -3.4643135, 14.184559, 0.7958851, -1.7502518, -14.184559, -0.7958851, 1.7502518, -46.351955, -0.4757042, 6.3235207),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
 }
-point_count = 3
+point_count = 4
 
 [sub_resource type="Animation" id="Animation_dxffa"]
 length = 0.001
@@ -355,7 +394,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_e0uss"]
 resource_name = "apogony_menu_anim"
-length = 12.166667
+length = 25.266666
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -364,10 +403,10 @@ tracks/0/path = NodePath("Path3D6/PathFollow3D:progress")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.0666666, 12.166667),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 5.766667, 20.640944, 25.266666),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.0, 44.774742]
+"values": [0.0, 0.0, 57.997025, 57.997025]
 }
 
 [sub_resource type="Animation" id="Animation_42cyn"]
@@ -395,10 +434,10 @@ _data = {
 
 [sub_resource type="Curve3D" id="Curve3D_ndece"]
 _data = {
-"points": PackedVector3Array(5.740551, 0.24155998, -8.026356, -5.740551, -0.24155998, 8.026356, 18.456226, 2.1501493, -9.921358, 6.218508, 0.78814983, -4.5113525, -6.218508, -0.78814983, 4.5113525, 2.0957367, 1.454648, 8.63176, 9.08338, 0.91159916, -4.949785, -9.08338, -0.91159916, 4.949785, -14.704077, -0.4417019, 19.096107),
-"tilts": PackedFloat32Array(0, 0, 0)
+"points": PackedVector3Array(4.413538, 0.23790836, -9.37142, -4.413538, -0.23790836, 9.37142, 10.054016, 1.904006, -20.186998, 2.216711, 1.0334911, -7.7570677, -2.216711, -1.0334911, 7.7570677, 5.5795174, 0.35002136, -0.8974581, 3.2227693, -0.21105576, -4.0196514, -3.2227693, 0.21105576, 4.0196514, -6.4222636, 0.22872639, 11.646109, 7.9582634, 0.9132042, -5.407608, -7.9582634, -0.9132042, 5.407608, -13.224208, 0.9325495, 29.76744),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
 }
-point_count = 3
+point_count = 4
 
 [node name="Main" type="Node" unique_id=2106466385]
 
@@ -490,11 +529,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.085989, 0.45078278, -2.0840
 mesh = ExtResource("8_wpkmi")
 
 [node name="Algae31" type="MeshInstance3D" parent="Algae1" unique_id=1278384149]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.978029, -12.133453, 32.288357)
+transform = Transform3D(0.8254242, 0, 0, 0, 0.5261934, 0, 0, 0, 0.82505137, 14.978029, -6.8136024, 32.288357)
 mesh = ExtResource("8_wpkmi")
 
 [node name="Algae32" type="MeshInstance3D" parent="Algae1" unique_id=403111883]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.196266, -12.133453, 32.288357)
+transform = Transform3D(0.76091105, 0, 0, 0, 0.39003202, 0, 0, 0, 1, 22.196266, -6.679907, 32.288357)
 mesh = ExtResource("8_wpkmi")
 
 [node name="Algae18" type="MeshInstance3D" parent="Algae1" unique_id=2120475206]
@@ -563,11 +602,11 @@ transform = Transform3D(1, 0, 0, 0, 1.3331043, 0, 0, 0, 1, 49.428085, -9.322765,
 mesh = ExtResource("8_wpkmi")
 
 [node name="Algae11" type="MeshInstance3D" parent="Algae1" unique_id=1895041169]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.077315, -30.770643, 42.917816)
+transform = Transform3D(1, 0, 0, 0, 0.38804102, 0, 0, 0, 1, 8.077315, -7.701173, 42.917816)
 mesh = ExtResource("8_wpkmi")
 
 [node name="Algae12" type="MeshInstance3D" parent="Algae1" unique_id=772061520]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.785126, -29.63834, 41.679665)
+transform = Transform3D(0.77857363, 0, 0, 0, 0.3568403, 0, 0, 0, 0.7230348, 26.785126, -6.784663, 41.679665)
 instance_shader_parameters/wave_offset = 0.38
 mesh = ExtResource("8_wpkmi")
 
@@ -587,20 +626,23 @@ mesh = ExtResource("8_wpkmi")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1659984671]
 libraries/ = SubResource("AnimationLibrary_iesyu")
 autoplay = &"school_of_fish_anim"
-speed_scale = 0.932
+speed_scale = 0.4
 
 [node name="Path3D" type="Path3D" parent="." unique_id=1376485222]
 transform = Transform3D(-0.9993657, -1.5566655e-09, -0.035612356, 1.5566655e-09, 1, -8.739505e-08, 0.035612356, -8.739505e-08, -0.9993657, -5.756895, 5.8461294, 5.3286223)
 curve = SubResource("Curve3D_iuxab")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1234509123]
-transform = Transform3D(0.3670284, 0.3399491, -0.8656734, 0, 0.93064255, 0.3654646, 0.930035, -0.13415729, 0.3416288, 11.048509, 0, 4.8209615)
+transform = Transform3D(0.367025, 0.33994722, -0.8656693, 0, 0.93063736, 0.36546284, 0.9300264, -0.13415654, 0.34162715, 11.048509, 0, 4.8209615)
 use_model_front = true
 
 [node name="GroupAnioly" parent="Path3D/PathFollow3D" unique_id=719337942 instance=ExtResource("12_amlcg")]
 transform = Transform3D(0.9999777, 7.756986e-06, 0.006678611, 7.747207e-06, 0.9999973, -0.0023225327, -0.006678626, 0.0023224987, 0.999975, -0.00027942657, 9.679794e-05, -0.08349323)
 
 [node name="BubblesScattered3" parent="Path3D/PathFollow3D/GroupAnioly" unique_id=1827452263 instance=ExtResource("13_ue0mw")]
+
+[node name="aniol_imperialny2" parent="Path3D/PathFollow3D/GroupAnioly/BubblesScattered3" unique_id=1855680170 instance=ExtResource("14_d00gp")]
+transform = Transform3D(0.9999995, 9.313226e-10, 2.9802322e-08, 2.7939677e-09, 0.99999976, 6.2282197e-09, -1.4901161e-08, -5.5879354e-09, 0.9999995, 0.2956152, 1.2042861, 3.5533733)
 
 [node name="Coral7" type="MeshInstance3D" parent="." unique_id=58023662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5880165, 2.1488433, -22.95693)
@@ -635,7 +677,7 @@ transform = Transform3D(0.822229, 0.11397917, 0.557368, 1.11742855e-08, 0.979560
 curve = SubResource("Curve3D_o0hb3")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D2" unique_id=2012228482]
-transform = Transform3D(-0.41931862, -0.034861278, 0.9070919, -1.862506e-09, 0.9991638, 0.03840201, -0.90775675, 0.016103413, -0.41901153, -6.432291, 4.3962393, -0.40197372)
+transform = Transform3D(-0.41931814, -0.03486122, 0.9070906, -1.8625038e-09, 0.99916214, 0.038401954, -0.9077557, 0.016103387, -0.41901094, -6.432291, 4.3962393, -0.40197372)
 use_model_front = true
 
 [node name="anglerfish" parent="Path3D2/PathFollow3D" unique_id=236139690 instance=ExtResource("19_cgvj2")]
@@ -689,24 +731,43 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0482206, 1.0294523, 0.85198
 curve = SubResource("Curve3D_dbvex")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D3" unique_id=1200871261]
-transform = Transform3D(0.044608213, -0.2263188, 0.9728679, 7.449401e-09, 0.9738205, 0.22654836, -0.998846, -0.010107333, 0.04344804, -18.402203, 7.7188454, -2.6120825)
+transform = Transform3D(-0.8946992, -0.10428963, 0.43397206, -1.1174178e-08, 0.97215074, 0.23362859, -0.44632977, 0.20905586, -0.8699274, -16.506264, 2.936265, -4.7102027)
 use_model_front = true
 
-[node name="GroupOfBlazenki" parent="Path3D3/PathFollow3D" unique_id=465633648 instance=ExtResource("21_4pcu1")]
-transform = Transform3D(1.0000191, 0, 2.9802322e-08, 0, 1.0000072, 0, 2.9802322e-08, -2.9802322e-08, 1.0000155, 0, 0, 0)
+[node name="blazenek_okoniowy2" parent="Path3D3/PathFollow3D" unique_id=166451735 instance=ExtResource("21_oagth")]
 
-[node name="BubblesScattered3" parent="Path3D3/PathFollow3D/GroupOfBlazenki" unique_id=1410894751 instance=ExtResource("13_ue0mw")]
+[node name="BubblesScattered3" parent="Path3D3/PathFollow3D" unique_id=1410894751 instance=ExtResource("13_ue0mw")]
+transform = Transform3D(1.0000192, 9.313226e-10, 2.6077032e-08, 0, 1.0000073, 1.14087015e-08, 2.9802322e-08, -2.9453076e-08, 1.0000155, 0, 0, 0)
+
+[node name="AnimationPlayer7" type="AnimationPlayer" parent="." unique_id=1877369471]
+libraries/ = SubResource("AnimationLibrary_b4h5o")
+autoplay = &"blazenek_01_menu_anim"
+speed_scale = 0.718
+
+[node name="Path3D7" type="Path3D" parent="AnimationPlayer7" unique_id=856235735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.914993, 15.096157, -21.276203)
+curve = SubResource("Curve3D_n53tw")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="AnimationPlayer7/Path3D7" unique_id=213725304]
+transform = Transform3D(-0.19854425, -0.053087, 0.97848785, 0, 0.998349, 0.054166824, -0.97992766, 0.010756018, -0.19825251, -35.215584, 1.30587, -3.6152115)
+use_model_front = true
+
+[node name="blazenek_okoniowy2" parent="AnimationPlayer7/Path3D7/PathFollow3D" unique_id=666321526 instance=ExtResource("21_oagth")]
+
+[node name="BubblesScattered3" parent="AnimationPlayer7/Path3D7/PathFollow3D" unique_id=509684576 instance=ExtResource("13_ue0mw")]
+transform = Transform3D(1.0000192, 9.313226e-10, 2.6077032e-08, 0, 1.0000073, 1.14087015e-08, 2.9802322e-08, -2.9453076e-08, 1.0000155, 0, 0, 0)
 
 [node name="AnimationPlayer4" type="AnimationPlayer" parent="." unique_id=977275392]
 libraries/ = SubResource("AnimationLibrary_pm5mm")
 autoplay = &"garbiki_menu_anim"
+speed_scale = 0.812
 
 [node name="Path3D4" type="Path3D" parent="." unique_id=419687813]
-transform = Transform3D(-0.9843981, 0, 0.1759554, 0, 1, 0, -0.1759554, 0, -0.9843981, 0, 20.489445, -22.147324)
+transform = Transform3D(-0.9843981, 0, 0.1759554, 0, 1, 0, -0.1759554, 0, -0.9843981, 0, 20.489445, -26.62671)
 curve = SubResource("Curve3D_dxffa")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D4" unique_id=446611319]
-transform = Transform3D(0.31094557, -0.02961479, -0.9498056, -1.8623565e-09, 0.99933153, -0.031160899, 0.9502648, 0.00969055, 0.31079534, 33.31182, 2.973133, -5.4395714)
+transform = Transform3D(0.3109454, -0.029614761, -0.9498043, -1.8623555e-09, 0.9993306, -0.031160856, 0.9502643, 0.009690541, 0.3107949, 48.420002, 3.1041832, -7.574444)
 use_model_front = true
 
 [node name="GroupGarbiki" parent="Path3D4/PathFollow3D" unique_id=1620854919 instance=ExtResource("22_7eg6f")]
@@ -730,36 +791,44 @@ transform = Transform3D(1.0000008, 7.916242e-09, 0, 1.5366822e-08, 1.0000002, 2.
 [node name="AnimationPlayer5" type="AnimationPlayer" parent="." unique_id=976393638]
 libraries/ = SubResource("AnimationLibrary_pm5mm")
 autoplay = &"garbiki_02_menu_anim"
+speed_scale = 0.812
 
 [node name="Path3D5" type="Path3D" parent="." unique_id=1703846122]
-transform = Transform3D(-0.9843981, 0, 0.1759554, 0, 1, 0, -0.1759554, 0, -0.9843981, 0, 16.499067, -22.147324)
+transform = Transform3D(-0.9843981, 0, 0.1759554, 0, 1, 0, -0.1759554, 0, -0.9843981, 0, 16.499067, -26.62671)
 curve = SubResource("Curve3D_dxffa")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D5" unique_id=247145549]
-transform = Transform3D(0.31094697, -0.02961512, -0.9498017, -1.8623649e-09, 0.9993427, -0.03116077, 0.9502691, 0.009690658, 0.31079406, 33.31182, 2.973133, -5.4395714)
+transform = Transform3D(0.31094635, -0.029614752, -0.9498017, -1.862361e-09, 0.9993303, -0.03116077, 0.95026714, 0.009690538, 0.31079406, 48.420002, 3.1041832, -7.574444)
 use_model_front = true
 
 [node name="GroupGarbiki2" parent="Path3D5/PathFollow3D" unique_id=81504779 instance=ExtResource("22_7eg6f")]
-transform = Transform3D(1.0092616, 9.080395e-09, 2.9802322e-08, 2.3748726e-08, 0.7602311, -6.7579094e-08, 0, 4.877802e-08, 0.95321554, 0.28931618, 1.513689, -3.9296055)
+transform = Transform3D(1.0092614, 8.8475645e-09, 4.4703484e-08, 2.3283064e-08, 0.76023096, -6.420305e-08, -2.9802322e-08, 4.869071e-08, 0.9532154, -0.9121361, 1.7806377, 4.6314697)
 
 [node name="BubblesScattered3" parent="Path3D5/PathFollow3D/GroupGarbiki2" unique_id=1465937248 instance=ExtResource("13_ue0mw")]
 
 [node name="garbik_pasiasty2" parent="Path3D5/PathFollow3D/GroupGarbiki2/BubblesScattered3" unique_id=1466566923 instance=ExtResource("23_rue0h")]
-transform = Transform3D(0.99969333, 0.0030051228, 0.023056924, -0.00014370307, 0.9876003, -0.19681619, -0.026190653, 0.12514451, 0.98730135, 0.9259491, 7.8182087, 5.0325623)
+transform = Transform3D(0.9996931, 0.0030051228, 0.023056895, -0.00014370354, 0.9876003, -0.19681615, -0.026190713, 0.12514451, 0.98730135, 1.0782547, 2.6586704, 4.0106716)
 
 [node name="AnimationPlayer6" type="AnimationPlayer" parent="." unique_id=1444929966]
 libraries/ = SubResource("AnimationLibrary_6s3j4")
 autoplay = &"apogony_menu_anim"
+speed_scale = 0.811
 
 [node name="Path3D6" type="Path3D" parent="." unique_id=303841842]
-transform = Transform3D(-0.6009918, 0.008071713, 0.7992145, 0.0042277374, 0.99996704, -0.0069200606, -0.7992441, -0.00078003504, -0.6010061, 0, 6.682654, 1.7444725)
+transform = Transform3D(-0.6009918, 0.008071713, 0.7992145, 0.0042277374, 0.99996704, -0.0069200606, -0.7992441, -0.00078003504, -0.6010061, -5.6703043, 12.06986, -11.306963)
 curve = SubResource("Curve3D_ndece")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D6" unique_id=1305204678]
-transform = Transform3D(0.81325924, -0.014233812, -0.5814826, -4.65594e-10, 0.99953026, -0.02446854, 0.5816534, 0.019901507, 0.81302047, 18.456226, 2.1501493, -9.921358)
+transform = Transform3D(0.9045578, -0.009781363, -0.42589906, 0, 0.9995715, -0.02295776, 0.4260081, 0.020769108, 0.9043263, 10.054016, 1.904006, -20.186998)
 use_model_front = true
 
 [node name="GroupApogony" parent="Path3D6/PathFollow3D" unique_id=1999413789 instance=ExtResource("24_c5cfd")]
 transform = Transform3D(0.91254616, -0.10595086, 0.39538676, 0.1362569, 0.98961824, -0.049292978, -0.3859952, 0.09883988, 0.9173566, 0, 0, 0)
+
+[node name="apogon_kardynal2" parent="Path3D6/PathFollow3D/GroupApogony" unique_id=1165105833 instance=ExtResource("25_n53tw")]
+transform = Transform3D(1.0000001, -7.450581e-09, 0, 7.450581e-09, 1, 0, -2.9802322e-08, -3.7252903e-09, 1, -1.6428223, 0.5440798, 3.6909552)
+
+[node name="apogon_kardynal3" parent="Path3D6/PathFollow3D/GroupApogony" unique_id=1386574685 instance=ExtResource("25_n53tw")]
+transform = Transform3D(1.0000004, -2.2351742e-08, 0, -7.450581e-09, 1, 0, -5.9604645e-08, -1.1175871e-08, 1, -1.376091, 2.3183508, 3.5481348)
 
 [node name="BubblesScattered3" parent="Path3D6/PathFollow3D/GroupApogony" unique_id=321170322 instance=ExtResource("13_ue0mw")]
