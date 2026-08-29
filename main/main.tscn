@@ -1131,9 +1131,9 @@ grow_vertical = 2
 [node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1684813524]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Graj"
+text = "Play"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1116193887]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Wyjdź"
+text = "Quit"

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dfwumjvps6ynq"]
+
+[ext_resource type="Script" uid="uid://b72u3dk5jin17" path="res://pause_menu/pause_menu.gd" id="1_5hbt6"]
+[ext_resource type="Shader" uid="uid://qpamyudsr182" path="res://pause_menu/blur.gdshader" id="2_rd7dy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5hbt6"]
+shader = ExtResource("2_rd7dy")
+shader_parameter/blur_lod = 2.000000095
+
+[node name="PauseMenu" type="Control" unique_id=805743049]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5hbt6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=686574983]
+material = SubResource("ShaderMaterial_5hbt6")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=370788848]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.66667
+offset_top = -33.0
+offset_right = 44.66667
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeButton" type="Button" parent="VBoxContainer" unique_id=961187947]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Resume"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=1847154302]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"

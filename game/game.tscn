@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://yofjydp5cult" path="res://Models/Level/level.tscn" id="1_vasa2"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="2_h7iqs"]
 [ext_resource type="PackedScene" uid="uid://4d7t7y5st3nw" path="res://skillcheck/skillcheck.tscn" id="3_h7iqs"]
+[ext_resource type="PackedScene" uid="uid://dfwumjvps6ynq" path="res://pause_menu/pause_menu.tscn" id="5_dxrkv"]
 
 [node name="Game" type="Node" unique_id=581175065]
 script = ExtResource("1_4fuuu")
@@ -16,4 +17,7 @@ unique_name_in_owner = true
 transform = Transform3D(-0.8765111, 0, -0.48138192, 0, 1, 0, 0.48138192, 0, -0.8765111, 3.331089, 4.150873, 69.02253)
 
 [node name="Skillcheck" parent="." unique_id=1804647029 instance=ExtResource("3_h7iqs")]
+visible = false
+
+[node name="PauseMenu" parent="." unique_id=805743049 instance=ExtResource("5_dxrkv")]
 visible = false
