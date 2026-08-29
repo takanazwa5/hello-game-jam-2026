@@ -6,7 +6,7 @@
 
 [node name="Game" type="Node" unique_id=581175065]
 
-[node name="Environment" parent="." unique_id=1600406036 instance=ExtResource("1_vasa2")]
+[node name="Level" parent="." unique_id=1600406036 instance=ExtResource("1_vasa2")]
 
 [node name="Fih" parent="." unique_id=761742824 instance=ExtResource("2_h7iqs")]
 transform = Transform3D(-0.8765111, 0, -0.48138192, 0, 1, 0, 0.48138192, 0, -0.8765111, 3.331089, 4.150873, 69.02253)
