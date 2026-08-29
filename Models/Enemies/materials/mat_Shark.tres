@@ -1,9 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cplp2fl5vqja6"]
 
 [ext_resource type="Texture2D" uid="uid://8wj1425kot2s" path="res://Models/Enemies/textures/tex_Shark_Base_color.png" id="1_fuj1a"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_jyjlf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mram1"]
+render_priority = 0
+shader = ExtResource("2_jyjlf")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_zarlacz"
+next_pass = SubResource("ShaderMaterial_mram1")
 shading_mode = 2
 albedo_texture = ExtResource("1_fuj1a")
 texture_filter = 2

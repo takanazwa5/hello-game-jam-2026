@@ -1,10 +1,22 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://c3jgmgfdc0s1u"]
 
 [ext_resource type="Texture2D" uid="uid://bcntdfh3w2tyj" path="res://Models/Trash/textures/tex_Trash_Base_Color.png" id="1_ceu4r"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_3i4fr"]
 [ext_resource type="Texture2D" uid="uid://b65aq2d2x28jl" path="res://Models/Trash/textures/tex_Trash_Roughness.png" id="2_3pgfe"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ruwoy"]
+render_priority = 0
+shader = ExtResource("2_3i4fr")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Trash"
+next_pass = SubResource("ShaderMaterial_ruwoy")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_ceu4r")

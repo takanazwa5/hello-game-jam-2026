@@ -2,9 +2,21 @@
 
 [ext_resource type="Texture2D" uid="uid://dplkub3sjy51j" path="res://Models/Trash/textures/tex_Canister_Base_Color.png" id="1_qqsnj"]
 [ext_resource type="Texture2D" uid="uid://c30xt3wa2pgq6" path="res://Models/Trash/textures/tex_Canister_Roughness.png" id="2_05h5v"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_lc34u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1kpnn"]
+render_priority = 0
+shader = ExtResource("2_lc34u")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Canister"
+next_pass = SubResource("ShaderMaterial_1kpnn")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_qqsnj")

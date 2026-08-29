@@ -2,9 +2,21 @@
 
 [ext_resource type="Shader" uid="uid://cf03ehtbl33ow" path="res://VFX/resources/shaders/foliage_movement.gdshader" id="1_4muxf"]
 [ext_resource type="Texture2D" uid="uid://dm6s8ev28y703" path="res://Models/algaes/textures/algae.png" id="1_4vy7e"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="1_hh3qc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7hcx7"]
+render_priority = 0
+shader = ExtResource("1_hh3qc")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 render_priority = 0
+next_pass = SubResource("ShaderMaterial_7hcx7")
 shader = ExtResource("1_4muxf")
 shader_parameter/time_scale = 1.0
 shader_parameter/wave = 0.3

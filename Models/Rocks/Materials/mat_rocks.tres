@@ -1,9 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://g75n5gvt0oc4"]
 
 [ext_resource type="Texture2D" uid="uid://ngpqwoqrpu7v" path="res://Models/Plates/textures/stone.png" id="1_k3unl"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_pdukt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pdukt"]
+render_priority = 0
+shader = ExtResource("2_pdukt")
+shader_parameter/ScroolSpeed = Vector2(0.01, 0.2)
+shader_parameter/ChromaticStrength = 0.0
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.01
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_rocks"
+next_pass = SubResource("ShaderMaterial_pdukt")
 shading_mode = 2
 albedo_texture = ExtResource("1_k3unl")
 uv1_scale = Vector3(0.05, 0.05, 0.05)

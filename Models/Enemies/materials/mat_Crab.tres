@@ -1,9 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://1ppfnu46xxpy"]
 
 [ext_resource type="Texture2D" uid="uid://bmmhadjn266lb" path="res://Models/Enemies/textures/tex_Crab_Base_color.png" id="1_otdyf"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_dmasp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_87slu"]
+render_priority = 0
+shader = ExtResource("2_dmasp")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Krab"
+next_pass = SubResource("ShaderMaterial_87slu")
 shading_mode = 2
 albedo_texture = ExtResource("1_otdyf")
 texture_filter = 2

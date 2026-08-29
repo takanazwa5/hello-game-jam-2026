@@ -1,9 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://badb3kx3rh7bg"]
 
 [ext_resource type="Texture2D" uid="uid://bpean8q5nyv18" path="res://Models/Corals/texture/Corals.png" id="1_o8a5d"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_j12yp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rgme2"]
+render_priority = 0
+shader = ExtResource("2_j12yp")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_corals"
+next_pass = SubResource("ShaderMaterial_rgme2")
 transparency = 4
 cull_mode = 2
 albedo_texture = ExtResource("1_o8a5d")

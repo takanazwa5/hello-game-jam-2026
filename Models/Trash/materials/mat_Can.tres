@@ -2,9 +2,21 @@
 
 [ext_resource type="Texture2D" uid="uid://c6rwyidwb3o8s" path="res://Models/Trash/textures/tex_Can_Base_Color.png" id="1_6dxir"]
 [ext_resource type="Texture2D" uid="uid://cd8vomjmmrr32" path="res://Models/Trash/textures/tex_Can_Roughness.png" id="2_sv4gu"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_swd2v"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_00ic1"]
+render_priority = 0
+shader = ExtResource("2_swd2v")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Can"
+next_pass = SubResource("ShaderMaterial_00ic1")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_6dxir")

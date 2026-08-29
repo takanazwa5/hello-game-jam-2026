@@ -2,9 +2,21 @@
 
 [ext_resource type="Texture2D" uid="uid://p4bmumqp6tyg" path="res://Models/Enemies/textures/tex_Anglerfish_Base_color.png" id="1_yho2m"]
 [ext_resource type="Texture2D" uid="uid://ds3nvnx0er3wx" path="res://Models/Enemies/textures/tex_Anglerfish_Emissive.png" id="2_vlmqv"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="3_tp5lr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hwdn0"]
+render_priority = 0
+shader = ExtResource("3_tp5lr")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Anglerfish"
+next_pass = SubResource("ShaderMaterial_hwdn0")
 shading_mode = 2
 albedo_texture = ExtResource("1_yho2m")
 emission_enabled = true

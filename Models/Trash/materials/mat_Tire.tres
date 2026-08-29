@@ -1,10 +1,22 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cppw4ccgf8i73"]
 
 [ext_resource type="Texture2D" uid="uid://uktflqh4vcn4" path="res://Models/Trash/textures/tex_Tire_Base_Color.png" id="1_cec0x"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_0ppdg"]
 [ext_resource type="Texture2D" uid="uid://nb3qyn2hh61u" path="res://Models/Trash/textures/tex_Tire_Roughness.png" id="2_yybbh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kssi4"]
+render_priority = 0
+shader = ExtResource("2_0ppdg")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Tire"
+next_pass = SubResource("ShaderMaterial_kssi4")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_cec0x")

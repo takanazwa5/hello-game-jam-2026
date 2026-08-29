@@ -2,9 +2,21 @@
 
 [ext_resource type="Texture2D" uid="uid://bkg3kv7yj75lx" path="res://Models/Trash/textures/tex_Remains_Base_Color.png" id="1_dilts"]
 [ext_resource type="Texture2D" uid="uid://cxueeto0lduxx" path="res://Models/Trash/textures/tex_Remains_Roughness.png" id="2_rg1rw"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_vbner"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i8g8t"]
+render_priority = 0
+shader = ExtResource("2_vbner")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Remains"
+next_pass = SubResource("ShaderMaterial_i8g8t")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_dilts")

@@ -2,9 +2,21 @@
 
 [ext_resource type="Texture2D" uid="uid://dwvb7mhud6sgm" path="res://Models/Trash/textures/tex_Bottle_Base_Color.png" id="1_p47h3"]
 [ext_resource type="Texture2D" uid="uid://cwhokf2mow5kq" path="res://Models/Trash/textures/tex_Bottle_Roughness.png" id="2_essye"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_mlbwb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dwg5y"]
+render_priority = 0
+shader = ExtResource("2_mlbwb")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Bottle"
+next_pass = SubResource("ShaderMaterial_dwg5y")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_p47h3")

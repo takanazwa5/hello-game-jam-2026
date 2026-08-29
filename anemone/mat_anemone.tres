@@ -1,8 +1,22 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://ubxgx1yv751d"]
 
 [ext_resource type="Shader" uid="uid://c6n527875a0i3" path="res://anemone/anemone_shader.tres" id="1_dyjd8"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="1_l1gn1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_64evr"]
+render_priority = 0
+shader = ExtResource("1_l1gn1")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 render_priority = 0
+next_pass = SubResource("ShaderMaterial_64evr")
 shader = ExtResource("1_dyjd8")
 shader_parameter/Dirtiness = 0.0
+shader_parameter/Saturation = 1.25
+shader_parameter/FloatParameter = 0.1

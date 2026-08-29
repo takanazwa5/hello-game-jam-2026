@@ -1,11 +1,23 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://bx4kl0854j0a"]
 
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="1_6mov3"]
 [ext_resource type="Shader" uid="uid://b7tq55cy2m4q3" path="res://VFX/resources/shaders/fish_animation.gdshader" id="1_m4grq"]
 [ext_resource type="Texture2D" uid="uid://bhb7dbyi883lx" path="res://Models/Fish/textures/tex_Rybki_Base_color.png" id="1_q6c7l"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i8414"]
+render_priority = 0
+shader = ExtResource("1_6mov3")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_Rybki"
 render_priority = 0
+next_pass = SubResource("ShaderMaterial_i8414")
 shader = ExtResource("1_m4grq")
 shader_parameter/time_scale = 5.0
 shader_parameter/side_to_side = 0.05

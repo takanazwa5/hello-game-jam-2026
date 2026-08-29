@@ -2,9 +2,21 @@
 
 [ext_resource type="Texture2D" uid="uid://c7pnxv317gdug" path="res://Models/Ship/textures/tex_Ship_04_Base_Color.png.png" id="1_d0p2u"]
 [ext_resource type="Texture2D" uid="uid://djodsn5o05y2k" path="res://Models/Ship/textures/tex_Ship_04_Roughness.png" id="2_bapii"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_ngmrf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k8vd8"]
+render_priority = 0
+shader = ExtResource("2_ngmrf")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_ship_04"
+next_pass = SubResource("ShaderMaterial_k8vd8")
 cull_mode = 2
 shading_mode = 2
 albedo_texture = ExtResource("1_d0p2u")

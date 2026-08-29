@@ -1,9 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://di5g4527h34c5"]
 
 [ext_resource type="Texture2D" uid="uid://bikfeq57bic1x" path="res://Models/Rocks/textures/tex_Rock_Base_Color.png" id="1_xx2tl"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_vlsgb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_10xf7"]
+render_priority = 0
+shader = ExtResource("2_vlsgb")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 5.0
 
 [resource]
 resource_name = "mat_rocks"
+next_pass = SubResource("ShaderMaterial_10xf7")
 cull_mode = 2
 shading_mode = 2
 albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)

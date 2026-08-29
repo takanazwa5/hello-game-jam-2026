@@ -1,11 +1,23 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://ck1q7r88g1kij"]
 
 [ext_resource type="Shader" uid="uid://byorj8qpdr3xj" path="res://VFX/resources/shaders/seabed.gdshader" id="1_0is76"]
+[ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="1_fajtl"]
 [ext_resource type="Texture2D" uid="uid://ngpqwoqrpu7v" path="res://Models/Plates/textures/stone.png" id="2_fajtl"]
 [ext_resource type="Texture2D" uid="uid://ch7wl5av31g2e" path="res://Models/Plates/textures/sand.png" id="3_68jnr"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fajtl"]
+render_priority = 0
+shader = ExtResource("1_fajtl")
+shader_parameter/ScroolSpeed = Vector2(0.1, 1)
+shader_parameter/ChromaticStrength = 0.1
+shader_parameter/Density = 0.5
+shader_parameter/AngularSpeed = 0.1
+shader_parameter/Blend = 5.0
+shader_parameter/Intensity = 7.0
+
 [resource]
 render_priority = 0
+next_pass = SubResource("ShaderMaterial_fajtl")
 shader = ExtResource("1_0is76")
 shader_parameter/top_texture = ExtResource("3_68jnr")
 shader_parameter/side_texture = ExtResource("2_fajtl")
