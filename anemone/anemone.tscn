@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cjayk6qel47pe" path="res://anemone/textures/anemone_dirty_4.png" id="2_ff88u"]
 [ext_resource type="Texture2D" uid="uid://cv1uyllwc4ati" path="res://anemone/textures/anemone_clean_4.png" id="3_70tqi"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_mes1e"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4jfv6"]
 resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("2_4jfv6")
@@ -70,7 +70,7 @@ bones/39/rotation = Quaternion(-0.2818495, -0.05312434, 0.95136416, -0.112449504
 
 [node name="anemoneP" parent="armature_001/Skeleton3D" index="0" unique_id=345076314]
 unique_name_in_owner = true
-surface_material_override/0 = SubResource("ShaderMaterial_mes1e")
+surface_material_override/0 = SubResource("ShaderMaterial_4jfv6")
 
 [node name="AnimationPlayer" parent="." index="1" unique_id=1743604576]
 unique_name_in_owner = true

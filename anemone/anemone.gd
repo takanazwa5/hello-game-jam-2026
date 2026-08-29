@@ -51,7 +51,7 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if skillcheck.visible: return
 	if event.is_action_pressed(&"E"):
-		if _is_fih_inside or (not _is_clean and _fih_in_cleaning_area):
+		if _can_clean():
 			_is_checking_skill = true
 			skillcheck.start()
 
@@ -61,13 +61,22 @@ func _process(_delta: float) -> void:
 	if _is_clean: clean_label.text += " %.2f" % clean_timer.time_left
 	dirtiness_label.text = "Dirtiness %.2f" % _shader_material.get_shader_parameter(&"Dirtiness")
 	if OS.is_debug_build():
-		if (not _is_clean and _fih_in_cleaning_area) or _is_fih_inside: can_clean_label.show()
+		if _can_clean(): can_clean_label.show()
 		else: can_clean_label.hide()
+
+
+func _can_clean() -> bool:
+	return not _is_transitioning() and (_is_fih_inside or (not _is_clean and _fih_in_cleaning_area))
+
+
+func _is_transitioning() -> bool:
+	return animation_player.current_animation == &"anim_anemone_closing"
 
 
 func _make_clean() -> void:
 	var wait_time: float = clean_timer.wait_time if _is_clean else randf_range(CLEAN_TIME_MIN, CLEAN_TIME_MAX)
 	_is_clean = true
+	if _is_transitioning(): await animation_player.animation_finished
 	if animation_player.current_animation == &"anim_anemone_closed":
 		animation_player.play_backwards(&"anim_anemone_closing")
 		await animation_player.animation_finished
