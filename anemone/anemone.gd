@@ -1,8 +1,8 @@
 class_name Anemone extends Node3D
 
 
-const CLEAN_TIME_MIN: float = 10.0
-const CLEAN_TIME_MAX: float = 20.0
+const CLEAN_TIME_MIN: float = 45
+const CLEAN_TIME_MAX: float = 90
 
 
 var _is_fih_inside: bool = false
@@ -23,6 +23,7 @@ var _is_checking_skill: bool = false
 @onready var cleaning_area: Area3D = %CleaningArea
 @onready var can_clean_label: Label = %CanCleanLabel
 @onready var skillcheck: Skillcheck = Skillcheck.instance
+@onready var clean_cooldown: Timer = %CleanCooldown
 
 
 func _ready() -> void:
@@ -66,7 +67,9 @@ func _process(_delta: float) -> void:
 
 
 func _can_clean() -> bool:
-	return not _is_transitioning() and (_is_fih_inside or (not _is_clean and _fih_in_cleaning_area))
+	return clean_cooldown.is_stopped() \
+	and not _is_transitioning() \
+	and (_is_fih_inside or (not _is_clean and _fih_in_cleaning_area))
 
 
 func _is_transitioning() -> bool:
@@ -76,6 +79,7 @@ func _is_transitioning() -> bool:
 func _make_clean() -> void:
 	var wait_time: float = clean_timer.wait_time if _is_clean else randf_range(CLEAN_TIME_MIN, CLEAN_TIME_MAX)
 	_is_clean = true
+	clean_cooldown.start()
 	if _is_transitioning(): await animation_player.animation_finished
 	if animation_player.current_animation == &"anim_anemone_closed":
 		animation_player.play_backwards(&"anim_anemone_closing")
