@@ -13,6 +13,30 @@ const DIRECTIONS: Array[Vector3] = [
 	Vector3(0, -1, 0),
 	Vector3(0, 0, 1),
 	Vector3(0, 0, -1),
+
+	Vector3(1, 1, 0),
+	Vector3(1, -1, 0),
+	Vector3(-1, 1, 0),
+	Vector3(-1, -1, 0),
+
+	Vector3(1, 0, 1),
+	Vector3(1, 0, -1),
+	Vector3(-1, 0, 1),
+	Vector3(-1, 0, -1),
+
+	Vector3(0, 1, 1),
+	Vector3(0, 1, -1),
+	Vector3(0, -1, 1),
+	Vector3(0, -1, -1),
+
+	Vector3(1, 1, 1),
+	Vector3(1, 1, -1),
+	Vector3(1, -1, 1),
+	Vector3(1, -1, -1),
+	Vector3(-1, 1, 1),
+	Vector3(-1, 1, -1),
+	Vector3(-1, -1, 1),
+	Vector3(-1, -1, -1),
 ]
 
 
@@ -34,15 +58,18 @@ func _ready() -> void:
 	end_game_area.body_entered.connect(_on_end_game_area_body_entered)
 	crab_area.body_entered.connect(_on_crab_area_body_entered)
 
+	crab.roaming_anim = crab_anim
+	crab.roaming_path = $"Enemies(Delete if Enemies are done)/CrabRoaming/Path3D/PathFollow3D"
+
 	_create_grid()
 	_connect_points()
 
 
 func _create_grid() -> void:
 	var point_id: int = 0
-	for x: int in range(-240, 380, 5):
-		for y: int in range(-50, 50, 5):
-			for z: int in range(-200, 100, 5):
+	for x: int in range(-240, 380, CELL_SIZE):
+		for y: int in range(-50, 50, CELL_SIZE):
+			for z: int in range(-200, 100, CELL_SIZE):
 				var pos := Vector3(x, y, z)
 
 				if not _is_position_blocked(pos):

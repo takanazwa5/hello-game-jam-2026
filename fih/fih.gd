@@ -93,7 +93,7 @@ func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed(&"S"):
 		velocity = velocity.move_toward(Vector3.ZERO, STOPPING_POWER)
 
-	var vertical_input: float = Input.get_axis(&"Ctrl", &"Space")
+	var vertical_input: float = Input.get_axis(&"LShift", &"Space")
 	velocity.y += vertical_input * VERTICAL_ACCELERATION
 	velocity.y = clampf(velocity.y, -5, 5)
 

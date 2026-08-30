@@ -39,5 +39,5 @@ func _on_fih_entered_end_game_area() -> void:
 
 
 func _on_fih_entered_crab_area() -> void:
-	level.crab_anim.stop()
+	level.crab_anim.pause()
 	level.crab.chase_fih(fih)

@@ -700,7 +700,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.910446, -55.30395, 155.251
 curve = SubResource("Curve3D_t4gay")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Enemies(Delete if Enemies are done)/CrabRoaming/Path3D" unique_id=294001934]
-transform = Transform3D(0.9344591, -0.12303483, 0.33367676, 0.16020249, 0.9831585, -0.086128615, -0.3175099, 0.1339594, 0.93858254, 72.62271, 16.163155, 9.002695)
+transform = Transform3D(0.93445736, -0.123034574, 0.33367655, 0.1602022, 0.9831565, -0.08612856, -0.31750932, 0.13395911, 0.93858194, 72.62271, 16.163155, 9.002695)
 use_model_front = true
 
 [node name="Crab" parent="Enemies(Delete if Enemies are done)/CrabRoaming/Path3D/PathFollow3D" unique_id=123366098 instance=ExtResource("46_btcbx")]
