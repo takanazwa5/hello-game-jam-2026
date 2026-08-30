@@ -10,22 +10,22 @@ shader_parameter/scanlines_opacity = 0.0
 shader_parameter/scanlines_width = 0.0150000007125
 shader_parameter/grille_opacity = 0.0
 shader_parameter/resolution = Vector2(640, 480)
-shader_parameter/pixelate = false
+shader_parameter/pixelate = true
 shader_parameter/roll = false
 shader_parameter/roll_speed = 0.64
 shader_parameter/roll_size = 0.0
 shader_parameter/roll_variation = 1.8
-shader_parameter/distort_intensity = 0.02000000095
-shader_parameter/noise_opacity = 0.0590000028025
+shader_parameter/distort_intensity = 0.010000000475
+shader_parameter/noise_opacity = 0.050000002375
 shader_parameter/noise_speed = 5.0
 shader_parameter/static_noise_intensity = 0.06
-shader_parameter/aberration = 0.03
+shader_parameter/aberration = 0.02000004845000003
 shader_parameter/brightness = 1.4
 shader_parameter/discolor = false
 shader_parameter/warp_amount = 0.0
 shader_parameter/clip_warp = false
-shader_parameter/vignette_intensity = 1.135
-shader_parameter/vignette_opacity = 0.406000019285
+shader_parameter/vignette_intensity = 0.8
+shader_parameter/vignette_opacity = 0.150000007125
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_urft8"]
 

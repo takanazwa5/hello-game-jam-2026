@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bt1aup4c1wxu6" path="res://main/main.gd" id="1_d8vpj"]
 [ext_resource type="ArrayMesh" uid="uid://duagkvhg06hv2" path="res://Models/Plates/plate3.glb" id="1_oagth"]
 [ext_resource type="ArrayMesh" uid="uid://dq6iqj4am004u" path="res://Models/Ship/meshes/ship.glb" id="2_n53tw"]
+[ext_resource type="PackedScene" uid="uid://emlmu62j5d35" path="res://Settings/enviroment_and_shader.tscn" id="2_qs5eo"]
 [ext_resource type="ArrayMesh" uid="uid://bq8okwm0rtsx1" path="res://Models/Rocks/rock_set_03.glb" id="3_d00gp"]
 [ext_resource type="ArrayMesh" uid="uid://dgw0np05phxhs" path="res://Models/Rocks/rock_set_01.glb" id="4_d8vpj"]
 [ext_resource type="ArrayMesh" uid="uid://4uvys8s4pofw" path="res://Models/Rocks/rock_set_02.glb" id="5_qs5eo"]
@@ -27,14 +28,6 @@
 [ext_resource type="PackedScene" uid="uid://cmvwfasaufd64" path="res://Models/Fish/meshes/garbik_pasiasty.glb" id="23_rue0h"]
 [ext_resource type="ArrayMesh" uid="uid://buqvllbrueuhf" path="res://VFX/resources/meshes/apogon_kardynal.tres" id="25_d8vpj"]
 [ext_resource type="PackedScene" uid="uid://kikedb1bq3dm" path="res://Models/Fish/meshes/apogon_kardynal.glb" id="25_n53tw"]
-
-[sub_resource type="Environment" id="Environment_c5gdo"]
-background_mode = 1
-background_color = Color(0.053326614, 0.188741, 0.19732144, 1)
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.0126
-volumetric_fog_albedo = Color(0.79981416, 0.87600726, 0.81454194, 1)
-volumetric_fog_emission_energy = 0.0
 
 [sub_resource type="Animation" id="Animation_7t6ro"]
 length = 0.001
@@ -443,16 +436,11 @@ point_count = 4
 [node name="Main" type="Node" unique_id=2106466385]
 script = ExtResource("1_d8vpj")
 
+[node name="Enviroment and Shader" parent="." unique_id=1521632719 instance=ExtResource("2_qs5eo")]
+
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1085153872]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9037671, 8.240482, 2.433053)
 current = true
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Camera3D" unique_id=1635463989]
-environment = SubResource("Environment_c5gdo")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D/WorldEnvironment" unique_id=1411706455]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.4807348)
-light_color = Color(0.53778845, 0.7261634, 0.7547773, 1)
 
 [node name="Plate3" type="MeshInstance3D" parent="." unique_id=1671627437]
 transform = Transform3D(1.8116937, 0, 0, 0, 1, 0, 0, 0, 3.0556757, 10.90038, -6.1634703, -42.957485)
@@ -735,15 +723,11 @@ use_model_front = true
 [node name="anglerfish" parent="Path3D2/PathFollow3D" unique_id=236139690 instance=ExtResource("19_cgvj2")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Path3D2/PathFollow3D/anglerfish" unique_id=1414825650]
-transform = Transform3D(0.99032825, -0.0048620366, 0.1398659, -0.13988264, -0.0014921436, 0.99036044, -0.004612645, -1.0001508, -0.0021625399, -0.0068187714, 0.7732878, 5.028314)
-light_color = Color(0.5966346, 0.99765116, 0.9999997, 1)
-light_energy = 16.0
-light_volumetric_fog_energy = 6.674
-light_size = 0.235
-light_specular = 0.0
-spot_range = 11.21
-spot_angle = 57.991882
+[node name="OmniLight3D" type="OmniLight3D" parent="Path3D2/PathFollow3D/anglerfish" unique_id=642926272]
+transform = Transform3D(0.6602558, -0.0032500327, 0.093250155, -0.09326011, -0.0009936169, 0.6602907, -0.003075242, -0.666801, -0.0014365464, -0.0068187714, 0.7732887, 5.0283165)
+light_color = Color(0, 0.88, 0.8506667, 1)
+light_energy = 3.0
+light_volumetric_fog_energy = 3.0
 
 [node name="BubblesScattered" parent="." unique_id=304630718 instance=ExtResource("13_ue0mw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.188063, 14.012124, -35.317093)
