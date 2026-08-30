@@ -6,6 +6,7 @@ var _cheat_buffer: StringName = &""
 
 @onready var level: Level = %Level
 @onready var fih: Fih = %Fih
+@onready var angler_fish_enemy: AnglerFishAI = %"Angler Fish Enemy"
 
 
 func _ready() -> void:
@@ -19,6 +20,10 @@ func _start_end_cutscene() -> void:
 	level.end_cutscene_camera.make_current()
 	level.end_cutscene_anim_1.play(&"1_blazenek")
 	level.end_cutscene_anim_2.play(&"end_grupa_blazenkow")
+	level.crab.queue_free()
+	angler_fish_enemy.queue_free()
+	await get_tree().create_timer(5.0).timeout
+	get_tree().change_scene_to_file("res://main/main.tscn")
 
 
 func _unhandled_input(event: InputEvent) -> void:

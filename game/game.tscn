@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4d7t7y5st3nw" path="res://skillcheck/skillcheck.tscn" id="3_h7iqs"]
 [ext_resource type="PackedScene" uid="uid://bycl25hjyypuj" path="res://Kacper Folder/angler_fish_enemy.tscn" id="4_dakft"]
 [ext_resource type="PackedScene" uid="uid://dfwumjvps6ynq" path="res://pause_menu/pause_menu.tscn" id="5_dxrkv"]
+[ext_resource type="AudioStream" uid="uid://i70gtaebrbst" path="res://Sounds/ambient/underwater_ambient.mp3" id="7_u5opy"]
 
 [node name="Game" type="Node" unique_id=581175065]
 script = ExtResource("1_4fuuu")
@@ -18,6 +19,7 @@ unique_name_in_owner = true
 transform = Transform3D(-0.8765111, 0, -0.48138192, 0, 1, 0, 0.48138192, 0, -0.8765111, 3.331089, 4.150873, 69.02253)
 
 [node name="Angler Fish Enemy" parent="." unique_id=620837142 node_paths=PackedStringArray("player") instance=ExtResource("4_dakft")]
+unique_name_in_owner = true
 player = NodePath("../Fih")
 
 [node name="Skillcheck" parent="." unique_id=1804647029 instance=ExtResource("3_h7iqs")]
@@ -25,3 +27,7 @@ visible = false
 
 [node name="PauseMenu" parent="." unique_id=805743049 instance=ExtResource("5_dxrkv")]
 visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=105245507]
+stream = ExtResource("7_u5opy")
+autoplay = true

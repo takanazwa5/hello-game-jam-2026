@@ -14,7 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://bdw3g6yhahp3i" path="res://VFX/resources/meshes/group_blazenki.tscn" id="38_3h5ww"]
 [ext_resource type="PackedScene" uid="uid://v67f47nmemcw" path="res://Models/Enemies/enemy_shark.tscn" id="42_w8p0i"]
 [ext_resource type="ArrayMesh" uid="uid://c6h8gexcyq4be" path="res://VFX/resources/meshes/blazenek_okoniowy.tres" id="43_4vy2l"]
-[ext_resource type="PackedScene" uid="uid://lodsvqvapoj7" path="res://Models/Enemies/enemy_anglerfish.tscn" id="45_ltrux"]
 [ext_resource type="PackedScene" uid="uid://yc18o4qp8xsi" path="res://Models/Enemies/enemy_crab.tscn" id="46_btcbx"]
 
 [sub_resource type="Animation" id="Animation_btcbx"]
@@ -92,14 +91,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0)
 }
 point_count = 5
-
-[sub_resource type="Curve3D" id="Curve3D_btcbx"]
-closed = true
-_data = {
-"points": PackedVector3Array(-14.138588, 0.5406151, -10.192823, 14.138588, -0.5406151, 10.192823, 89.437805, 23.268448, -21.316801, 21.901627, 1.7539043, 1.0094671, -21.901627, -1.7539043, -1.0094671, 70.91736, 19.111536, 3.329198, 9.573906, 0.16081429, 24.721176, -9.573906, -0.16081429, -24.721176, 46.551483, 1.5068245, -16.375038, -9.721367, -9.631317, -0.41257858, 9.721367, 9.631317, 0.41257858, 64.34533, 7.2795963, -40.054993),
-"tilts": PackedFloat32Array(0, 0, 0, 0)
-}
-point_count = 4
 
 [sub_resource type="Curve3D" id="Curve3D_t4gay"]
 closed = true
@@ -681,27 +672,6 @@ use_model_front = true
 [node name="Shark" parent="Enemies(Delete if Enemies are done)/SharkRoaming/Path3D/PathFollow3D" unique_id=1528879968 instance=ExtResource("42_w8p0i")]
 transform = Transform3D(1.0001496, 0, 0, 0, 1.0001619, 0, 0, 0, 1.000151, 0, 0, 0)
 
-[node name="AnglerfishRoaming" type="Node3D" parent="Enemies(Delete if Enemies are done)" unique_id=1852363078]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.237915, 40.885853, -167.4481)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemies(Delete if Enemies are done)/AnglerfishRoaming" unique_id=1149434983]
-libraries/ = SubResource("AnimationLibrary_4vy2l")
-autoplay = &"school_of_fish_anim"
-
-[node name="Path3D" type="Path3D" parent="Enemies(Delete if Enemies are done)/AnglerfishRoaming" unique_id=1007616656]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -186.81245, -55.30396, 170.30026)
-curve = SubResource("Curve3D_btcbx")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="Enemies(Delete if Enemies are done)/AnglerfishRoaming/Path3D" unique_id=824412560]
-transform = Transform3D(0.58471185, 0.025144186, 0.8106647, -9.311862e-10, 0.99935937, -0.030997265, -0.81106055, 0.018127011, 0.58442646, 89.437805, 23.268448, -21.316801)
-use_model_front = true
-
-[node name="Anglerfish" parent="Enemies(Delete if Enemies are done)/AnglerfishRoaming/Path3D/PathFollow3D" unique_id=1200089179 instance=ExtResource("45_ltrux")]
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Enemies(Delete if Enemies are done)/AnglerfishRoaming/Path3D/PathFollow3D/Anglerfish" unique_id=1766095348]
-light_color = Color(0.19680001, 0.82, 0.80961335, 1)
-light_volumetric_fog_energy = 2.0
-
 [node name="CrabRoaming" type="Node3D" parent="Enemies(Delete if Enemies are done)" unique_id=815327261]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.237915, 40.885853, -167.4481)
 
@@ -724,6 +694,7 @@ transform = Transform3D(1.0001525, 0, 0, 0, 1.0001621, 0, 0, 0, 1.0001477, 0, 0,
 
 [node name="EndCutscene" type="Node3D" parent="." unique_id=2105164121]
 unique_name_in_owner = true
+visible = false
 
 [node name="1_Blazenek" type="Node3D" parent="EndCutscene" unique_id=1809386371]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.577003, 30.25076, -144.80812)
