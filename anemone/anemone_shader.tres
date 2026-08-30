@@ -21,7 +21,7 @@ constant = 2.0
 operator = 2
 
 [sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_a0iyl"]
-constant = 0.14
+constant = 0.05
 
 [sub_resource type="VisualShaderNodeCustom" id="VisualShaderNodeCustom_4dkk0"]
 default_input_values = [0, Vector3(1, 1, 1), 1, 1.0]

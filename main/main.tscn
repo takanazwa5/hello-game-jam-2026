@@ -3802,7 +3802,7 @@ transform = Transform3D(-0.9993657, -1.5566655e-09, -0.035612356, 1.5566655e-09,
 curve = SubResource("Curve3D_iuxab")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1234509123]
-transform = Transform3D(0.050449107, 0.4977236, -0.8656779, -0.6155095, 0.69802684, 0.36546656, 0.7862903, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
+transform = Transform3D(0.05044911, 0.4977236, -0.8656779, -0.6155095, 0.69802684, 0.36546656, 0.78629035, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
 use_model_front = true
 
 [node name="GroupAnioly" type="Node3D" parent="Path3D/PathFollow3D" unique_id=719337942]
@@ -4399,29 +4399,35 @@ layout_mode = 2
 [node name="MarginContainer" type="MarginContainer" parent="Control/Tutorial/VBoxContainer" unique_id=659846239]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/margin_left = 20
+theme_override_constants/margin_left = 40
 theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
+theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 20
 
-[node name="Label" type="Label" parent="Control/Tutorial/VBoxContainer/MarginContainer" unique_id=1716447642]
-custom_minimum_size = Vector2(1, 1)
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/Tutorial/VBoxContainer/MarginContainer" unique_id=1452419700]
 layout_mode = 2
+theme = ExtResource("29_o8j3b")
+bbcode_enabled = true
 text = "You went to clean anemones and got lost! You must find your way back home to the coral reef.
 
-Press [W] to swim forward slowly
-[S] will stop you
-[Shift] and [Space] will control your vertical movement
-Mash [A] and [D] to flap your fins and swim faster!
-Clean anemones with [E]
+Press [color=00f7e3b4][W] [/color]to swim forward slowly
+[color=00f7e3b4][S] [/color]will stop you
+[color=00f7e3b4][Shift] [/color]and [color=00f7e3b4][Space] [/color]will control your vertical movement
+Mash [color=00f7e3b4][A] [/color]and [color=00f7e3b4][D] [/color]to flap your fins and swim faster!
+Clean anemones with [color=00f7e3b4][E]
 
-Watch out for predators! You can hide from them inside anemones which need cleaning from time to time.
+[/color]Watch out for predators! You can hide from them inside anemones which need cleaning from time to time.
 They will close when not cleaned for a long time. You can still clean them but from the outside where you're vulnerable."
-autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="OkButton" type="Button" parent="Control/Tutorial/VBoxContainer" unique_id=1631266261]
+[node name="OkButton" type="Button" parent="Control/Tutorial/VBoxContainer/MarginContainer" unique_id=1631266261]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Ok"
+size_flags_vertical = 8
+theme = ExtResource("29_o8j3b")
+theme_override_font_sizes/font_size = 40
+text = "OK!"
+flat = true
