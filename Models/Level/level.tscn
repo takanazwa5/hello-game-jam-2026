@@ -624,6 +624,12 @@ size = Vector3(251.1294, 149.5362, 2.8030777)
 [sub_resource type="BoxShape3D" id="BoxShape3D_se82u"]
 size = Vector3(2.9789429, 149.5362, 173.72691)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sh27a"]
+size = Vector3(2.9789429, 38.76687, 19.66101)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_08qg4"]
+size = Vector3(2.9789429, 38.76687, 25.568298)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_4vo3p"]
 size = Vector3(2.9789429, 305.16898, 357.60443)
 
@@ -1440,34 +1446,52 @@ shape = SubResource("ConcavePolygonShape3D_hhrlx")
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=311169733]
 transform = Transform3D(0.8473796, 2.2351742e-08, -0.3868239, 6.9849193e-10, 0.9314959, 1.4901161e-08, 0.38682392, 4.4703484e-08, 0.8473797, 49.92329, 12.166995, -146.12811)
 shape = SubResource("BoxShape3D_ybrex")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D78" type="CollisionShape3D" parent="StaticBody3D" unique_id=900602500]
 transform = Transform3D(0.8473796, 2.2351742e-08, -0.3868239, 6.9849193e-10, 0.9314959, 1.4901161e-08, 0.38682392, 4.4703484e-08, 0.8473797, -50.619232, 12.166999, 78.5728)
 shape = SubResource("BoxShape3D_ybrex")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D34" type="CollisionShape3D" parent="StaticBody3D" unique_id=1793035506]
 transform = Transform3D(0.6227472, 2.2351742e-08, -0.6927271, -8.591958e-09, 0.9314959, 3.302182e-08, 0.69272715, 4.4703484e-08, 0.62274724, -72.83835, 12.166995, -141.45537)
 shape = SubResource("BoxShape3D_se82u")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D79" type="CollisionShape3D" parent="StaticBody3D" unique_id=124782414]
 transform = Transform3D(0.8933203, 2.2351742e-08, -0.26393893, 5.493498e-09, 0.9314959, 9.747728e-09, 0.26393902, 4.4703484e-08, 0.8933204, -130.16995, 12.166995, -36.904175)
 shape = SubResource("BoxShape3D_se82u")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D77" type="CollisionShape3D" parent="StaticBody3D" unique_id=1924333288]
 transform = Transform3D(0.92004675, 2.2351742e-08, 0.14559874, 2.4506335e-08, 0.9314959, -1.3619759e-09, -0.14559868, 4.4703484e-08, 0.9200468, 114.76208, 12.166997, -46.982067)
 shape = SubResource("BoxShape3D_se82u")
+debug_color = Color(1, 1, 0, 1)
+
+[node name="CollisionShape3D99" type="CollisionShape3D" parent="StaticBody3D" unique_id=313776777]
+transform = Transform3D(0.5102228, 2.2351742e-08, 0.7793316, 6.47538e-08, 0.9314959, 3.0991565e-09, -0.77933156, 4.4703484e-08, 0.5102228, 54.331684, 53.35356, -102.418175)
+shape = SubResource("BoxShape3D_sh27a")
+debug_color = Color(1, 1, 0, 1)
+
+[node name="CollisionShape3D101" type="CollisionShape3D" parent="StaticBody3D" unique_id=1177794669]
+transform = Transform3D(0.7596409, 2.2351745e-08, 0.5391018, 4.723999e-08, 0.9314959, -3.1062424e-09, -0.5391017, 4.470348e-08, 0.75964093, -31.166086, 53.35356, -158.527)
+shape = SubResource("BoxShape3D_08qg4")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D81" type="CollisionShape3D" parent="StaticBody3D" unique_id=796272593]
 transform = Transform3D(0.7569754, 2.2351742e-08, -0.5428381, -4.619501e-09, 0.9314959, 2.2983404e-08, 0.54283816, 4.4703484e-08, 0.75697553, 86.0085, 12.166997, 68.74602)
 shape = SubResource("BoxShape3D_se82u")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D83" type="CollisionShape3D" parent="StaticBody3D" unique_id=1749699722]
 transform = Transform3D(-5.9604645e-08, -0.84660673, -0.38851213, 0.93149614, -1.2111947e-08, 4.1396766e-09, 5.9604645e-08, -0.38851202, 0.846607, -5.157059, 65.6755, -39.898304)
 shape = SubResource("BoxShape3D_4vo3p")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CollisionShape3D93" type="CollisionShape3D" parent="StaticBody3D" unique_id=382847042]
 transform = Transform3D(-5.9604645e-08, -0.84660673, -0.38851213, 0.93149614, -1.2111947e-08, 4.1396766e-09, 5.9604645e-08, -0.38851202, 0.846607, -5.1570516, -53.66597, -39.898315)
 shape = SubResource("BoxShape3D_4vo3p")
+debug_color = Color(1, 1, 0, 1)
 
 [node name="CrabArea" type="Area3D" parent="." unique_id=527848130]
 unique_name_in_owner = true
