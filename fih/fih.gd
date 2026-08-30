@@ -34,7 +34,7 @@ var can_move: bool = false
 @onready var velocity_label: Label = %VelocityLabel
 @onready var camera: Camera3D = %Camera3D
 @onready var camera_rig: Node3D = %CameraRig
-@onready var hidden_icon: PanelContainer = %HiddenIcon
+@onready var hidden_icon: TextureRect = %HiddenIcon
 
 
 func _ready() -> void:

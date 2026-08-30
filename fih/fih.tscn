@@ -266,19 +266,11 @@ mesh = SubResource("ArrayMesh_dxcub")
 libraries/ = SubResource("AnimationLibrary_dxcub")
 autoplay = &"game_start"
 
-[node name="HiddenIcon" type="PanelContainer" parent="." unique_id=909145155]
+[node name="HiddenIcon" type="TextureRect" parent="." unique_id=371342278]
 unique_name_in_owner = true
-visible = false
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -22.0
+offset_left = 298.0
 offset_top = 14.0
-offset_right = 22.0
+offset_right = 342.0
 offset_bottom = 58.0
-grow_horizontal = 2
-
-[node name="TextureRect" type="TextureRect" parent="HiddenIcon" unique_id=371342278]
-layout_mode = 2
 texture = ExtResource("2_nvf21")
 expand_mode = 1
