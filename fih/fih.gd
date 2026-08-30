@@ -27,13 +27,14 @@ var _pending_look_yaw: float = 0.0
 var _pending_look_pitch: float = 0.0
 var _is_hidden: bool = false: set = set_hidden, get = is_hidden
 var _camera_rig_base_position: Vector3
-var _can_move: bool = false
+var can_move: bool = false
 
 
 @onready var fin_timer: Timer = %FinTimer
 @onready var velocity_label: Label = %VelocityLabel
 @onready var camera: Camera3D = %Camera3D
 @onready var camera_rig: Node3D = %CameraRig
+@onready var hidden_icon: PanelContainer = %HiddenIcon
 
 
 func _ready() -> void:
@@ -45,7 +46,7 @@ func _ready() -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if not _can_move: return
+	if not can_move: return
 
 	if event is InputEventMouseMotion:
 		_pending_look_yaw += -event.relative.x * 0.001
@@ -79,7 +80,9 @@ func _flap_fin() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	if not _can_move: return
+	hidden_icon.visible = is_hidden()
+
+	if not can_move: return
 
 	var dot_product: float = camera.global_basis.z.dot(velocity)
 	_acceleration_modifier = dot_product / 10 if dot_product > 0.0 else 0.0
@@ -105,7 +108,7 @@ func _physics_process(_delta: float) -> void:
 
 
 func _process(delta: float) -> void:
-	if not _can_move: return
+	if not can_move: return
 
 	velocity_label.text = "%.2f" % velocity.length()
 

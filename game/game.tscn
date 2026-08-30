@@ -23,6 +23,7 @@ unique_name_in_owner = true
 player = NodePath("../Fih")
 
 [node name="Skillcheck" parent="." unique_id=1804647029 instance=ExtResource("3_h7iqs")]
+unique_name_in_owner = true
 visible = false
 
 [node name="PauseMenu" parent="." unique_id=805743049 instance=ExtResource("5_dxrkv")]
