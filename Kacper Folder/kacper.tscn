@@ -2,10 +2,9 @@
 
 [ext_resource type="Shader" uid="uid://dw8ioscir2v06" path="res://Kacper Folder/fisheye.gdshader" id="1_263pk"]
 [ext_resource type="PackedScene" uid="uid://emlmu62j5d35" path="res://Settings/enviroment_and_shader.tscn" id="2_263pk"]
-[ext_resource type="PackedScene" uid="uid://lodsvqvapoj7" path="res://Models/Enemies/enemy_anglerfish.tscn" id="2_ny5rf"]
-[ext_resource type="Script" uid="uid://d334fprqi26t4" path="res://Models/Enemies/enemy_anglerfish.gd" id="4_cxj6j"]
 [ext_resource type="PackedScene" uid="uid://v67f47nmemcw" path="res://Models/Enemies/enemy_shark.tscn" id="6_263pk"]
 [ext_resource type="PackedScene" uid="uid://yc18o4qp8xsi" path="res://Models/Enemies/enemy_crab.tscn" id="7_cxj6j"]
+[ext_resource type="PackedScene" uid="uid://bycl25hjyypuj" path="res://Kacper Folder/angler_fish_enemy.tscn" id="7_urft8"]
 [ext_resource type="PackedScene" uid="uid://c1li6jqoavtwc" path="res://fih/fih.tscn" id="8_3elb6"]
 [ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="8_urft8"]
 
@@ -17,8 +16,6 @@ shader_parameter/effect_amount = 1.8000002042499998
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_263pk"]
 albedo_color = Color(0.9647059, 0.7921569, 0.62352943, 1)
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_7dy88"]
 
 [node name="Kacper" type="Node3D" unique_id=1201478182]
 
@@ -49,31 +46,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1487346, 4.162245, -12.2038
 
 [node name="Fih" parent="." unique_id=761742824 instance=ExtResource("8_3elb6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29513443, 0)
-motion_mode = 1
 
 [node name="Anemone" parent="." unique_id=2006091342 instance=ExtResource("8_urft8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.151898, 0, 6.363309)
 
-[node name="Angler Fish Enemy" type="CharacterBody3D" parent="." unique_id=37224592 node_paths=PackedStringArray("player")]
+[node name="Angler Fish Enemy" parent="." unique_id=620837142 instance=ExtResource("7_urft8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1062586, 0)
-script = ExtResource("4_cxj6j")
-player = NodePath("../Fih")
-turn_smoothing = 0.25
-
-[node name="Model Root" type="Node3D" parent="Angler Fish Enemy" unique_id=1378196612]
-
-[node name="MeshRoot" parent="Angler Fish Enemy/Model Root" unique_id=1200089179 instance=ExtResource("2_ny5rf")]
-transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.22710717, 0, 1.6251485)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Angler Fish Enemy/Model Root/MeshRoot" unique_id=1272607288]
-transform = Transform3D(1.0000001, 5.2154064e-08, -4.7683716e-07, -5.2154064e-08, 1, 9.685755e-08, 5.364418e-07, -1.1175871e-07, 1, -0.18408346, 0.6051712, 4.98706)
-light_color = Color(0, 0.8039216, 0.9764706, 1)
-light_energy = 0.1
-shadow_enabled = true
-shadow_blur = 10.0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Angler Fish Enemy" unique_id=929949124]
-transform = Transform3D(0.5431744, 0.16882902, 0.82247084, 0, 0.9795753, -0.20107792, -0.8396198, 0.10922039, 0.53208023, 9.761565, 2.9597893, -1.1250172)
-shape = SubResource("SphereShape3D_7dy88")
-
-[node name="SpawnTimer" type="Timer" parent="Angler Fish Enemy" unique_id=829757528]
