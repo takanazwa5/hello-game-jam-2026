@@ -39,6 +39,7 @@ func _ready() -> void:
 
 	if not OS.is_debug_build():
 		clean_label.hide()
+		dirtiness_label.hide()
 
 	hide_area.body_entered.connect(_on_hide_area_body_entered)
 	hide_area.body_exited.connect(_on_hide_area_body_exited)
