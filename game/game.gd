@@ -10,6 +10,7 @@ var _cheat_buffer: StringName = &""
 
 func _ready() -> void:
 	level.fih_entered_end_game_area.connect(_on_fih_entered_end_game_area)
+	level.fih_entered_crab_area.connect(_on_fih_entered_crab_area)
 
 
 func _start_end_cutscene() -> void:
@@ -35,3 +36,8 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _on_fih_entered_end_game_area() -> void:
 	_start_end_cutscene()
+
+
+func _on_fih_entered_crab_area() -> void:
+	level.crab_anim.stop()
+	level.crab.chase_fih(fih)

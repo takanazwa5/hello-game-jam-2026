@@ -1,0 +1,217 @@
+[gd_scene format=3 uid="uid://b4lnw5rjeyiai"]
+
+[ext_resource type="ArrayMesh" uid="uid://duagkvhg06hv2" path="res://Models/Plates/plate3.glb" id="1_y6jdl"]
+[ext_resource type="ArrayMesh" uid="uid://0uwscucu3h0h" path="res://Models/Plates/plate4.glb" id="2_2lxdr"]
+
+[node name="LargePlates" type="Node3D" unique_id=911792219]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Plate_L1" type="MeshInstance3D" parent="." unique_id=1845778768]
+transform = Transform3D(0.951911, 0, 1.4292008, 0, 1.561934, 0, -1.2245257, 0, 1.1110196, -71.27529, 0.04210186, 149.1524)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L2" type="MeshInstance3D" parent="." unique_id=533134066]
+transform = Transform3D(0.47747234, 0, 2.2617366, 0, 2.3152578, 0, -1.9535782, 0, 0.5527893, 106.314514, 0.042098522, 117.39252)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L3" type="MeshInstance3D" parent="." unique_id=1946321807]
+transform = Transform3D(0.82744473, 0, -0.71693355, 0.13341421, 2.0709715, 0.08458825, 0.9580412, -0.28839776, 0.6074243, 15.385776, 0.99311554, 174.7758)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L4" type="MeshInstance3D" parent="." unique_id=1495065503]
+transform = Transform3D(0.8377279, -0.4803582, 0.6889979, 0.13334562, 3.4810035, 0.083466604, -0.9481942, 0.06514178, 0.6204662, 118.848206, 2.1305315, 108.743416)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L5" type="MeshInstance3D" parent="." unique_id=455319279]
+transform = Transform3D(0.12745269, 0.41322654, 0.9197746, 0.07686255, 3.4810045, -0.11542911, -1.2635226, 0.25343874, 0.085756525, -57.478165, 54.657845, -530.5508)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L6" type="MeshInstance3D" parent="." unique_id=844949013]
+transform = Transform3D(-0.8557477, 0.11206072, 0.37461144, 0.10454265, 2.4965985, 0.06562148, -0.5016648, 0.3291146, -0.6253433, -48.43949, 3.8033888, 163.69843)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L7" type="MeshInstance3D" parent="." unique_id=1117009244]
+transform = Transform3D(-1.1454408, 1.0420767, -0.16702083, 0.2420287, 1.7779468, 0.64686173, 0.5215912, 1.4634506, -0.66694224, -127.25231, 26.827707, -158.87717)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L42" type="MeshInstance3D" parent="." unique_id=1327793831]
+transform = Transform3D(-1.2379936, -1.8805467, -0.31981236, -0.5719992, 4.4330034, 0.1347584, 0.23496199, 0.8834244, -1.3569986, -107.85629, 5.51293, -114.08886)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L8" type="MeshInstance3D" parent="." unique_id=1346043795]
+transform = Transform3D(1.4167116, -3.6027135e-08, 0.21850605, -0.03962255, 0.98397917, 0.20128137, -0.2436545, -0.16001275, 1.2377559, 38.633972, 2.543965, 153.257)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L9" type="MeshInstance3D" parent="." unique_id=746119878]
+transform = Transform3D(-1.7600794, 4.180905e-08, 1.4505253, 1.0449128e-07, 0.69403505, -8.8871786e-08, -1.6220106, -6.5759564e-10, -1.5739973, -6.707888, -0.78227043, 117.76263)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L10" type="MeshInstance3D" parent="." unique_id=953227072]
+transform = Transform3D(-0.98796767, 1.1349479e-08, -0.59639513, 5.2155027e-08, 0.88952893, -4.4043272e-08, 0.67168075, -5.237677e-08, -0.87723094, 57.134624, 0.042094707, 116.66884)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L11" type="MeshInstance3D" parent="." unique_id=1058134537]
+transform = Transform3D(-1.3952614, 1.4964325e-08, -0.8521918, 0.13049501, 1.1616952, -0.17243898, 0.93956494, -0.16134639, -1.2415617, -29.80163, 6.417594, 165.23198)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L12" type="MeshInstance3D" parent="." unique_id=861573630]
+transform = Transform3D(1.8221807, -0.031234048, -1.0192866, -0.34196812, 0.8255832, -0.46974343, 1.2715758, 0.26678488, 1.3343186, 29.741371, 22.228775, -90.96958)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L13" type="MeshInstance3D" parent="." unique_id=1605607527]
+transform = Transform3D(-0.4890304, 3.3305085e-08, 1.3078524, 4.616565e-08, 0.674613, -4.9530936e-08, -0.9678463, 1.5350325e-08, -0.66082746, -48.88259, 1.932198, 83.719025)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L14" type="MeshInstance3D" parent="." unique_id=1568011916]
+transform = Transform3D(-1.7545778, -2.8127532e-08, -0.47151116, -5.8429904e-08, 0.66264725, -1.1425944e-07, 0.37531874, -2.8331964e-08, -2.2042677, -9.291631, -0.14802837, 37.666634)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L15" type="MeshInstance3D" parent="." unique_id=1843010206]
+transform = Transform3D(-1.3617824, -0.51424944, 1.9211059, -0.3577965, 2.2320888, 0.3849439, -1.4505925, -0.06779166, -1.8984385, -95.4622, -15.251102, 23.560902)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L16" type="MeshInstance3D" parent="." unique_id=203047304]
+transform = Transform3D(-1.706316, 0, 0.31366596, 0.04612848, 0.73475516, 0.21594454, -0.3349633, 0.10118461, -1.5680879, 6.705394, 3.0545192, -25.016369)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L17" type="MeshInstance3D" parent="." unique_id=1109828034]
+transform = Transform3D(-1.9469665, -0.09557739, 1.6935818, 0.24273302, 0.8884468, 0.65954274, -1.7239069, 0.23304118, -1.8198522, -58.606632, 14.936558, -91.79597)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L18" type="MeshInstance3D" parent="." unique_id=577019693]
+transform = Transform3D(-2.1566794, 5.7035437, -3.3935928, 0.24769339, 24.60185, 1.601062, 1.5461183, 4.0145698, -4.990214, -214.7364, -205.72354, 95.36136)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L19" type="MeshInstance3D" parent="." unique_id=148020907]
+transform = Transform3D(-0.3326626, -0.13889562, 2.402378, 0.40957022, 1.0998389, 0.36042953, -2.2712069, 0.21867974, -0.2868787, 75.88176, 3.4624557, -31.314087)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L20" type="MeshInstance3D" parent="." unique_id=1432783047]
+transform = Transform3D(-0.84013337, -0.057753883, -0.5161388, -0.13506465, 0.6523096, 0.04640631, 0.5306206, 0.07459759, -0.8053921, 46.816, 3.1578505, -12.07896)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L21" type="MeshInstance3D" parent="." unique_id=657731385]
+transform = Transform3D(-0.07831257, 0, -1.8237357, 0, 0.7811559, 0, 1.4119786, 0, -0.10114983, 42.804756, 0.04210186, 24.716316)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L22" type="MeshInstance3D" parent="." unique_id=1296153172]
+transform = Transform3D(-0.7858968, -0.38922557, 2.6879132, -0.11928498, 5.5804, 0.13453424, -1.6099129, -0.22346959, -1.3221024, -98.56089, -44.238953, -44.472183)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L23" type="MeshInstance3D" parent="." unique_id=574124363]
+transform = Transform3D(1.4894845, 0, 0.86269546, 0, 1.4612303, 0, -0.9219202, 0, 1.3937982, -95.9755, 1.3623714, 88.40626)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L24" type="MeshInstance3D" parent="." unique_id=659258989]
+transform = Transform3D(2.1582987, 0, 0.6148925, 0, 1.0800904, 0, -0.6535401, 0, 2.030664, 95.37657, 1.3623648, 42.216736)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L25" type="MeshInstance3D" parent="." unique_id=1606724739]
+transform = Transform3D(-0.23157229, -0.06516605, -1.466417, -0.01322704, 1.1408938, -0.083759405, 1.7632496, 0, -0.19321668, -55.41737, -1.2326536, 42.966133)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L26" type="MeshInstance3D" parent="." unique_id=2141105500]
+transform = Transform3D(1.842014, 0.0506479, 0.00012772088, -0.06848581, 1.3341813, -0.23688842, -0.010003378, 0.19208567, 1.6453364, -47.381355, -5.0762186, -25.051025)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L27" type="MeshInstance3D" parent="." unique_id=292746335]
+transform = Transform3D(1.6476594, -0.03211639, -0.5785973, -0.027633788, 1.1631206, -0.19303057, 0.62574387, 0.1359317, 1.5149916, 30.373222, 8.814255, -55.12471)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L28" type="MeshInstance3D" parent="." unique_id=898901134]
+transform = Transform3D(0.4614653, 0.064883925, 1.6636869, -0.013641193, 0.7397704, -0.15288584, -1.7219064, 0.011528069, 0.44707415, 180.15788, -3.187024, -76.23751)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L29" type="MeshInstance3D" parent="." unique_id=140594559]
+transform = Transform3D(-1.2798325, -0.12044843, 1.1881781, 0.035604075, 1.5645419, 0.22547698, -1.2304916, 0.1705479, -1.2292972, 186.911, -6.176606, 10.853972)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L30" type="MeshInstance3D" parent="." unique_id=817082568]
+transform = Transform3D(-1.9526947, -0.8769389, 1.9038385, -0.56479526, 3.6559486, 0.36128578, -1.9909711, -0.17703389, -1.9697245, 312.44247, -6.915596, -191.63895)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L31" type="MeshInstance3D" parent="." unique_id=140547876]
+transform = Transform3D(3.488372, -0.10199498, -13.383796, -1.5022186, 3.6938272, -0.7587243, 13.678166, 0.43169034, 3.3299706, 280.2901, -40.867573, 49.064472)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L32" type="MeshInstance3D" parent="." unique_id=556076463]
+transform = Transform3D(-11.268657, 0.08604077, 5.5394077, 0.30224285, 2.3432362, -0.5785252, -4.314006, -0.06057901, -14.510073, 162.16669, 23.60092, -477.70123)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L33" type="MeshInstance3D" parent="." unique_id=985446574]
+transform = Transform3D(6.280526, 0.08604077, 10.154853, -0.46129984, 2.343236, -0.18784112, -8.923118, -0.06057901, 7.1571913, 426.35608, 13.650412, -487.36502)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L34" type="MeshInstance3D" parent="." unique_id=1268488546]
+transform = Transform3D(1.4786872, -0.22779131, -1.5125158, -0.03571789, 2.833531, -0.23628762, 1.7329605, 0.25276986, 1.2857171, 87.54609, 10.958038, -114.65138)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L35" type="MeshInstance3D" parent="." unique_id=506186011]
+transform = Transform3D(-1.5970198, 0.20652252, -1.5907699, -0.032514248, 2.5800405, 0.25387922, 1.7912884, 0.23095612, -1.4136401, 148.72903, -12.169181, -5.4871297)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L36" type="MeshInstance3D" parent="." unique_id=2093151242]
+transform = Transform3D(-1.5970198, 0.25715116, -1.5907699, -0.032514248, 3.2125328, 0.25387922, 1.7912884, 0.2875746, -1.4136401, 177.59958, -10.987662, 98.60213)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L37" type="MeshInstance3D" parent="." unique_id=80462623]
+transform = Transform3D(2.3026068, 0.3068865, 0.063206434, -0.16905399, 4.241921, 0.086313844, -0.05964899, -0.17561343, 2.1953526, -121.49395, -12.734917, -132.95506)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L38" type="MeshInstance3D" parent="." unique_id=1694916560]
+transform = Transform3D(4.08254, -0.07957739, -1.4336377, -0.06847047, 2.8819587, -0.47828755, 1.5504565, 0.33680904, 3.7538185, -6.808501, 24.153292, -176.32077)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L39" type="MeshInstance3D" parent="." unique_id=472955131]
+transform = Transform3D(1.4322299, -0.047275033, 0.355196, 0.1410217, 0.64282155, -0.119741306, -0.3469102, 0.06613531, 1.417763, -11.308743, 12.473648, -62.348213)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L40" type="MeshInstance3D" parent="." unique_id=1034325664]
+transform = Transform3D(1.3684746, 0, 1.0727713, 0, 0.7004872, 0, -1.1038415, 0, 1.3299556, 39.613842, 0.04210186, 77.19917)
+mesh = ExtResource("1_y6jdl")
+metadata/_edit_lock_ = true
+
+[node name="Plate_L41" type="MeshInstance3D" parent="." unique_id=1090623709]
+transform = Transform3D(-0.98796767, 2.4023178e-08, -0.59639513, 5.2155023e-08, 1.8828449, -4.4043272e-08, 0.6716808, -1.1086469e-07, -0.87723094, 78.021225, 0.042094707, 154.78612)
+mesh = ExtResource("2_2lxdr")
+metadata/_edit_lock_ = true

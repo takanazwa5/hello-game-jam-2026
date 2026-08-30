@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://dtlxwfkkvf4jr"]
+
+[ext_resource type="PackedScene" uid="uid://b7lthhdhtirge" path="res://VFX/particles/particles_bubbles_point.tscn" id="1_icuo7"]
+[ext_resource type="PackedScene" uid="uid://4wy018l3xj62" path="res://VFX/particles/particles_bubbles_scattered.tscn" id="2_ci6hv"]
+
+[node name="Bubbles" type="Node3D" unique_id=387890551]
+
+[node name="BubblesPoint_1" parent="." unique_id=1571209497 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 18.534071, 29.76773, -164.17598)
+
+[node name="BubblesPoint_2" parent="." unique_id=1685967504 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 37.219475, 28.365326, -150.33807)
+
+[node name="BubblesPoint_3" parent="." unique_id=1807274081 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 19.821068, 28.56071, -130.25009)
+
+[node name="BubblesPoint_4" parent="." unique_id=1633203046 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 19.153646, 30.78443, -111.74759)
+
+[node name="BubblesPoint_5" parent="." unique_id=1002165096 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, -46.17221, 8.539413, 35.29317)
+
+[node name="BubblesPoint_6" parent="." unique_id=1046375859 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, -44.09361, 1.9936664, -5.3581924)
+
+[node name="BubblesPoint_7" parent="." unique_id=666134589 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901161e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, -13.272391, 18.130928, -57.88211)
+
+[node name="BubblesPoint_8" parent="." unique_id=1928483534 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.490116e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 9.884465, 32.151787, -158.10474)
+
+[node name="BubblesPoint_9" parent="." unique_id=23458256 instance=ExtResource("1_icuo7")]
+transform = Transform3D(1, 1.4901159e-08, -2.9802322e-08, 1.4901161e-08, 1, -7.4505806e-08, 0, 4.4703484e-08, 1, 17.583244, 32.151787, -156.42337)
+
+[node name="BubblesScattered_1" parent="." unique_id=1827452263 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.557325, 26.064114, -125.911354)
+
+[node name="BubblesScattered_2" parent="." unique_id=639876665 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.021664, 26.064114, -144.91206)
+
+[node name="BubblesScattered_3" parent="." unique_id=1377895946 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.191349, 28.323233, -140.77216)
+
+[node name="BubblesScattered_4" parent="." unique_id=1160557496 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4676504, 32.157112, -166.21661)
+
+[node name="BubblesScattered_5" parent="." unique_id=638703837 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.68463, 29.86845, -164.95592)
+
+[node name="BubblesScattered_6" parent="." unique_id=557500376 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.444777, 26.352488, -91.505066)
+
+[node name="BubblesScattered_7" parent="." unique_id=2121279978 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.738438, 2.7304726, 5.257971)
+
+[node name="BubblesScattered_8" parent="." unique_id=1767611978 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.328349, 2.7304702, 39.06603)
+
+[node name="BubblesScattered_9" parent="." unique_id=855448095 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.505378, 29.944012, -115.5814)
+
+[node name="BubblesScattered_10" parent="." unique_id=1531344307 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24751079, 28.617096, -133.03052)
+
+[node name="BubblesScattered_11" parent="." unique_id=860554524 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.429394, 12.40615, -34.070324)
+
+[node name="BubblesScattered_12" parent="." unique_id=1670034915 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.847477, 18.955242, -83.593094)
+
+[node name="BubblesScattered_13" parent="." unique_id=603318689 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.86709, 6.8866186, -57.05471)
+
+[node name="BubblesScattered_14" parent="." unique_id=833342782 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.42334, 9.385111, 42.450703)
+
+[node name="BubblesScattered_15" parent="." unique_id=229321810 instance=ExtResource("2_ci6hv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104.004486, -0.092977524, -56.60686)

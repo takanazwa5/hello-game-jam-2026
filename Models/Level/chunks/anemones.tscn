@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://c7idst7tblx66"]
+
+[ext_resource type="PackedScene" uid="uid://dfnie27cpth43" path="res://anemone/anemone.tscn" id="1_3oceh"]
+
+[node name="Anemones" type="Node3D" unique_id=1190602801]
+
+[node name="Anemone1" parent="." unique_id=2006091342 instance=ExtResource("1_3oceh")]
+transform = Transform3D(0.7156443, 0, -0.69846493, 0.11362152, 0.9866801, 0.11641613, 0.68916136, -0.16267318, 0.70611185, -13.244984, 3.3838015, 57.86861)
+
+[node name="Anemone2" parent="." unique_id=140040680 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.9170382, 0, -0.3987994, -0.0008314978, 0.99999785, 0.001912027, 0.39879853, 0.0020850026, -0.91703624, 16.288904, 2.6795397, 40.87709)
+
+[node name="Anemone3" parent="." unique_id=302959368 instance=ExtResource("1_3oceh")]
+transform = Transform3D(0.7259501, 0.061986912, -0.68494827, 0.08797744, 0.9793779, 0.18187629, 0.68209714, -0.19229302, 0.70552593, -29.508818, 4.031459, 35.834366)
+
+[node name="Anemone4" parent="." unique_id=1437318933 instance=ExtResource("1_3oceh")]
+transform = Transform3D(0.71543795, 0.024012696, -0.6982635, -0.01718455, 0.99971163, 0.016772026, 0.69846493, 0, 0.7156443, -2.1025558, 3.0590963, 21.17103)
+
+[node name="Anemone5" parent="." unique_id=1934112492 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.8170176, -0.018049296, -0.57633007, 0.043941174, 0.99465454, -0.09344211, 0.57493585, -0.10166847, -0.81185716, 31.202515, 2.890548, 7.5244207)
+
+[node name="Anemone6" parent="." unique_id=337141740 instance=ExtResource("1_3oceh")]
+transform = Transform3D(0.7035042, -0.18465437, -0.6862831, 0.08362299, 0.9804557, -0.17808431, 0.70575416, 0.06789402, 0.7051962, -57.396374, -1.3910173, -18.610977)
+
+[node name="Anemone7" parent="." unique_id=1926817582 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.81282735, -0.15697187, -0.5609561, -0.26812088, 0.9557485, 0.1210617, 0.5171298, 0.2488063, -0.81894606, 13.358591, 21.93102, -65.99063)
+
+[node name="Anemone9" parent="." unique_id=723950663 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.19512798, 0.005646108, -0.9807616, 0.2450962, 0.9685363, -0.04318753, 0.94965947, -0.24880809, -0.19037238, -35.535873, 3.1763866, 8.41892)
+
+[node name="Anemone10" parent="." unique_id=1197721054 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.39083368, 0.049254645, -0.9191425, -0.14639056, 0.98253155, 0.11489905, 0.90874577, 0.17946023, -0.37679592, 1.0346181, 9.190859, -29.058187)
+
+[node name="Anemone11" parent="." unique_id=1327870490 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.99484944, -0.010380984, 0.100833505, -3.4924597e-10, 0.9947423, 0.102410495, -0.10136645, 0.10188297, -0.9896187, 44.150097, 8.121346, -20.11559)
+
+[node name="Anemone12" parent="." unique_id=2011213411 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.44585618, 0.04829704, -0.89380074, -0.11483822, 0.98720497, 0.110629156, 0.88770735, 0.15196714, -0.43460506, -0.6258578, 27.036737, -95.195885)
+
+[node name="Anemone13" parent="." unique_id=1072977497 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.44471106, -0.1922497, -0.87479836, -0.3437591, 0.93852943, -0.031502664, 0.8270802, 0.28671023, -0.48346192, -23.164598, 18.903997, -73.188286)
+
+[node name="Anemone14" parent="." unique_id=795414005 instance=ExtResource("1_3oceh")]
+transform = Transform3D(-0.9948495, -0.010380974, 0.10083343, -0.00843761, 0.99977076, 0.019680649, -0.10101464, 0.018728472, -0.9947087, 105.835594, 0.19380224, -24.139568)

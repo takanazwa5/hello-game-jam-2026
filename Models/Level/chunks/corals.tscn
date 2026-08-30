@@ -1,0 +1,336 @@
+[gd_scene format=3 uid="uid://btk5b1xv3rm7l"]
+
+[ext_resource type="PackedScene" uid="uid://jpb75r1iuuk8" path="res://anemone/anemone_decor.tscn" id="1_y385g"]
+[ext_resource type="ArrayMesh" uid="uid://rcwwec6526db" path="res://Models/Corals/Coral1.glb" id="2_fadx3"]
+[ext_resource type="ArrayMesh" uid="uid://bkxmtnp1ow0km" path="res://Models/Corals/Coral2.glb" id="3_8faht"]
+[ext_resource type="ArrayMesh" uid="uid://bknpl0e5nlicl" path="res://Models/Corals/Coral3.glb" id="4_i154h"]
+[ext_resource type="ArrayMesh" uid="uid://cy7v1puwikihy" path="res://Models/Corals/Coral4.glb" id="5_552nu"]
+[ext_resource type="ArrayMesh" uid="uid://duut6yxxmi1je" path="res://Models/Corals/Coral5.glb" id="6_scv07"]
+[ext_resource type="ArrayMesh" uid="uid://b2mh0sjikpsgn" path="res://Models/Corals/Coral6.glb" id="7_8tgah"]
+[ext_resource type="ArrayMesh" uid="uid://dahup8if7c235" path="res://Models/Corals/Coral7.glb" id="8_j8fmx"]
+
+[node name="Corals" type="Node3D" unique_id=622199469]
+
+[node name="Anemone_1" parent="." unique_id=2006091342 instance=ExtResource("1_y385g")]
+transform = Transform3D(0.05754015, 0, -0.9983432, 0, 1, 0, 0.9983432, 0, 0.05754015, 9.731966, 29.815857, -158.33328)
+
+[node name="Anemone_2" parent="." unique_id=1516631817 instance=ExtResource("1_y385g")]
+transform = Transform3D(-0.7415478, 0.08480969, -0.6655179, -3.7252903e-09, 0.9919778, 0.12641183, 0.67090005, 0.09374042, -0.73559904, 37.406975, 26.2934, -150.8625)
+
+[node name="Anemone_4" parent="." unique_id=1329492812 instance=ExtResource("1_y385g")]
+transform = Transform3D(-0.55879974, 0.084809706, -0.8249547, -0.030539818, 0.9919778, 0.12266731, 0.8287402, 0.09374042, -0.5517268, 20.09002, 26.052385, -130.72289)
+
+[node name="Anemone_5" parent="." unique_id=209436567 instance=ExtResource("1_y385g")]
+transform = Transform3D(-0.18472683, 0.0848097, -0.9791238, -0.0767949, 0.9919778, 0.10041164, 0.979785, 0.09374042, -0.17673187, -3.2982, 27.34749, -131.93188)
+
+[node name="Anemone_6" parent="." unique_id=1250535300 instance=ExtResource("1_y385g")]
+transform = Transform3D(-0.7415478, 0.08480969, -0.6655179, 0, 0.9919778, 0.12641184, 0.67090005, 0.09374043, -0.73559904, 52.23864, 26.27834, -163.38158)
+
+[node name="Anemone_7" parent="." unique_id=122498402 instance=ExtResource("1_y385g")]
+transform = Transform3D(-0.9935698, -0.022683471, 0.11092628, -0.0474209, 0.97302455, -0.2257755, -0.10281276, -0.22958393, -0.96784335, 19.72521, 28.825163, -111.17594)
+
+[node name="Anemone_8" parent="." unique_id=1419191204 instance=ExtResource("1_y385g")]
+transform = Transform3D(0.43272358, 0.038222663, -0.900716, -0.099868484, 0.994984, -0.0057559833, 0.8959779, 0.09244388, 0.43437028, 2.1067216, 32.562954, -176.50056)
+
+[node name="Anemone_9" parent="." unique_id=720699977 instance=ExtResource("1_y385g")]
+transform = Transform3D(-0.6748974, 0.17906608, -0.7158553, -0.46512118, 0.6498995, 0.6010768, 0.5728664, 0.7386245, -0.355328, 39.24573, 44.843563, -186.11588)
+
+[node name="Coral_1" type="MeshInstance3D" parent="." unique_id=1482725064]
+transform = Transform3D(0.9032524, 0, 0.4291096, 0, 1, 0, -0.4291096, 0, 0.9032524, 16.151997, 28.562096, -166.27692)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_2" type="MeshInstance3D" parent="." unique_id=1653300540]
+transform = Transform3D(0.8684838, -0.24819535, 0.4291096, 0.27477962, 0.96150726, 0, -0.41259202, 0.11791057, 0.9032525, 57.043003, 25.304506, -161.48982)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_3" type="MeshInstance3D" parent="." unique_id=937399586]
+transform = Transform3D(0.9681629, 0.21517646, -0.12790444, -0.19844133, 0.9712103, 0.13180192, 0.15258273, -0.102224216, 0.98298967, -9.872113, 32.692287, -166.36113)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_4" type="MeshInstance3D" parent="." unique_id=1473406633]
+transform = Transform3D(0.8647961, -0.4650005, 0.18947873, 0.2886833, 0.7691892, 0.57009643, -0.4108401, -0.43831787, 0.7994297, 44.49394, 28.435783, -151.23637)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_5" type="MeshInstance3D" parent="." unique_id=310408596]
+transform = Transform3D(0.5539066, -0.5774404, 0.5997918, -0.13345091, 0.6495116, 0.748549, -0.8218142, -0.494669, 0.28270873, 23.647793, 25.96534, -118.72216)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_6" type="MeshInstance3D" parent="." unique_id=453313502]
+transform = Transform3D(0.5539067, 0.42132777, 0.718102, -0.13345087, 0.89628065, -0.42293245, -0.82181406, 0.13843381, 0.5526823, 4.3616023, 27.737751, -138.85217)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_7" type="MeshInstance3D" parent="." unique_id=943675033]
+transform = Transform3D(0.96641445, 0.2456269, 0.07556896, -0.25586078, 0.9471546, 0.19347812, -0.02405202, -0.20631516, 0.97819, -9.402384, 29.662935, -115.9498)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_8" type="MeshInstance3D" parent="." unique_id=1305542753]
+transform = Transform3D(0.5853204, -0.00841052, 0.8107585, 0.20513439, 0.9689499, -0.13804357, -0.78442323, 0.24711427, 0.5688714, 37.86103, 28.398628, -179.92915)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_9" type="MeshInstance3D" parent="." unique_id=870532275]
+transform = Transform3D(0.3110506, -0.5588135, 0.768749, 0.95030195, 0.19407661, -0.24343367, -0.013162233, 0.80626416, 0.59140944, 50.81389, 43.92281, -180.23244)
+mesh = ExtResource("2_fadx3")
+
+[node name="Coral_10" type="MeshInstance3D" parent="." unique_id=2059796660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.435392, 29.768312, -163.26155)
+mesh = ExtResource("3_8faht")
+
+[node name="Coral_11" type="MeshInstance3D" parent="." unique_id=1909617316]
+transform = Transform3D(1, 0, 0, 0, 0.9793237, -0.20229965, 0, 0.20229965, 0.9793237, 43.349777, 27.090237, -159.73314)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_12" type="MeshInstance3D" parent="." unique_id=2025566104]
+transform = Transform3D(0.95800024, -0.2422647, -0.15343845, 0, 0.5350624, -0.8448126, 0.2867674, 0.80933064, 0.5125899, 45.795963, 37.71737, -178.89746)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_13" type="MeshInstance3D" parent="." unique_id=1459042595]
+transform = Transform3D(1, 0, 0, 0, 0.99770576, -0.067699395, 0, 0.067699395, 0.99770576, 29.577463, 29.323385, -177.35701)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_14" type="MeshInstance3D" parent="." unique_id=286579764]
+transform = Transform3D(1, 0, 0, 0, 0.9793237, -0.20229965, 0, 0.20229965, 0.9793237, 4.75041, 28.98874, -142.7798)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_15" type="MeshInstance3D" parent="." unique_id=90861886]
+transform = Transform3D(0.7576271, 0.4984223, -0.42139807, -0.65257984, 0.5667337, -0.50294375, -0.011857927, 0.65603983, 0.7546333, -18.078093, 26.29459, -91.70693)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_16" type="MeshInstance3D" parent="." unique_id=810791540]
+transform = Transform3D(0.98028225, -0.10053955, -0.17011312, -0.014085253, 0.82314414, -0.56765795, 0.19709964, 0.5588611, 0.8054975, 12.54177, 27.812784, -91.27908)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_17" type="MeshInstance3D" parent="." unique_id=867000142]
+transform = Transform3D(1, 0, 0, 0, 0.9793237, -0.20229965, 0, 0.20229965, 0.9793237, 23.126339, 28.487528, -161.12982)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_60" type="MeshInstance3D" parent="." unique_id=530387675]
+transform = Transform3D(0.9516259, -0.27904668, 0.1286124, 0.2989925, 0.9374375, -0.17836744, -0.07079324, 0.20819314, 0.9755226, -18.342026, 16.146814, -61.276714)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_18" type="MeshInstance3D" parent="." unique_id=609730711]
+transform = Transform3D(1, 0, 0, 0, 0.99406207, -0.10881462, 0, 0.10881462, 0.99406207, 25.532917, 25.31042, -129.69585)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_19" type="MeshInstance3D" parent="." unique_id=1177941580]
+transform = Transform3D(0.9977158, 0.06755204, 0, -0.06615531, 0.97708666, -0.20229965, -0.013665753, 0.20183755, 0.9793237, -5.2258306, 32.933277, -169.76273)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_20" type="MeshInstance3D" parent="." unique_id=1736689390]
+transform = Transform3D(0.2092113, 0.050235704, -0.7118541, -0.15820965, 0.7266196, 0.0047804713, 0.6958661, 0.15009838, 0.21510497, -5.4083686, 32.9661, -164.79906)
+mesh = ExtResource("4_i154h")
+
+[node name="Coral_21" type="MeshInstance3D" parent="." unique_id=2142207880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.608353, 26.912834, -156.77657)
+mesh = ExtResource("5_552nu")
+
+[node name="Coral_22" type="MeshInstance3D" parent="." unique_id=2004952298]
+transform = Transform3D(0.8049374, 0, -0.5933597, 0, 1, 0, 0.5933597, 0, 0.8049374, 24.818804, 29.101292, -166.00462)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_22" unique_id=359580898]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_23" type="MeshInstance3D" parent="." unique_id=15580454]
+transform = Transform3D(0.8049374, 0, -0.5933597, 0, 1, 0, 0.5933597, 0, 0.8049374, 41.899544, 27.680508, -173.37756)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_23" unique_id=1607105738]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_24" type="MeshInstance3D" parent="." unique_id=1040292365]
+transform = Transform3D(0.8049374, 0, -0.5933597, 0, 1, 0, 0.5933597, 0, 0.8049374, -0.17367554, 26.51109, -132.99199)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_24" unique_id=1910595162]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_25" type="MeshInstance3D" parent="." unique_id=1847390790]
+transform = Transform3D(0.8049374, 0, -0.5933597, 0, 1, 0, 0.5933597, 0, 0.8049374, 22.301065, 25.070389, -126.5392)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_25" unique_id=483119696]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_26" type="MeshInstance3D" parent="." unique_id=1767681575]
+transform = Transform3D(0.8049374, 0, -0.5933597, 0, 1, 0, 0.5933597, 0, 0.8049374, 5.07576, 28.752361, -102.31501)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_26" unique_id=430565123]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_27" type="MeshInstance3D" parent="." unique_id=577034495]
+transform = Transform3D(-0.20936495, 0, -0.97783756, 0, 1, 0, 0.97783756, 0, -0.20936495, -14.837957, 25.077286, -92.626434)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_27" unique_id=1533985750]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_28" type="MeshInstance3D" parent="." unique_id=471343026]
+transform = Transform3D(-0.20936495, 0, -0.97783756, 0, 1, 0, 0.97783756, 0, -0.20936495, -30.099995, 3.5257387, 9.178504)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_28" unique_id=690769519]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_29" type="MeshInstance3D" parent="." unique_id=2066045721]
+transform = Transform3D(-0.20936495, 0, -0.97783756, 0, 1, 0, 0.97783756, 0, -0.20936495, 8.408326, 1.5684879, 54.50029)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_29" unique_id=2052908104]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_58" type="MeshInstance3D" parent="." unique_id=579572760]
+transform = Transform3D(0.13641754, 0, -0.99065137, 0, 1, 0, 0.99065137, 0, 0.13641754, -15.1634865, 8.138369, 79.55587)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_58" unique_id=1328679203]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_59" type="MeshInstance3D" parent="." unique_id=982876338]
+transform = Transform3D(0.13641754, 3.4031715e-09, -0.99065137, 0.4967044, 0.8652204, 0.068398625, 0.8571319, -0.50139177, 0.118031256, -95.98262, -9.648765, 12.462291)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_59" unique_id=780476034]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_30" type="MeshInstance3D" parent="." unique_id=699950433]
+transform = Transform3D(-0.20936495, 0, -0.97783756, -0.2934248, 0.95391554, 0.062825225, 0.9327744, 0.30007517, -0.19971648, 46.803764, 7.3539343, -13.267187)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_30" unique_id=301252673]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_31" type="MeshInstance3D" parent="." unique_id=2033143713]
+transform = Transform3D(0.74303997, 0, 0.66924685, 0, 0.9999999, 0, -0.66924685, 0, 0.7430401, 121.50218, 0.1151886, 0.16435242)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_31" unique_id=1537876638]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_32" type="MeshInstance3D" parent="." unique_id=1883917233]
+transform = Transform3D(0.98652077, -0.14262116, 0.08022502, 0.15525353, 0.9706834, -0.18349454, -0.051702857, 0.19347638, 0.9797416, 42.37542, 25.72121, -147.98859)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_32" unique_id=1029189382]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_33" type="MeshInstance3D" parent="." unique_id=526657755]
+transform = Transform3D(0.98652077, -0.14262116, 0.08022502, 0.15525353, 0.9706834, -0.18349454, -0.051702857, 0.19347638, 0.9797416, 1.1896915, 30.916647, -173.57115)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_1" type="MeshInstance3D" parent="Coral_33" unique_id=1578300030]
+transform = Transform3D(-0.007923663, 0, 0.9999686, 0, 1, 0, -0.9999686, 0, -0.007923663, 0, 0, 0)
+mesh = ExtResource("6_scv07")
+
+[node name="Coral_34" type="MeshInstance3D" parent="." unique_id=1556104038]
+transform = Transform3D(1, 0, 0, 0, 1.8281062, 0, 0, 0, 1, 33.56517, 28.591625, -159.78311)
+mesh = ExtResource("7_8tgah")
+
+[node name="Coral_35" type="MeshInstance3D" parent="." unique_id=1313247271]
+transform = Transform3D(1, 0, 0, 0, 1.7931378, -0.19465493, 0, 0.35584986, 0.9808718, 27.609959, 26.912195, -150.02332)
+mesh = ExtResource("7_8tgah")
+
+[node name="Coral_36" type="MeshInstance3D" parent="." unique_id=521921423]
+transform = Transform3D(1, 0, 0, 0, 1.766625, -0.25715965, 0, 0.47011515, 0.966369, 16.354252, 25.121613, -126.381454)
+mesh = ExtResource("7_8tgah")
+
+[node name="Coral_37" type="MeshInstance3D" parent="." unique_id=1353049463]
+transform = Transform3D(1, 0, 0, 0, 1.6991948, 0.36886337, 0, -0.67432153, 0.9294838, 16.702724, 30.235287, -107.66696)
+mesh = ExtResource("7_8tgah")
+
+[node name="Coral_38" type="MeshInstance3D" parent="." unique_id=1801006364]
+transform = Transform3D(1, 0, 0, 0, 1.8230017, -0.07467708, 0, 0.13651761, 0.9972078, 46.70665, 24.113985, -133.33241)
+mesh = ExtResource("7_8tgah")
+
+[node name="Coral_39" type="MeshInstance3D" parent="." unique_id=541089308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.378975, 28.030495, -161.487)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_40" type="MeshInstance3D" parent="." unique_id=1623565271]
+transform = Transform3D(0.77471066, -0.5963279, -0.21027792, -1.0389368e-08, 0.3325519, -0.9430851, 0.6323163, 0.7306181, 0.2576315, 42.45004, 35.34978, -179.29184)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_41" type="MeshInstance3D" parent="." unique_id=602598807]
+transform = Transform3D(0.99626905, 0.08071249, 0.030560248, -0.00025959904, 0.3568993, -0.9341427, -0.08630381, 0.9306495, 0.35558853, 35.9717, 44.670784, -185.851)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_42" type="MeshInstance3D" parent="." unique_id=1858375479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.118581, 27.387146, -141.80939)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_43" type="MeshInstance3D" parent="." unique_id=1517860083]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.274807, 24.744045, -138.91353)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_44" type="MeshInstance3D" parent="." unique_id=1924480490]
+transform = Transform3D(0.83396566, 0.37276497, -0.40687567, -0.39538664, 0.91800416, 0.030626051, 0.38492987, 0.13533211, 0.91297, -3.7834702, 32.7784, -166.24146)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_45" type="MeshInstance3D" parent="." unique_id=175114232]
+transform = Transform3D(1, 0, 0, 0, 0.9565574, -0.29154414, 0, 0.29154414, 0.9565574, -1.1361227, 24.089458, -121.435356)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_46" type="MeshInstance3D" parent="." unique_id=1846512138]
+transform = Transform3D(1, 0, 0, 0, 0.9565574, -0.29154414, 0, 0.29154414, 0.9565574, -2.8307018, 26.991758, -97.93711)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_47" type="MeshInstance3D" parent="." unique_id=1541672994]
+transform = Transform3D(0.97709686, -0.21279514, 0, 0.20355076, 0.9346492, -0.29154414, 0.062039174, 0.28486687, 0.95655745, -27.469007, 21.7666, -85.46291)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_61" type="MeshInstance3D" parent="." unique_id=1586577006]
+transform = Transform3D(0.97709686, -0.21279514, 0, 0.20355076, 0.9346492, -0.29154414, 0.062039174, 0.28486687, 0.95655745, -12.946034, 16.432255, -58.94023)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_48" type="MeshInstance3D" parent="." unique_id=1387297627]
+transform = Transform3D(0.97709686, -0.21279514, 0, 0.20355076, 0.9346492, -0.29154414, 0.062039174, 0.28486687, 0.95655745, -10.197833, 10.92642, -38.932262)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_49" type="MeshInstance3D" parent="." unique_id=326413627]
+transform = Transform3D(0.58065176, -0.72896427, 0.3625672, 0.77621466, 0.361313, -0.516666, 0.2456307, 0.58143294, 0.7756298, -4.551654, 7.0860124, 38.54439)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_50" type="MeshInstance3D" parent="." unique_id=1669720678]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 14.862004, 2.3234086, 48.325592)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_51" type="MeshInstance3D" parent="." unique_id=1836778266]
+transform = Transform3D(0.92201185, -0.37999266, 0.0741606, 0.38716173, 0.90493906, -0.17661083, 0, 0.19154942, 0.9814831, 63.55256, 3.9279408, -6.966631)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_52" type="MeshInstance3D" parent="." unique_id=160058230]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, -25.205708, 2.0895245, 52.056366)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_53" type="MeshInstance3D" parent="." unique_id=194421609]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, -46.260056, 7.4464226, 35.290638)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_54" type="MeshInstance3D" parent="." unique_id=1908985894]
+transform = Transform3D(1, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, -44.132668, 0.82613325, -5.172439)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_55" type="MeshInstance3D" parent="." unique_id=876607239]
+transform = Transform3D(0.9371971, 0.34596124, 0.04441209, -0.34794438, 0.918374, 0.18847837, 0.024419291, -0.19209431, 0.9810727, -82.894394, -2.1351798, 4.4357295)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_56" type="MeshInstance3D" parent="." unique_id=1566453141]
+transform = Transform3D(1, 0, 0, 0, 0.9648104, -0.2629467, 0, 0.2629467, 0.9648104, 7.301834, 29.70037, -158.81084)
+mesh = ExtResource("8_j8fmx")
+
+[node name="Coral_57" type="MeshInstance3D" parent="." unique_id=112958629]
+transform = Transform3D(0.8503522, 0.5262139, 0, -0.18184792, 0.29386297, -0.9383901, -0.49379387, 0.7979621, 0.34557796, 19.952545, 34.392017, -165.86868)
+mesh = ExtResource("8_j8fmx")

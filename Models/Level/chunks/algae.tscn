@@ -1,0 +1,549 @@
+[gd_scene format=3 uid="uid://be0fe5x8cifnm"]
+
+[ext_resource type="ArrayMesh" uid="uid://6yup2fefosxh" path="res://Models/algaes/meshes/algae1.glb" id="1_f0k87"]
+[ext_resource type="ArrayMesh" uid="uid://c0y75mt03gcfv" path="res://Models/algaes/meshes/algae2.glb" id="2_1rgv6"]
+[ext_resource type="ArrayMesh" uid="uid://brwaxefuwc3l1" path="res://Models/algaes/meshes/algae3.glb" id="3_tfyqj"]
+[ext_resource type="ArrayMesh" uid="uid://c6w1flr0biojj" path="res://Models/algaes/meshes/algae4.glb" id="4_6ovw3"]
+
+[node name="Algae" type="Node3D" unique_id=971543898]
+
+[node name="Algae_1" type="MeshInstance3D" parent="." unique_id=623218968]
+transform = Transform3D(0.8872572, 0, 0, 0, 0.8872572, 0, 0, 0, 0.8872572, 7.238058, 27.684204, -141.11649)
+instance_shader_parameters/wave_offset = 1.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_2" type="MeshInstance3D" parent="." unique_id=963376092]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8443832, 28.792654, -145.97614)
+instance_shader_parameters/wave_offset = 2.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_3" type="MeshInstance3D" parent="." unique_id=569866718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5473609, 32.260612, -179.37286)
+instance_shader_parameters/wave_offset = 2.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_4" type="MeshInstance3D" parent="." unique_id=1815638226]
+transform = Transform3D(1, 0, 0, 0, 1.1654345, 0, 0, 0, 1, 58.821922, 25.273363, -159.30405)
+instance_shader_parameters/wave_offset = 2.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_5" type="MeshInstance3D" parent="." unique_id=1421865828]
+transform = Transform3D(1, 0, 0, 0, 0.85171396, 0, 0, 0, 1, -2.8012686, 31.750526, -171.7241)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_6" type="MeshInstance3D" parent="." unique_id=1036767696]
+transform = Transform3D(0.7085729, 0, 0, 0, 0.7085729, 0, 0, 0, 0.7085729, 1.3216715, 28.792654, -145.90483)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_7" type="MeshInstance3D" parent="." unique_id=1008551183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.857506, 24.099653, -125.51337)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_8" type="MeshInstance3D" parent="." unique_id=89094011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.075974, 29.593714, -109.15878)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_9" type="MeshInstance3D" parent="." unique_id=784695683]
+transform = Transform3D(1, 0, 0, 0, 0.8525767, 0, 0, 0, 1, -21.596407, 27.536615, -116.99014)
+instance_shader_parameters/wave_offset = 6.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_10" type="MeshInstance3D" parent="." unique_id=869091145]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.867779, 27.536617, -121.63401)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_11" type="MeshInstance3D" parent="." unique_id=971305453]
+transform = Transform3D(1, 0, 0, 0, 1.1156917, 0, 0, 0, 1, -29.275671, 28.209429, -113.49512)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_12" type="MeshInstance3D" parent="." unique_id=1989550590]
+transform = Transform3D(1, 0, 0, 0, 1.1156917, 0, 0, 0, 1, -38.358616, 18.931646, -89.15249)
+instance_shader_parameters/wave_offset = 6.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_13" type="MeshInstance3D" parent="." unique_id=1081246075]
+transform = Transform3D(1, 0, 0, 0, 0.9955198, 0, 0, 0, 1, -42.34835, 17.830984, -86.26771)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_14" type="MeshInstance3D" parent="." unique_id=415266163]
+transform = Transform3D(1, 0, 0, 0, 0.7842196, 0, 0, 0, 1, -44.3364, 15.391298, -73.78122)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_15" type="MeshInstance3D" parent="." unique_id=1436110485]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.1156917, 0, -0.2536657, 0, 0.96729195, 39.03857, 8.977569, 42.25939)
+instance_shader_parameters/wave_offset = 6.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_16" type="MeshInstance3D" parent="." unique_id=976020168]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.248304, 0, -0.2536657, 0, 0.96729195, 42.208797, 9.5349, 50.56566)
+instance_shader_parameters/wave_offset = 6.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_17" type="MeshInstance3D" parent="." unique_id=1790771227]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 0.9135695, 0, -0.2536657, 0, 0.96729195, 34.12455, 5.4534206, 46.43392)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_18" type="MeshInstance3D" parent="." unique_id=1942892760]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, 44.44587, 4.92624, 35.27719)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_19" type="MeshInstance3D" parent="." unique_id=1905430691]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, 26.796206, 5.3805666, 79.4329)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_20" type="MeshInstance3D" parent="." unique_id=2112182183]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, 46.604248, 5.8961983, 75.72688)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_21" type="MeshInstance3D" parent="." unique_id=1316707414]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.2471373, 0, -0.2536657, 0, 0.96729195, -17.230644, 2.0793686, 4.0968275)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_22" type="MeshInstance3D" parent="." unique_id=1161790004]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, 73.857185, 6.2590475, -42.09222)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_23" type="MeshInstance3D" parent="." unique_id=1244838640]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.3681042, 0, -0.2536657, 0, 0.96729195, 83.65266, 3.0545063, -42.898853)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_24" type="MeshInstance3D" parent="." unique_id=307099269]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.3681042, 0, -0.2536657, 0, 0.96729195, 103.46335, -0.6800165, -53.43508)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_25" type="MeshInstance3D" parent="." unique_id=937974095]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1, 0, -0.2536657, 0, 0.96729195, 104.641174, -0.6544399, -59.04254)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_26" type="MeshInstance3D" parent="." unique_id=1157718290]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1, 0, -0.2536657, 0, 0.96729195, 109.54815, -6.0307555, 31.832603)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_27" type="MeshInstance3D" parent="." unique_id=2003144285]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 0.7499759, 0, -0.2536657, 0, 0.96729195, 110.56306, -4.6427817, 25.807749)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_28" type="MeshInstance3D" parent="." unique_id=131026766]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, -79.30461, 5.523551, -57.21227)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_29" type="MeshInstance3D" parent="." unique_id=725938406]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 0.7552928, 0, -0.2536657, 0, 0.96729195, -76.03398, 7.743082, -59.439957)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_30" type="MeshInstance3D" parent="." unique_id=1719015365]
+transform = Transform3D(1, 0, 0, 0, 0.7552928, 0, 0, 0, 1, -52.196766, 14.795768, -70.444214)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_31" type="MeshInstance3D" parent="." unique_id=803636862]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, 13.813804, 7.858348, 93.90496)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_32" type="MeshInstance3D" parent="." unique_id=1008675467]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.1395715, 0, -0.2536657, 0, 0.96729195, 13.815251, 5.3784914, 81.51236)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_33" type="MeshInstance3D" parent="." unique_id=2055738679]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 1.027644, 0, -0.2536657, 0, 0.96729195, -29.512667, 6.1424227, 73.76813)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_34" type="MeshInstance3D" parent="." unique_id=1512283141]
+transform = Transform3D(1, 0, 0, 0, 1.2740633, 0, 0, 0, 1, -34.085354, 7.4950094, 71.80369)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_35" type="MeshInstance3D" parent="." unique_id=1905896356]
+transform = Transform3D(1, 0, 0, 0, 0.757267, 0, 0, 0, 1, -39.1372, 7.4950094, 61.43093)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_36" type="MeshInstance3D" parent="." unique_id=783142562]
+transform = Transform3D(1, 0, 0, 0, 0.757267, 0, 0, 0, 1, -60.554916, 5.4075117, 50.11194)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_37" type="MeshInstance3D" parent="." unique_id=1230994893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.45984, -2.068738, 11.829706)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_38" type="MeshInstance3D" parent="." unique_id=1498745502]
+transform = Transform3D(1, 0, 0, 0, 0.7507262, 0, 0, 0, 1, -85.28572, -2.068738, 8.315647)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_39" type="MeshInstance3D" parent="." unique_id=1431432429]
+transform = Transform3D(1, 0, 0, 0, 0.7507262, 0, 0, 0, 1, -77.11209, -13.37092, -13.053764)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_40" type="MeshInstance3D" parent="." unique_id=1349771951]
+transform = Transform3D(0.96729195, 0, 0.2536657, 0, 0.7842196, 0, -0.2536657, 0, 0.96729195, 34.948933, 3.0137348, 56.4954)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_41" type="MeshInstance3D" parent="." unique_id=4931588]
+transform = Transform3D(1, 0, 0, 0, 0.94559187, 0, 0, 0, 1, 24.381323, 33.22193, -93.80243)
+instance_shader_parameters/wave_offset = 4.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_42" type="MeshInstance3D" parent="." unique_id=740154995]
+transform = Transform3D(1, 0, 0, 0, 0.8672601, 0, 0, 0, 1, 21.658691, 25.954609, -82.29039)
+instance_shader_parameters/wave_offset = 2.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_43" type="MeshInstance3D" parent="." unique_id=1018113727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.163185, 16.909685, -65.64315)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_44" type="MeshInstance3D" parent="." unique_id=713730636]
+transform = Transform3D(1, 0, 0, 0, 0.7964685, 0, 0, 0, 1, 47.972538, 16.909685, -66.2859)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_45" type="MeshInstance3D" parent="." unique_id=1050570984]
+transform = Transform3D(0.31008327, 0, -0.9507094, 0, 1, 0, 0.9507094, 0, 0.31008327, 25.473598, 12.666906, -33.347878)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_46" type="MeshInstance3D" parent="." unique_id=343011363]
+transform = Transform3D(0.31008324, 0, -0.95070934, 0, 0.5370049, 0, 0.95070934, 0, 0.31008324, 21.393314, 11.997876, -33.600563)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_47" type="MeshInstance3D" parent="." unique_id=429034441]
+transform = Transform3D(0.31008324, 0, -0.95070934, 0, 0.7532954, 0, 0.95070934, 0, 0.31008324, -19.375572, 0.5792866, -2.1292255)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_48" type="MeshInstance3D" parent="." unique_id=161446328]
+transform = Transform3D(0.31008327, 0, -0.9507094, 0, 1, 0, 0.9507094, 0, 0.31008327, -13.313524, 2.3428912, 17.207544)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_49" type="MeshInstance3D" parent="." unique_id=1941205183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.61338, 23.805021, -87.929306)
+instance_shader_parameters/wave_offset = 6.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_50" type="MeshInstance3D" parent="." unique_id=2135464236]
+transform = Transform3D(1, 0, 0, 0, 1.302275, 0, 0, 0, 1, 33.552673, 27.877121, -88.29053)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_51" type="MeshInstance3D" parent="." unique_id=2077978865]
+transform = Transform3D(1, 0, 0, 0, 0.8778407, 0, 0, 0, 1, 30.223763, 29.09531, -180.27563)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_52" type="MeshInstance3D" parent="." unique_id=915320821]
+transform = Transform3D(1, 0, 0, 0, 0.87825817, 0, 0, 0, 1, -8.304808, 29.929674, -211.37877)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_53" type="MeshInstance3D" parent="." unique_id=1060952804]
+transform = Transform3D(1, 0, 0, 0, 1.1819613, 0, 0, 0, 1, 64.04269, 29.929674, -175.18048)
+instance_shader_parameters/wave_offset = 1.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_54" type="MeshInstance3D" parent="." unique_id=163482472]
+transform = Transform3D(1, 0, 0, 0, 1.1819613, 0, 0, 0, 1, 88.94142, 24.761724, -177.32092)
+instance_shader_parameters/wave_offset = 1.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_55" type="MeshInstance3D" parent="." unique_id=1110086417]
+transform = Transform3D(1, 0, 0, 0, 1.1819613, 0, 0, 0, 1, 78.75864, 25.069117, -152.42842)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_56" type="MeshInstance3D" parent="." unique_id=571861227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.73105, 23.164371, -193.44017)
+instance_shader_parameters/wave_offset = 1.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_57" type="MeshInstance3D" parent="." unique_id=265837612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.320747, 27.935251, -223.40985)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_58" type="MeshInstance3D" parent="." unique_id=2128279403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.648294, 30.838993, -200.96895)
+instance_shader_parameters/wave_offset = 3.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_59" type="MeshInstance3D" parent="." unique_id=689450757]
+transform = Transform3D(1, 0, 0, 0, 1.2874788, 0, 0, 0, 1, -15.839325, 29.411263, -210.86928)
+instance_shader_parameters/wave_offset = 2.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_60" type="MeshInstance3D" parent="." unique_id=1978162567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.591602, 29.518095, -187.81763)
+instance_shader_parameters/wave_offset = 5.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_61" type="MeshInstance3D" parent="." unique_id=196443423]
+transform = Transform3D(1, 0, 0, 0, 0.8593315, 0, 0, 0, 1, 26.028505, 29.446302, -180.03456)
+instance_shader_parameters/wave_offset = 7.0
+mesh = ExtResource("1_f0k87")
+
+[node name="Algae_62" type="MeshInstance3D" parent="." unique_id=1780595811]
+transform = Transform3D(-0.62018377, 0, -0.78445655, 0, 1, 0, 0.78445655, 0, -0.62018377, -0.26914644, 1.769263, 40.532257)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_63" type="MeshInstance3D" parent="." unique_id=1182878375]
+transform = Transform3D(-0.86627114, 0, -1.095727, 0, 1.3967975, 0, 1.095727, 0, -0.86627114, 17.171688, 2.6842287, 44.39712)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_64" type="MeshInstance3D" parent="." unique_id=1530120999]
+transform = Transform3D(-0.62018377, 0, -0.78445655, 0, 1, 0, 0.78445655, 0, -0.62018377, 15.770618, 0.9797919, 61.02543)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_65" type="MeshInstance3D" parent="." unique_id=1814695458]
+transform = Transform3D(-0.25381577, 0, -0.9672526, 0, 1, 0, 0.9672526, 0, -0.25381577, -4.302225, 2.8831315, 57.572823)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_66" type="MeshInstance3D" parent="." unique_id=696958327]
+transform = Transform3D(-0.25381577, 0, -0.9672526, 0, 1, 0, 0.9672526, 0, -0.25381577, -19.477995, 3.7988687, 54.860756)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_67" type="MeshInstance3D" parent="." unique_id=1871901598]
+transform = Transform3D(-0.9847717, 0, -0.17385198, 0, 1, 0, 0.17385198, 0, -0.9847717, -24.229689, 4.0659866, 42.806004)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_68" type="MeshInstance3D" parent="." unique_id=2112558249]
+transform = Transform3D(-0.9847717, 0, -0.17385198, 0, 1, 0, 0.17385198, 0, -0.9847717, 3.246831, 2.4140759, 12.84501)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_69" type="MeshInstance3D" parent="." unique_id=873283955]
+transform = Transform3D(-0.9811917, -0.07452658, -0.1780694, -0.10573816, 0.9792673, 0.17278656, 0.16150032, 0.18836546, -0.9687292, 24.205776, 4.494082, -8.519717)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_70" type="MeshInstance3D" parent="." unique_id=10565310]
+transform = Transform3D(-0.9358504, 0.34077546, -0.08975657, 0.33534807, 0.9394667, 0.07031864, 0.10828613, 0.03570798, -0.99347854, 58.96335, 5.5017776, 11.355477)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_71" type="MeshInstance3D" parent="." unique_id=1888682651]
+transform = Transform3D(-0.996022, -0.08159593, 0.03580874, -0.088394105, 0.9555037, -0.28142375, -0.011252383, -0.28346965, -0.9589154, 76.26138, 6.26115, -8.903266)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_72" type="MeshInstance3D" parent="." unique_id=1944542615]
+transform = Transform3D(-0.97457457, -0.2115051, 0.07396014, -0.19139446, 0.9574471, 0.2160165, -0.116501465, 0.19636847, -0.9735846, 49.67848, 10.211763, -33.02952)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_73" type="MeshInstance3D" parent="." unique_id=1448406462]
+transform = Transform3D(-0.75320846, -0.0021611545, -0.6577783, -0.037316203, 0.9985244, 0.039449707, 0.6567225, 0.054259703, -0.7521779, 36.127647, 8.372961, -30.427244)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_74" type="MeshInstance3D" parent="." unique_id=1017505215]
+transform = Transform3D(-0.72252667, -0.24045408, -0.6481799, -0.29802638, 0.95430857, -0.0218075, 0.6238073, 0.17741823, -0.76117533, 18.28976, 11.1154, -33.44515)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_75" type="MeshInstance3D" parent="." unique_id=15048601]
+transform = Transform3D(-0.77857614, 0, 0.62755007, 0, 1, 0, -0.62755007, 0, -0.77857614, -42.192123, 7.001994, 39.201797)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_76" type="MeshInstance3D" parent="." unique_id=617991862]
+transform = Transform3D(-0.89961946, 0, -0.43667457, 0, 1, 0, 0.43667457, 0, -0.89961946, -40.71743, 5.825051, 27.060965)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_77" type="MeshInstance3D" parent="." unique_id=992914063]
+transform = Transform3D(-0.89961946, 0, -0.43667457, 0, 1, 0, 0.43667457, 0, -0.89961946, -55.971317, 1.7674246, 18.6635)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_78" type="MeshInstance3D" parent="." unique_id=604460658]
+transform = Transform3D(-0.542163, 0, -0.84027344, 0, 1, 0, 0.84027344, 0, -0.542163, -43.6249, 1.2376242, -2.539863)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_79" type="MeshInstance3D" parent="." unique_id=878854735]
+transform = Transform3D(-0.9949991, 1.3473849e-08, -1.5421032, -0.39304692, 1.7746282, 0.2536026, 1.4911727, 0.46776074, -0.96213776, -53.249565, -0.52959657, -19.852636)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_80" type="MeshInstance3D" parent="." unique_id=220776872]
+transform = Transform3D(-0.5910296, -0.0794334, -0.8027293, 0.456937, 0.7871139, -0.4143195, 0.6647502, -0.6116716, -0.42891157, -17.607967, 6.2394867, -22.284714)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_81" type="MeshInstance3D" parent="." unique_id=1823948565]
+transform = Transform3D(0.74417925, -0.15488026, -0.64977646, 0.11666645, 0.9879333, -0.10186674, 0.6577129, 0, 0.7532687, -19.439718, 24.776165, -86.72784)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_82" type="MeshInstance3D" parent="." unique_id=1275282026]
+transform = Transform3D(0.7334721, -0.37410253, -0.56750846, 0.20558068, 0.9179078, -0.3393849, 0.6478851, 0.1322606, 0.7501679, 3.9175682, 28.744009, -99.380974)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_83" type="MeshInstance3D" parent="." unique_id=2000121379]
+transform = Transform3D(0.9684856, -0.28159928, -0.8186776, 0.36881912, 1.2455548, 0.007877002, 0.78326476, -0.23830958, 1.0085634, -14.798338, 29.29838, -116.33383)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_84" type="MeshInstance3D" parent="." unique_id=170766624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.422657, 27.175478, -160.02858)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_85" type="MeshInstance3D" parent="." unique_id=1907339832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.04569, 28.873064, -160.84103)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_86" type="MeshInstance3D" parent="." unique_id=1342473216]
+transform = Transform3D(0.99242365, 0.122863665, 0, -0.122863665, 0.99242365, 0, 0, 0, 1, 12.32153, 28.761711, -151.9964)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_87" type="MeshInstance3D" parent="." unique_id=1087205818]
+transform = Transform3D(0.99242365, 0.122863665, 0, -0.122863665, 0.99242365, 0, 0, 0, 1, -1.8109417, 30.182697, -155.54155)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_88" type="MeshInstance3D" parent="." unique_id=1064037406]
+transform = Transform3D(0.9924236, 0.12286366, 0, -0.12090657, 0.97661537, -0.17777543, -0.021842143, 0.17642856, 0.9840711, 12.030104, 27.59813, -87.393585)
+mesh = ExtResource("2_1rgv6")
+
+[node name="Algae_89" type="MeshInstance3D" parent="." unique_id=758401081]
+transform = Transform3D(0.9652287, -0.26140705, 0, 0.26140705, 0.9652287, 0, 0, 0, 1, -11.015312, 8.366346, -29.173222)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_90" type="MeshInstance3D" parent="." unique_id=1972119436]
+transform = Transform3D(0.9652287, -0.26140705, 0, 0.26140705, 0.9652287, 0, 0, 0, 1, 20.983185, 17.477407, -50.55025)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_91" type="MeshInstance3D" parent="." unique_id=161811771]
+transform = Transform3D(0.9652287, -0.26140705, 0, 0.26140705, 0.9652287, 0, 0, 0, 1, 23.273075, 3.1800628, 21.944305)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_92" type="MeshInstance3D" parent="." unique_id=1535950258]
+transform = Transform3D(0.18996735, -0.0514477, 0.9804415, 0.26140705, 0.9652287, 6.75434e-09, -0.9463502, 0.25629434, 0.19681068, -9.599905, 3.1800628, 36.982983)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_93" type="MeshInstance3D" parent="." unique_id=45382581]
+transform = Transform3D(0.6955198, -0.18836343, 0.69337684, 0.26140705, 0.9652287, 3.2711143e-09, -0.6692672, 0.18125358, 0.72057515, -35.77249, 3.1800628, 23.020304)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_94" type="MeshInstance3D" parent="." unique_id=1366747727]
+transform = Transform3D(-0.001902048, 0.00028395574, -0.9999982, -0.5837124, 0.8119593, 0.0013408117, 0.81195825, 0.5837138, -0.0013786369, -64.06079, -0.017033339, -19.745096)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_95" type="MeshInstance3D" parent="." unique_id=293147625]
+transform = Transform3D(-0.023537496, -0.14477979, -0.98918396, 0.14577733, 0.97838515, -0.14666797, 0.9890374, -0.1476528, -0.0019231268, -36.16881, 1.0002112, -8.851711)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_96" type="MeshInstance3D" parent="." unique_id=1817655819]
+transform = Transform3D(-0.90168226, 0.1346116, -0.41091257, 0.14765306, 0.9890392, 0, 0.40640864, -0.0606725, -0.91167474, 5.534144, 2.1479192, -0.3083434)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_97" type="MeshInstance3D" parent="." unique_id=877980309]
+transform = Transform3D(-0.28755367, 0.042928703, 0.95680195, 0.14765304, 0.9890391, 3.396253e-09, -0.9463149, 0.14127478, -0.29074037, 17.016264, 2.1479192, 24.244547)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_98" type="MeshInstance3D" parent="." unique_id=1318694126]
+transform = Transform3D(0.19324306, 0.17421994, 0.9655592, 0.24353316, 0.94479483, -0.21921307, -0.9504469, 0.27750713, 0.1401467, 60.370567, 5.299661, 12.816393)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_99" type="MeshInstance3D" parent="." unique_id=1477101170]
+transform = Transform3D(0.99668235, 0.08139246, 0, -0.08139249, 0.996682, 0, 0, 0, 1, 35.343014, 5.299661, 19.10281)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_100" type="MeshInstance3D" parent="." unique_id=539576163]
+transform = Transform3D(0.10480422, 0.008558667, -0.99445605, -0.08139249, 0.996682, 0, 0.9911568, 0.08094122, 0.10515308, -0.8950176, 8.6963825, -22.603125)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_101" type="MeshInstance3D" parent="." unique_id=1083543826]
+transform = Transform3D(-0.49679914, -0.0405703, -0.86691684, -0.08139249, 0.996682, 0, 0.86404073, 0.07056049, -0.4984528, -14.120264, 2.0349402, 4.362458)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_102" type="MeshInstance3D" parent="." unique_id=1863836776]
+transform = Transform3D(-0.49679914, -0.0405703, -0.86691684, -0.08139249, 0.996682, 0, 0.86404073, 0.07056049, -0.4984528, 15.413549, 29.653631, -162.1228)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_103" type="MeshInstance3D" parent="." unique_id=674048121]
+transform = Transform3D(-0.38909975, -0.03177519, 0.9206475, -0.08139248, 0.996682, -3.7137629e-09, -0.9175931, -0.07493375, -0.39039493, -2.2944207, 31.298208, -163.99164)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_104" type="MeshInstance3D" parent="." unique_id=1024800929]
+transform = Transform3D(-0.98888177, -0.08075541, 0.12486678, -0.08139248, 0.996682, -7.4275257e-09, -0.1244525, -0.01016322, -0.99217343, 34.970493, 28.504278, -173.73209)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_105" type="MeshInstance3D" parent="." unique_id=830774793]
+transform = Transform3D(0.9089221, 0.07422565, 0.4103068, -0.08139248, 0.996682, -3.7137629e-09, -0.4089456, -0.03339587, 0.9119476, 41.600414, 27.266983, -163.99855)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_106" type="MeshInstance3D" parent="." unique_id=812880860]
+transform = Transform3D(0.17733745, 0.014481973, -0.98404354, -0.081392474, 0.996682, -9.732319e-10, 0.9807788, 0.080093704, 0.17792773, 8.741307, 27.62384, -138.22038)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_107" type="MeshInstance3D" parent="." unique_id=1858902560]
+transform = Transform3D(-0.4536215, -0.037044264, -0.8904242, -0.08139248, 0.9966821, -1.0300021e-09, 0.88747007, 0.0724738, -0.4551315, -9.331841, 27.623842, -122.61947)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_108" type="MeshInstance3D" parent="." unique_id=1026349878]
+transform = Transform3D(-0.47164062, -0.038515765, 0.88094926, 0.16357657, 0.97788393, 0.13032906, -0.866486, 0.20557112, -0.45490947, 17.78122, 23.721266, -120.21332)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_109" type="MeshInstance3D" parent="." unique_id=1614417911]
+transform = Transform3D(-0.47164062, -0.038515765, 0.88094926, 0.10820209, 0.9889678, 0.101167396, -0.87512714, 0.14303519, -0.46226987, 37.74289, 25.350775, -141.19463)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_110" type="MeshInstance3D" parent="." unique_id=1590039996]
+transform = Transform3D(-0.37229663, 0.1147168, 0.92099696, -0.027836833, 0.9905051, -0.1346271, -0.9276964, -0.07575882, -0.36556837, 24.920357, 26.157764, -139.06699)
+mesh = ExtResource("3_tfyqj")
+
+[node name="Algae_111" type="MeshInstance3D" parent="." unique_id=1823785865]
+transform = Transform3D(0.9907042, -0.12885876, 0.043597057, 0.13549742, 0.9631855, -0.23219407, -0.012071822, 0.23594289, 0.9716918, 8.154024, 25.508469, -127.37889)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_112" type="MeshInstance3D" parent="." unique_id=1695320035]
+transform = Transform3D(0.9907042, -0.12885876, 0.043597057, 0.13549742, 0.9631855, -0.23219407, -0.012071822, 0.23594289, 0.9716918, 61.87987, 8.403142, -20.504763)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_113" type="MeshInstance3D" parent="." unique_id=1254409133]
+transform = Transform3D(0.9907042, -0.12885876, 0.043597057, 0.13549742, 0.9631855, -0.23219407, -0.012071822, 0.23594289, 0.9716918, 101.92767, -0.40480423, -42.91934)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_114" type="MeshInstance3D" parent="." unique_id=1596199296]
+transform = Transform3D(0.9981407, 0.0056502484, 0.06068915, -0.009372201, 0.9980802, 0.0612199, -0.06022675, -0.06167485, 0.9962774, -77.510994, -3.0499032, 5.351601)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_115" type="MeshInstance3D" parent="." unique_id=1437650272]
+transform = Transform3D(0.9907042, -0.12885876, 0.04359706, 0.13174425, 0.9887026, -0.07148631, -0.033892903, 0.076565385, 0.99648815, 25.34746, 27.318655, -151.35696)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_116" type="MeshInstance3D" parent="." unique_id=1054416943]
+transform = Transform3D(0.9907042, -0.12885876, 0.04359706, 0.13174425, 0.9887026, -0.07148631, -0.033892903, 0.076565385, 0.99648815, 45.9063, 24.595295, -143.04422)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_117" type="MeshInstance3D" parent="." unique_id=109465345]
+transform = Transform3D(0.9907042, -0.12885876, 0.04359706, 0.13174425, 0.9887026, -0.07148631, -0.033892903, 0.076565385, 0.99648815, 7.9155817, 30.236664, -161.55411)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_118" type="MeshInstance3D" parent="." unique_id=1258268452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.887048, 1.4477234, 39.610542)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_119" type="MeshInstance3D" parent="." unique_id=1405481301]
+transform = Transform3D(0.3625286, 0, -0.9319726, 0, 1, 0, 0.9319726, 0, 0.3625286, -28.329742, 3.7785192, 50.83442)
+mesh = ExtResource("4_6ovw3")
+
+[node name="Algae_120" type="MeshInstance3D" parent="." unique_id=1752241552]
+transform = Transform3D(0.21653573, 0, -0.97627467, 0, 1, 0, 0.97627467, 0, 0.21653573, -2.4950662, 2.66502, 70.58568)
+mesh = ExtResource("4_6ovw3")
