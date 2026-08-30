@@ -3141,6 +3141,9 @@ _data = {
 }
 point_count = 4
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ttdih"]
+bg_color = Color(0, 0, 0, 0.7647059)
+
 [node name="Main" type="Node" unique_id=2106466385]
 script = ExtResource("1_d8vpj")
 
@@ -3799,7 +3802,7 @@ transform = Transform3D(-0.9993657, -1.5566655e-09, -0.035612356, 1.5566655e-09,
 curve = SubResource("Curve3D_iuxab")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1234509123]
-transform = Transform3D(0.050449096, 0.4977236, -0.8656779, -0.61550933, 0.69802684, 0.36546656, 0.7862901, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
+transform = Transform3D(0.050449107, 0.4977236, -0.8656779, -0.6155095, 0.69802684, 0.36546656, 0.7862903, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
 use_model_front = true
 
 [node name="GroupAnioly" type="Node3D" parent="Path3D/PathFollow3D" unique_id=719337942]
@@ -4349,9 +4352,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 44.0
-offset_top = -90.0
-offset_right = 163.0
-offset_bottom = 91.0
+offset_top = -95.0
+offset_right = 427.0
+offset_bottom = 195.0
 grow_vertical = 2
 theme_override_constants/separation = 25
 
@@ -4361,6 +4364,15 @@ layout_mode = 2
 theme = ExtResource("29_o8j3b")
 text = "Play"
 flat = true
+alignment = 0
+
+[node name="HowToPlayButton" type="Button" parent="Control/VBoxContainer" unique_id=1454492391]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("29_o8j3b")
+text = "How to play"
+flat = true
+alignment = 0
 
 [node name="QuitButton" type="Button" parent="Control/VBoxContainer" unique_id=1116193887]
 unique_name_in_owner = true
@@ -4368,3 +4380,48 @@ layout_mode = 2
 theme = ExtResource("29_o8j3b")
 text = "Quit"
 flat = true
+alignment = 0
+
+[node name="Tutorial" type="PanelContainer" parent="Control" unique_id=1018566882]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ttdih")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Tutorial" unique_id=1246697718]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/Tutorial/VBoxContainer" unique_id=659846239]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Label" type="Label" parent="Control/Tutorial/VBoxContainer/MarginContainer" unique_id=1716447642]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2
+text = "You went to clean anemones and got lost! You must find your way back home to the coral reef.
+
+Press [W] to swim forward slowly
+[S] will stop you
+[Shift] and [Space] will control your vertical movement
+Mash [A] and [D] to flap your fins and swim faster!
+Clean anemones with [E]
+
+Watch out for predators! You can hide from them inside anemones which need cleaning from time to time.
+They will close when not cleaned for a long time. You can still clean them but from the outside where you're vulnerable."
+autowrap_mode = 2
+
+[node name="OkButton" type="Button" parent="Control/Tutorial/VBoxContainer" unique_id=1631266261]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Ok"
