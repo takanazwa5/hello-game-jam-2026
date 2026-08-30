@@ -4,13 +4,12 @@
 
 [node name="Shark" unique_id=1528879968 instance=ExtResource("1_baigp")]
 
-[node name="Skeleton3D" parent="Shark_Rig" parent_id_path=PackedInt32Array(759033175) index="0" unique_id=1578607426]
-bones/0/rotation = Quaternion(-0.70655715, 0.027875014, 0.027875014, 0.70655715)
-bones/1/rotation = Quaternion(0.003717173, 0.00051655836, 0.13371831, 0.99101233)
-bones/4/rotation = Quaternion(1.3374846e-09, 0.0012439955, 0.16471799, 0.9863399)
-bones/5/rotation = Quaternion(-1.4847192e-09, 0.0008788798, 0.11696084, 0.99313617)
-bones/6/rotation = Quaternion(0.00012440921, 0.0024637673, 0.30182818, 0.9533591)
+[node name="Skeleton3D" parent="Shark_Rig" parent_id_path=PackedInt32Array(1775215772) index="0" unique_id=1231253354]
+bones/0/rotation = Quaternion(-0.7071068, 1.4687481e-16, 1.4687481e-16, 0.7071068)
+bones/1/rotation = Quaternion(0.0037508581, -7.7909986e-19, -2.077109e-16, 0.99999297)
+bones/5/rotation = Quaternion(-1.6298145e-09, -3.556021e-32, -1.5779325e-30, 1)
+bones/6/rotation = Quaternion(0, 1.1736136e-33, -1.8022165e-35, 1)
 bones/7/rotation = Quaternion(0.702361, -1.5139942e-15, -1.5139941e-15, 0.71182096)
 
-[node name="AnimationPlayer" parent="." index="1" unique_id=1671428441]
+[node name="AnimationPlayer" parent="." index="1" unique_id=2055352219]
 autoplay = &"Fish_Swimming"

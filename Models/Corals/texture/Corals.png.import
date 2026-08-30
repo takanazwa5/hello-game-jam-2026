@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqfmdq5sea515"
-path.s3tc="res://.godot/imported/Corals.png-f09be534273ee8b254ecfb6f1a73969f.s3tc.ctex"
+path.s3tc="res://.godot/imported/Corals.png-54d7354095629dfdac993e7d26c37999.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/Corals/texture/Corals.png"
-dest_files=["res://.godot/imported/Corals.png-f09be534273ee8b254ecfb6f1a73969f.s3tc.ctex"]
+source_file="res://Models/Corals/Texture/Corals.png"
+dest_files=["res://.godot/imported/Corals.png-54d7354095629dfdac993e7d26c37999.s3tc.ctex"]
 
 [params]
 
