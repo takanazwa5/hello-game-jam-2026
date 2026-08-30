@@ -134,6 +134,10 @@ func is_hidden() -> bool:
 
 func set_hidden(hidden: bool) -> void:
 	_is_hidden = hidden
+	
+func handle_death() -> void:
+	get_tree().reload_current_scene()
+	
 
 
 func _apply_idle_and_swim_motion(delta: float) -> void:

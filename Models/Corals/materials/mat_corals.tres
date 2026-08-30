@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://badb3kx3rh7bg"]
 
-[ext_resource type="Texture2D" uid="uid://bpean8q5nyv18" path="res://Models/Corals/texture/Corals.png" id="1_o8a5d"]
+[ext_resource type="Texture2D" uid="uid://dqfmdq5sea515" path="res://Models/Corals/texture/Corals.png" id="1_o8a5d"]
 [ext_resource type="Shader" uid="uid://dl7vg1q22ggou" path="res://VFX/resources/shaders/caustics.tres" id="2_j12yp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rgme2"]

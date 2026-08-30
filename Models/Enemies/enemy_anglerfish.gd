@@ -138,6 +138,9 @@ func _process_hunting(delta: float) -> void:
 
 	if distance <= catch_distance:
 		player_caught.emit()
+		
+		player.handle_death()
+		
 		return
 
 	var direction: Vector3 = to_player.normalized()
