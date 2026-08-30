@@ -29,7 +29,7 @@ radius = 0.9679217
 
 [node name="Anemone" unique_id=2006091342 instance=ExtResource("1_k7qmx")]
 
-[node name="Skeleton3D" parent="armature_001" parent_id_path=PackedInt32Array(918333072) index="0" unique_id=744272766]
+[node name="Skeleton3D" parent="armature_001" parent_id_path=PackedInt32Array(1629237702) index="0" unique_id=1102314183]
 bones/1/rotation = Quaternion(0.18363336, 0.5134991, 0.15524246, 0.8237094)
 bones/2/rotation = Quaternion(0.12212056, -0.015454993, 0.48572, 0.8654039)
 bones/3/rotation = Quaternion(0.26456824, 0.6619134, 0.067091726, 0.69812113)
@@ -70,11 +70,11 @@ bones/37/rotation = Quaternion(0.8649763, -0.15658595, 0.46557787, 0.10263607)
 bones/38/rotation = Quaternion(0.44585901, -0.27466854, 0.85154384, -0.025298525)
 bones/39/rotation = Quaternion(-0.2818495, -0.05312434, 0.95136416, -0.112449504)
 
-[node name="anemoneP" parent="armature_001/Skeleton3D" index="0" unique_id=1721841892]
+[node name="anemoneP" parent="armature_001/Skeleton3D" index="0" unique_id=345076314]
 unique_name_in_owner = true
 surface_material_override/0 = SubResource("ShaderMaterial_mes1e")
 
-[node name="AnimationPlayer" parent="." index="1" unique_id=1107636870]
+[node name="AnimationPlayer" parent="." index="1" unique_id=1743604576]
 unique_name_in_owner = true
 autoplay = &"anim_armature_idle"
 
