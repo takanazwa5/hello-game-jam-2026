@@ -14,6 +14,8 @@ func _ready() -> void:
 	quit_button.pressed.connect(_on_quit_button_pressed)
 	ok_button.pressed.connect(_on_ok_button_pressed)
 
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
 
 func _on_start_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://game/game.tscn")

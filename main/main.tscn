@@ -3802,7 +3802,7 @@ transform = Transform3D(-0.9993657, -1.5566655e-09, -0.035612356, 1.5566655e-09,
 curve = SubResource("Curve3D_iuxab")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1234509123]
-transform = Transform3D(0.05044911, 0.4977236, -0.8656779, -0.6155095, 0.69802684, 0.36546656, 0.78629035, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
+transform = Transform3D(0.050449125, 0.4977236, -0.8656779, -0.61550975, 0.69802684, 0.36546656, 0.78629065, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
 use_model_front = true
 
 [node name="GroupAnioly" type="Node3D" parent="Path3D/PathFollow3D" unique_id=719337942]
