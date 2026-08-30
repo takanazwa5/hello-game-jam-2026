@@ -290,7 +290,7 @@ func _face_direction(direction: Vector3, delta: float) -> void:
 	_last_facing_direction = direction
 
 
-func _apply_bob(delta: float) -> void:
+func _apply_bob(_delta: float) -> void:
 	var speed_ratio: float = clampf(velocity.length() / max(hunt_speed, retreat_speed), 0.0, 1.0)
 	var bob_offset: float = sin(_bob_time * bob_frequency * TAU) * bob_amplitude * (0.5 + speed_ratio * 0.5)
 

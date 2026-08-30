@@ -3799,7 +3799,7 @@ transform = Transform3D(-0.9993657, -1.5566655e-09, -0.035612356, 1.5566655e-09,
 curve = SubResource("Curve3D_iuxab")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" unique_id=1234509123]
-transform = Transform3D(0.050449036, 0.4977236, -0.86567765, -0.6155087, 0.69802684, 0.36546648, 0.7862892, 0.51448226, 0.3416305, 11.048509, 0, 4.8209615)
+transform = Transform3D(0.05044908, 0.4977236, -0.8656779, -0.6155092, 0.69802684, 0.36546656, 0.78628993, 0.51448226, 0.34163058, 11.048509, 0, 4.8209615)
 use_model_front = true
 
 [node name="GroupAnioly" type="Node3D" parent="Path3D/PathFollow3D" unique_id=719337942]
@@ -3893,7 +3893,7 @@ transform = Transform3D(0.822229, 0.11397917, 0.557368, 1.11742855e-08, 0.979560
 curve = SubResource("Curve3D_o0hb3")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D2" unique_id=2012228482]
-transform = Transform3D(0.106891096, -0.17599459, 0.97847766, 0, 0.98409885, 0.17701218, -0.9941787, -0.018922407, 0.10520298, -3.4768066, 7.4276376, 2.134018)
+transform = Transform3D(0.106891096, -0.17599459, 0.9784775, 0, 0.98409885, 0.17701213, -0.9941787, -0.018922407, 0.10520295, -3.4768066, 7.4276376, 2.134018)
 use_model_front = true
 
 [node name="anglerfish" type="Node3D" parent="Path3D2/PathFollow3D" unique_id=236139690]
