@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cjayk6qel47pe" path="res://anemone/textures/anemone_dirty_4.png" id="2_ff88u"]
 [ext_resource type="Texture2D" uid="uid://cv1uyllwc4ati" path="res://anemone/textures/anemone_clean_4.png" id="3_70tqi"]
 [ext_resource type="PackedScene" uid="uid://4wy018l3xj62" path="res://VFX/particles/particles_bubbles_scattered.tscn" id="5_4pot5"]
+[ext_resource type="Texture2D" uid="uid://b8soa3usifcyg" path="res://anemone/press_e.png" id="6_mes1e"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4pot5"]
 resource_local_to_scene = true
@@ -142,3 +143,23 @@ text = "CAN CLEAN"
 unique_name_in_owner = true
 wait_time = 20.0
 one_shot = true
+
+[node name="CleanPrompt" type="PanelContainer" parent="." index="11" unique_id=1604023113]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -62.400024
+offset_top = -38.0
+offset_right = 62.399994
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="CleanPrompt" index="0" unique_id=1805898366]
+layout_mode = 2
+texture = ExtResource("6_mes1e")
+expand_mode = 1

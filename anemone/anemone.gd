@@ -24,6 +24,7 @@ var _is_checking_skill: bool = false
 @onready var can_clean_label: Label = %CanCleanLabel
 @onready var skillcheck: Skillcheck = Skillcheck.instance
 @onready var clean_cooldown: Timer = %CleanCooldown
+@onready var clean_prompt: PanelContainer = %CleanPrompt
 
 
 func _ready() -> void:
@@ -58,6 +59,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _process(_delta: float) -> void:
+	clean_prompt.visible = _can_clean()
 	clean_label.text = "CZYSTY" if _is_clean else "BRUDNY"
 	if _is_clean: clean_label.text += " %.2f" % clean_timer.time_left
 	dirtiness_label.text = "Dirtiness %.2f" % _shader_material.get_shader_parameter(&"Dirtiness")
